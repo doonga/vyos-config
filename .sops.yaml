@@ -3,4 +3,4 @@ creation_rules:
   - path_regex: .*\.sops\.env
     # VyOS
     age: >-
-      age1px5u0v9cm60mturyp7lmv6ceudwx2vqxgqtnmfkunwye78k8tcxqdh26zp
+      age1z0gs6j9j28d2zj42sck34dpey5cvwz3f63rah0yvleuyv93u3dysw5xazd
