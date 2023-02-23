@@ -7,7 +7,7 @@
   "platform": "github",
   "username": "greyrock-bot[bot]",
   "gitAuthor": "greyrock-bot <1583719+greyrock-bot[bot]@users.noreply.github.com>",
-  "repositories": ["bjw-s/vyos-config"],
+  "repositories": ["doonga/vyos-config"],
   "regexManagers": [
     {
       "description": ["Generic Docker image Regex manager"],
