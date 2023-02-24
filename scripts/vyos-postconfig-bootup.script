@@ -10,7 +10,7 @@ tee /home/vyos/.gitconfig <<END
 [safe]
   directory = /config
 [user]
-  email = admin@sl.greyrock.io
+  email = sunny.song4198@nocanseemymail.com
   name = Todd Punderson
 END
 #
