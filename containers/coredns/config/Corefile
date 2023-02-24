@@ -14,32 +14,40 @@
    }
 }
 
-(local_hosts) {
-  hosts /config/hosts {
-    ttl 1
-    reload 5s
-    fallthrough greyrock.tech greyrock.io
-  }
-}
-
 (k8s_gateway) {
   forward . 10.45.0.3:53
 }
 
-(forward_upstream) {
-  forward . tls://1.1.1.1 tls://1.0.0.1 {
-    tls_servername cloudflare-dns.com
+# Hack to prevent the gatway returning 127.0.0.1 from /etc/hosts
+gateway.bjw-s.tech {
+  import common
+  template IN A gateway.private.greyrock.io {
+    answer "{{ .Name }} 60 IN A 10.1.0.1"
   }
 }
 
 greyrock.tech {
   import common
-  import local_hosts
+  hosts /host/etc/hosts {
+    ttl 1
+    reload 5s
+    fallthrough
+  }
   import k8s_gateway
 }
 
 greyrock.io {
   import common
-  import local_hosts
-  import forward_upstream
+  hosts /host/etc/hosts {
+    ttl 1
+    reload 5s
+    fallthrough
+  }
+}
+
+1.10.in-addr.arpa {
+  hosts /host/etc/hosts {
+    ttl 1
+    reload 5s
+  }
 }
