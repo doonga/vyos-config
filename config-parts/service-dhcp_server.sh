@@ -63,8 +63,6 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-mitsubishi-inverter mac-address '74:7a:90:cd:6c:5e'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-samsung-tv ip-address '10.1.3.190'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-samsung-tv mac-address '68:27:37:c2:fc:f0'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping pikvm ip-address '10.1.3.60'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping pikvm mac-address 'e4:5f:01:85:3b:2e'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping ps4 ip-address '10.1.3.11'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping ps4 mac-address '2c:cc:44:a9:b6:47'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping solargedge-inverter ip-address '10.1.3.199'
@@ -136,6 +134,8 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s6 mac-address '48:21:0b:3e:d8:14'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas ip-address '10.1.1.3'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas mac-address '4c:cc:6a:18:22:bb'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm ip-address '10.1.1.52'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm mac-address 'e4:5f:01:85:3b:2e'
 
 # Trusted VLAN
 set service dhcp-server shared-network-name TRUSTED authoritative
