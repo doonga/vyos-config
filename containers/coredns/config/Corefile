@@ -18,6 +18,12 @@
   forward . 10.45.0.3:53
 }
 
+(forward_upstream) {
+  forward . tls://1.1.1.1 tls://1.0.0.1 {
+    tls_servername cloudflare-dns.com
+  }
+}
+
 # Hack to prevent the gatway returning 127.0.0.1 from /etc/hosts
 gateway.bjw-s.tech {
   import common
@@ -43,6 +49,7 @@ greyrock.io {
     reload 5s
     fallthrough
   }
+  import forward_upstream
 }
 
 1.10.in-addr.arpa {
