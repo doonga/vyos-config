@@ -73,8 +73,6 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping teslawallconnecter-todd mac-address '98:ed:5c:96:3a:d9'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping tesla-model-3-todd ip-address '10.1.3.188'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping tesla-model-3-todd mac-address '4c:fc:aa:37:cd:f3'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping tesla-model-3-todd ip-address '10.1.3.188'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping tesla-model-3-todd mac-address '4c:fc:aa:37:cd:f3'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping tubeszb-cc2652-poe-2022 ip-address '10.1.3.196'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping tubeszb-cc2652-poe-2022 mac-address '7c:9e:bd:bf:a0:7f'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping upstairs-litter-robot ip-address '10.1.3.191'
