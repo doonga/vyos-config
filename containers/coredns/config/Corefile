@@ -10,7 +10,7 @@
   prometheus :9153
 
   health {
-     lameduck 5s
+    lameduck 5s
    }
 }
 

@@ -10,5 +10,4 @@
 # Mount USB Backup Drive
 backupdest=/media/usb-backup
 mkdir -p "$backupdest"
-
 mount -t vfat -o rw,uid=vyos,gid=vyattacfg /dev/disk/by-id/usb-SanDisk_Cruzer_Fit_4C530102060809112300-0:0-part1 "$backupdest"

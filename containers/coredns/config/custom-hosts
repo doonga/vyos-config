@@ -1,8 +1,0 @@
-10.1.0.1    ipv4.greyrock.io
-10.1.0.1    vpn.greyrock.io
-10.1.1.3    s3.private.greyrock.io
-
-10.1.1.1    gateway.private.greyrock.io
-10.1.3.60   pikvm.private.greyrock.io
-10.1.1.3    nas.private.greyrock.io
-10.5.0.2    greyrock-ops.private.greyrock.io
