@@ -83,6 +83,11 @@ set firewall name iot-local rule 5 description 'Rule: accept_mdns'
 set firewall name iot-local rule 5 destination port 'mdns'
 set firewall name iot-local rule 5 protocol 'udp'
 set firewall name iot-local rule 5 source port 'mdns'
+set firewall name iot-local rule 6 action 'accept'
+set firewall name iot-local rule 6 description 'Rule: accept_icmp_from_zigbee_coordinator'
+set firewall name iot-local rule 6 protocol 'icmp'
+set firewall name iot-local rule 6 source group address-group 'zigbee_coordinator'
+
 
 # From IOT to SERVERS
 set firewall name iot-servers default-action 'drop'

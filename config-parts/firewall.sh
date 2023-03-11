@@ -94,6 +94,8 @@ set firewall group address-group vyos_dnsdist address '10.5.0.4'
 
 set firewall group address-group weather_stations address '10.1.3.198'
 
+set firewall group address-group zigbee_coordinator address '10.1.3.196'
+
 # Network groups
 set firewall group network-group cloudflare-ipv4 network '173.245.48.0/20'
 set firewall group network-group cloudflare-ipv4 network '103.21.244.0/22'
