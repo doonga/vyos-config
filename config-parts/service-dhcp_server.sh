@@ -24,6 +24,7 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 lease '86400'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 name-server '10.5.0.4'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 range 0 start '10.1.3.200'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 range 0 stop '10.1.3.254'
+set service dhcp-server shared-network-name IOT ntp-server 10.1.3.1
 
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping ambient-ws5000 ip-address '10.1.3.198'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping ambient-ws5000 mac-address 'd8:f1:5b:15:83:9e'
@@ -88,6 +89,7 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 lease '86400'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 name-server '10.5.0.4'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 range 0 start '10.1.0.200'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 range 0 stop '10.1.0.254'
+set service dhcp-server shared-network-name LAN ntp-server 10.1.0.1
 
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch ip-address '10.1.0.2'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch mac-address '64:e8:81:b1:62:14'
@@ -115,6 +117,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 lease '86
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 name-server '10.5.0.4'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 start '10.1.1.200'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 stop '10.1.1.254'
+set service dhcp-server shared-network-name SERVERS ntp-server 10.1.1.1
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping chronos ip-address '10.1.1.2'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping chronos mac-address '4e:90:51:6f:5b:40'
@@ -146,6 +149,7 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 lease '86
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 name-server '10.5.0.4'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 range 0 start '10.1.2.200'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 range 0 stop '10.1.2.254'
+set service dhcp-server shared-network-name TRUSTED ntp-server 10.1.2.1
 
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping andys-desktop ip-address '10.1.2.14'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping andys-desktop mac-address '04:42:1a:08:f3:fe'
@@ -189,6 +193,7 @@ set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 lease '8640
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 name-server '10.5.0.4'
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 range 0 start '10.1.4.200'
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 range 0 stop '10.1.4.254'
+set service dhcp-server shared-network-name VIDEO ntp-server 10.1.4.1
 
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping courtyard-porch-doorbell ip-address '10.1.4.253'
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping courtyard-porch-doorbell mac-address '9c:8e:cd:2c:28:38'
