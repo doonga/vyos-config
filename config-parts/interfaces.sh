@@ -21,15 +21,12 @@ set interfaces ethernet eth2 vif 50 description 'VIDEO'
 
 set interfaces wireguard wg01 address '10.0.11.1/24'
 set interfaces wireguard wg01 description 'WIREGUARD'
-set interfaces wireguard wg01 peer ipad-todd allowed-ips '10.0.11.3/32'
-set interfaces wireguard wg01 peer ipad-todd persistent-keepalive '15'
-set interfaces wireguard wg01 peer ipad-todd public-key 'tyxACMBFCXxJZ8AdrHfXAI+lhueC7Msrj0s/DCNnXgs='
 set interfaces wireguard wg01 peer iphone-todd allowed-ips '10.0.11.2/32'
 set interfaces wireguard wg01 peer iphone-todd persistent-keepalive '15'
 set interfaces wireguard wg01 peer iphone-todd public-key 'Nra9xTkUYNynIZvjAurDkYDaDOSVeb/COgmzcxRmHio='
-set interfaces wireguard wg01 peer macbook-todd allowed-ips '10.0.11.4/32'
-set interfaces wireguard wg01 peer macbook-todd persistent-keepalive '15'
-set interfaces wireguard wg01 peer macbook-todd public-key '/NCWOUGrjcspzfwMraFKHUu40lXbxX0Rt7baosoM+Do='
+set interfaces wireguard wg01 peer laptop-todd allowed-ips '10.0.11.3/32'
+set interfaces wireguard wg01 peer laptop-todd persistent-keepalive '15'
+set interfaces wireguard wg01 peer laptop-todd public-key 'kf4C70WdtW5263fR5ykOIXvc2C2T5AhYqrsEl41XPh4='
 set interfaces wireguard wg01 port '51820'
 set interfaces wireguard wg01 private-key "${SECRET_WIREGUARD_PRIVATE_KEY}"
 
