@@ -199,3 +199,17 @@ set service dhcp-server shared-network-name VIDEO ntp-server 10.1.4.1
 
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping courtyard-porch-doorbell ip-address '10.1.4.253'
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping courtyard-porch-doorbell mac-address '9c:8e:cd:2c:28:38'
+
+# VoIP VLAN
+set service dhcp-server shared-network-name VOIP authoritative
+set service dhcp-server shared-network-name VOIP ping-check
+set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 default-router '10.1.5.1'
+set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 domain-name 'private.greyrock.io'
+set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 lease '86400'
+set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 name-server '10.5.0.4'
+set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 range 0 start '10.1.5.200'
+set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 range 0 stop '10.1.5.254'
+set service dhcp-server shared-network-name VOIP ntp-server 10.1.3.1
+
+set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 static-mapping office-polycom-todd ip-address '10.1.5.10'
+set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 static-mapping office-polycom-todd mac-address 'd1:f1:51:11:81:91'

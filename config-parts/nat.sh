@@ -32,6 +32,7 @@ set nat destination rule 103 protocol 'tcp_udp'
 set nat destination rule 103 translation address '10.5.0.4'
 set nat destination rule 103 translation port '53'
 
+# Force NTP
 set nat destination rule 104 description 'Force NTP for LAN'
 set nat destination rule 104 destination address '!10.1.0.1'
 set nat destination rule 104 destination port '123'
@@ -40,7 +41,6 @@ set nat destination rule 104 protocol 'udp'
 set nat destination rule 104 translation address '10.1.0.1'
 set nat destination rule 104 translation port '123'
 
-# Force NTP
 set nat destination rule 105 description 'Force NTP for Servers'
 set nat destination rule 105 destination address '!10.1.1.1'
 set nat destination rule 105 destination port '123'
@@ -73,13 +73,21 @@ set nat destination rule 108 protocol 'udp'
 set nat destination rule 108 translation address '10.1.4.1'
 set nat destination rule 108 translation port '123'
 
-set nat destination rule 109 description 'Force NTP for Wireguard Trusted'
-set nat destination rule 109 destination address '!10.0.11.1'
+set nat destination rule 109 description 'Force NTP for VoIP'
+set nat destination rule 109 destination address '!10.1.5.1'
 set nat destination rule 109 destination port '123'
-set nat destination rule 109 inbound-interface 'wg01'
+set nat destination rule 109 inbound-interface 'eth2.60'
 set nat destination rule 109 protocol 'udp'
-set nat destination rule 109 translation address '10.0.11.1'
+set nat destination rule 109 translation address '10.1.4.1'
 set nat destination rule 109 translation port '123'
+
+set nat destination rule 110 description 'Force NTP for Wireguard Trusted'
+set nat destination rule 110 destination address '!10.0.11.1'
+set nat destination rule 110 destination port '123'
+set nat destination rule 110 inbound-interface 'wg01'
+set nat destination rule 110 protocol 'udp'
+set nat destination rule 110 translation address '10.0.11.1'
+set nat destination rule 110 translation port '123'
 
 # LAN -> WAN masquerade
 set nat source rule 100 description 'LAN -> WAN'

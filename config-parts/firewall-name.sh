@@ -1,5 +1,10 @@
 #!/bin/vbash
 
+# From GUEST to VOIP
+set firewall name guest-voip default-action 'drop'
+set firewall name guest-voip description 'From GUEST to VOIP'
+set firewall name guest-voip enable-default-log
+
 # From GUEST to IOT
 set firewall name guest-iot default-action 'drop'
 set firewall name guest-iot description 'From GUEST to IOT'
@@ -48,6 +53,11 @@ set firewall name guest-video enable-default-log
 set firewall name guest-wan default-action 'accept'
 set firewall name guest-wan description 'From GUEST to WAN'
 
+# From IOT to VOIP
+set firewall name iot-voip default-action 'drop'
+set firewall name iot-voip description 'From IOT to VOIP'
+set firewall name iot-voip enable-default-log
+
 # From IOT to GUEST
 set firewall name iot-guest default-action 'drop'
 set firewall name iot-guest description 'From IOT to GUEST'
@@ -87,7 +97,6 @@ set firewall name iot-local rule 6 action 'accept'
 set firewall name iot-local rule 6 description 'Rule: accept_icmp_from_zigbee_coordinator'
 set firewall name iot-local rule 6 protocol 'icmp'
 set firewall name iot-local rule 6 source group address-group 'zigbee_coordinator'
-
 
 # From IOT to SERVERS
 set firewall name iot-servers default-action 'drop'
@@ -164,6 +173,11 @@ set firewall name iot-video enable-default-log
 set firewall name iot-wan default-action 'accept'
 set firewall name iot-wan description 'From IOT to WAN'
 
+# From LAN to VOIP
+set firewall name lan-voip default-action 'drop'
+set firewall name lan-voip description 'From LAN to VOIP'
+set firewall name lan-voip enable-default-log
+
 # From LAN to GUEST
 set firewall name lan-guest default-action 'drop'
 set firewall name lan-guest description 'From LAN to GUEST'
@@ -221,6 +235,11 @@ set firewall name lan-video enable-default-log
 # From LAN to WAN
 set firewall name lan-wan default-action 'accept'
 set firewall name lan-wan description 'From LAN to WAN'
+
+# From LOCAL to VOIP
+set firewall name local-voip default-action 'drop'
+set firewall name local-voip description 'From LOCAL to VOIP'
+set firewall name local-voip enable-default-log
 
 # From LOCAL to GUEST
 set firewall name local-guest default-action 'drop'
@@ -304,6 +323,11 @@ set firewall name local-video enable-default-log
 # From LOCAL to WAN
 set firewall name local-wan default-action 'accept'
 set firewall name local-wan description 'From LOCAL to WAN'
+
+# From SERVERS to VOIP
+set firewall name servers-voip default-action 'drop'
+set firewall name servers-voip description 'From SERVERS to VOIP'
+set firewall name servers-voip enable-default-log
 
 # From SERVERS to GUEST
 set firewall name servers-guest default-action 'drop'
@@ -404,6 +428,11 @@ set firewall name servers-video rule 2 source group address-group 'k8s_nodes'
 set firewall name servers-wan default-action 'accept'
 set firewall name servers-wan description 'From SERVERS to WAN'
 
+# From SERVICES to VOIP
+set firewall name services-voip default-action 'drop'
+set firewall name services-voip description 'From SERVICES to VOIP'
+set firewall name services-voip enable-default-log
+
 # From SERVICES to GUEST
 set firewall name services-guest default-action 'drop'
 set firewall name services-guest description 'From SERVICES to GUEST'
@@ -453,6 +482,11 @@ set firewall name services-video enable-default-log
 # From SERVICES to WAN
 set firewall name services-wan default-action 'accept'
 set firewall name services-wan description 'From SERVICES to WAN'
+
+# From TRUSTED to VOIP
+set firewall name trusted-voip default-action 'drop'
+set firewall name trusted-voip description 'From TRUSTED to VOIP'
+set firewall name trusted-voip enable-default-log
 
 # From TRUSTED to GUEST
 set firewall name trusted-guest default-action 'drop'
@@ -529,6 +563,11 @@ set firewall name trusted-video rule 1 protocol 'icmp'
 set firewall name trusted-wan default-action 'accept'
 set firewall name trusted-wan description 'From TRUSTED to WAN'
 
+# From VIDEO to VOIP
+set firewall name video-voip default-action 'drop'
+set firewall name video-voip description 'From VIDEO to VOIP'
+set firewall name video-voip enable-default-log
+
 # From VIDEO to GUEST
 set firewall name video-guest default-action 'drop'
 set firewall name video-guest description 'From VIDEO to GUEST'
@@ -579,6 +618,58 @@ set firewall name video-trusted enable-default-log
 # From VIDEO to WAN
 set firewall name video-wan default-action 'drop'
 set firewall name video-wan description 'From VIDEO to WAN'
+
+# From VOIP to GUEST
+set firewall name voip-guest default-action 'drop'
+set firewall name voip-guest description 'From VOIP to GUEST'
+set firewall name voip-guest enable-default-log
+
+# From VOIP to IOT
+set firewall name voip-iot default-action 'drop'
+set firewall name voip-iot description 'From VOIP to IOT'
+set firewall name voip-iot enable-default-log
+
+# From VOIP to LAN
+set firewall name voip-lan default-action 'drop'
+set firewall name voip-lan description 'From VOIP to LAN'
+set firewall name voip-lan enable-default-log
+
+# From VOIP to LOCAL
+set firewall name voip-local default-action 'drop'
+set firewall name voip-local description 'From VOIP to LOCAL'
+set firewall name voip-local enable-default-log
+
+# From VOIP to SERVERS
+set firewall name voip-servers default-action 'drop'
+set firewall name voip-servers description 'From VOIP to SERVERS'
+set firewall name voip-servers enable-default-log
+
+# From VOIP to SERVICES
+set firewall name voip-services default-action 'accept'
+set firewall name voip-services description 'From VOIP to SERVICES'
+set firewall name voip-services rule 1 action 'accept'
+set firewall name voip-services rule 1 description 'Rule: accept_dns'
+set firewall name voip-services rule 1 destination port 'domain,domain-s'
+set firewall name voip-services rule 1 protocol 'tcp_udp'
+
+# From VOIP to TRUSTED
+set firewall name voip-trusted default-action 'drop'
+set firewall name voip-trusted description 'From VOIP to TRUSTED'
+set firewall name voip-trusted enable-default-log
+
+# From VOIP to VIDEO
+set firewall name voip-video default-action 'drop'
+set firewall name voip-video description 'From VOIP to VIDEO'
+set firewall name voip-video enable-default-log
+
+# From VOIP to WAN
+set firewall name voip-wan default-action 'accept'
+set firewall name voip-wan description 'From VOIP to WAN'
+
+# From WAN to VOIP
+set firewall name wan-voip default-action 'drop'
+set firewall name wan-voip description 'From WAN to VOIP'
+set firewall name wan-voip enable-default-log
 
 # From WAN to GUEST
 set firewall name wan-guest default-action 'drop'
