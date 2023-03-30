@@ -638,6 +638,10 @@ set firewall name voip-lan enable-default-log
 set firewall name voip-local default-action 'drop'
 set firewall name voip-local description 'From VOIP to LOCAL'
 set firewall name voip-local enable-default-log
+set firewall name voip-local rule 1 action 'accept'
+set firewall name voip-local rule 1 description 'Rule: accept_ntp'
+set firewall name voip-local rule 1 destination port 'ntp'
+set firewall name voip-local rule 1 protocol 'udp'
 
 # From VOIP to SERVERS
 set firewall name voip-servers default-action 'drop'

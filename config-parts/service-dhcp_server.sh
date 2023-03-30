@@ -13,7 +13,7 @@ set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 range 0 
 set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 range 0 stop '192.168.2.254'
 
 set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping todds-work-laptop ip-address '192.168.2.11'
-set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping todds-work-laptop mac-address 'dc:41:a9:ba:b1:ca'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping todds-work-laptop mac-address '30:24:a9:a7:b8:66'
 
 # IoT VLAN
 set service dhcp-server shared-network-name IOT authoritative
@@ -211,7 +211,7 @@ set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 lease '86400
 set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 name-server '10.5.0.4'
 set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 range 0 start '10.1.5.200'
 set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 range 0 stop '10.1.5.254'
-set service dhcp-server shared-network-name VOIP ntp-server 10.1.3.1
+set service dhcp-server shared-network-name VOIP ntp-server 10.1.5.1
 
 set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 static-mapping office-polycom-todd ip-address '10.1.5.10'
-set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 static-mapping office-polycom-todd mac-address 'd1:f1:51:11:81:91'
+set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 static-mapping office-polycom-todd mac-address '64:16:7f:df:59:b1'
