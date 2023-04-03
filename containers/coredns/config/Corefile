@@ -25,7 +25,7 @@
 }
 
 # Hack to prevent the gatway returning 127.0.0.1 from /etc/hosts
-gateway.bjw-s.tech {
+gateway.private.greyrock.io {
   import common
   template IN A gateway.private.greyrock.io {
     answer "{{ .Name }} 60 IN A 10.1.0.1"

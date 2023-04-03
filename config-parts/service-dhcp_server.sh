@@ -154,7 +154,7 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 range 0 s
 set service dhcp-server shared-network-name TRUSTED ntp-server 10.1.2.1
 
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping andys-desktop ip-address '10.1.2.14'
-set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping andys-desktop mac-address '04:42:1a:08:f3:fe'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping andys-desktop mac-address '2c:f0:5d:ad:e5:b4'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping andys-iphone ip-address '10.1.2.15'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping andys-iphone mac-address '44:90:bb:c9:44:79'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping fsr-appletv ip-address '10.1.2.25'
@@ -176,7 +176,7 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-ma
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping office-homepod ip-address '10.1.2.21'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping office-homepod mac-address '4c:20:b8:de:46:e8'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping todds-desktop ip-address '10.1.2.10'
-set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping todds-desktop mac-address '2c:f0:5d:ad:e5:b4'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping todds-desktop mac-address '74:56:3c:61:39:3f'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping todds-iphone ip-address '10.1.2.12'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping todds-iphone mac-address '70:b3:06:4c:04:65'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping todds-laptop ip-address '10.1.2.11'
