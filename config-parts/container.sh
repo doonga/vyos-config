@@ -35,7 +35,7 @@ set container name coredns volume vyoshosts mode 'ro'
 
 # dnsdist
 set container name dnsdist cap-add 'net-bind-service'
-set container name dnsdist environment TZ value 'Europe/Amsterdam'
+set container name dnsdist environment TZ value 'America/New_York'
 set container name dnsdist image 'docker.io/powerdns/dnsdist-17:1.7.3'
 set container name dnsdist memory '0'
 set container name dnsdist network services address '10.5.0.4'
