@@ -23,3 +23,4 @@ set system static-host-mapping host-name greyrock-ops.private.greyrock.io inet 1
 set system static-host-mapping host-name gitops.private.greyrock.io inet 10.1.1.10
 set system static-host-mapping host-name pikvm.private.greyrock.io inet 10.1.1.52
 set system static-host-mapping host-name s3.private.greyrock.io inet 10.1.1.3
+set system static-host-mapping host-name courtyard-porch-doorbell.private.greyrock.io inet 10.1.4.253
