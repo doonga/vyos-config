@@ -1,0 +1,83 @@
+[service]
+  log_level = "debug"
+  log_path = ""
+  cache_enable = false
+
+[network.0]
+  cidrs = ["10.1.0.0/24"]
+  name = "LAN"
+
+[network.1]
+  cidrs = ["10.1.1.0/24"]
+  name = "Servers"
+
+[network.2]
+  cidrs = ["10.1.2.0/24"]
+  name = "Trusted"
+
+[network.3]
+  cidrs = ["10.1.3.0/24"]
+  name = "IoT"
+
+[network.4]
+  cidrs = ["10.1.4.0/24"]
+  name = "Video"
+
+[network.5]
+  cidrs = ["10.0.11.0/24"]
+  name = "Wireguard"
+
+[network.6]
+  cidrs = ["10.1.5.0/24"]
+  name = "VoIP"
+
+[upstream.0]
+  bootstrap_ip = ""
+  endpoint = "10.5.0.3"
+  name = "CoreDNS"
+  timeout = 5000
+  type = "legacy"
+
+[upstream.1]
+  bootstrap_ip = ""
+  endpoint = "https://dns.controld.com/zyogcvxe1j"
+  name = "Control D - Servers"
+  timeout = 5000
+  type = "doh"
+
+[upstream.2]
+  bootstrap_ip = ""
+  endpoint = "https://dns.controld.com/b2qm1vgv9u"
+  name = "Control D - Trusted"
+  timeout = 5000
+  type = "doh"
+
+[upstream.3]
+  bootstrap_ip = ""
+  endpoint = "https://dns.controld.com/1beo4ot1khf"
+  name = "Control D - IoT"
+  timeout = 5000
+  type = "doh"
+
+[listener.0]
+  ip = "10.5.0.9"
+  port = 53
+  restricted = true
+
+[listener.0.policy]
+  name = "Listener 0 policy"
+  networks = [
+    {"network.0" = ["upstream.1"]},
+    {"network.1" = ["upstream.1"]},
+    {"network.2" = ["upstream.2"]},
+    {"network.3" = ["upstream.3"]},
+    {"network.4" = ["upstream.3"]},
+    {"network.5" = ["upstream.2"]},
+    {"network.6" = ["upstream.1"]},
+  ]
+  rules = [
+    {"*.greyrock.io" = ["upstream.0"]},
+    {"*.greyrock.tech" = ["upstream.0"]},
+    {"*.1.10.in-addr.arpa" = ["upstream.0"]},
+  ]
+

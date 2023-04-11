@@ -4,9 +4,6 @@
 # Track certain files and directories
 !.gitignore
 
-!/coredns/
-!/ctrld/
-!/dnsdist/
-!/haproxy/
-!/unifi/
-!/vector-agent/
+!/config/
+/config/*
+!/config/ctrld.toml
