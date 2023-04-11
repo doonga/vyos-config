@@ -46,6 +46,20 @@ set container name dnsdist volume config destination '/etc/dnsdist/dnsdist.conf'
 set container name dnsdist volume config source '/config/containers/dnsdist/config/dnsdist.conf'
 set container name dnsdist volume config mode 'ro'
 
+# ctrld
+set container name ctrld cap-add 'net-bind-service'
+set container name ctrld environment TZ value 'America/New_York'
+set container name ctrld image 'ghcr.io/doonga/ctrld:1.1.4'
+set container name ctrld memory '512'
+set container name ctrld network services address '10.5.0.9'
+set container name ctrld restart 'on-failure'
+set container name ctrld shared-memory '0'
+set container name ctrld volume config destination '/config/ctrld.toml'
+set container name ctrld volume config source '/config/containers/ctrld/config/ctrld.toml'
+set container name ctrld volume config mode 'ro'
+set container name ctrld volume logs destination '/dev/log'
+set container name ctrld volume logs source '/dev/log'
+
 # haproxy-k8s-api
 set container name haproxy-k8s-api image 'docker.io/library/haproxy:2.7.6'
 set container name haproxy-k8s-api memory '0'
