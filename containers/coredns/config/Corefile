@@ -1,6 +1,8 @@
 (common) {
   errors
-  log error
+  log . {
+    class error
+  }
   reload
   loadbalance
   cache
@@ -18,7 +20,7 @@
   forward . 10.45.0.3:53
 }
 
-# Hack to prevent the gatway returning 127.0.0.1 from /etc/hosts
+# Hack to prevent the gateway returning 127.0.0.1 from /etc/hosts
 gateway.private.greyrock.io {
   import common
   template IN A gateway.private.greyrock.io {
@@ -36,23 +38,8 @@ greyrock.tech {
   import k8s_gateway
 }
 
-greyrock.io {
+. {
   import common
-  hosts /host/etc/hosts {
-    ttl 1
-    reload 5s
-  }
-}
-
-private.greyrock.io {
-  import common
-  hosts /host/etc/hosts {
-    ttl 1
-    reload 5s
-  }
-}
-
-1.10.in-addr.arpa {
   hosts /host/etc/hosts {
     ttl 1
     reload 5s
