@@ -19,7 +19,7 @@ set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-m
 set service dhcp-server shared-network-name IOT authoritative
 set service dhcp-server shared-network-name IOT ping-check
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 default-router '10.1.3.1'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 domain-name 'private.greyrock.io'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 domain-name 'greyrock.io'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 lease '86400'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 name-server '10.5.0.4'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 range 0 start '10.1.3.200'
@@ -112,7 +112,7 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mappin
 set service dhcp-server shared-network-name SERVERS authoritative
 set service dhcp-server shared-network-name SERVERS ping-check
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 default-router '10.1.1.1'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 domain-name 'private.greyrock.io'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 domain-name 'greyrock.io'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 lease '86400'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 name-server '10.5.0.4'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 start '10.1.1.200'
@@ -146,7 +146,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name TRUSTED authoritative
 set service dhcp-server shared-network-name TRUSTED ping-check
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 default-router '10.1.2.1'
-set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 domain-name 'private.greyrock.io'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 domain-name 'greyrock.io'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 lease '86400'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 name-server '10.5.0.4'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 range 0 start '10.1.2.200'
@@ -192,7 +192,7 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-ma
 set service dhcp-server shared-network-name VIDEO authoritative
 set service dhcp-server shared-network-name VIDEO ping-check
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 default-router '10.1.4.1'
-set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 domain-name 'private.greyrock.io'
+set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 domain-name 'greyrock.io'
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 lease '86400'
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 name-server '10.5.0.4'
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 range 0 start '10.1.4.200'
@@ -206,7 +206,7 @@ set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapp
 set service dhcp-server shared-network-name VOIP authoritative
 set service dhcp-server shared-network-name VOIP ping-check
 set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 default-router '10.1.5.1'
-set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 domain-name 'private.greyrock.io'
+set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 domain-name 'greyrock.io'
 set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 lease '86400'
 set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 name-server '10.5.0.4'
 set service dhcp-server shared-network-name VOIP subnet 10.1.5.0/24 range 0 start '10.1.5.200'
