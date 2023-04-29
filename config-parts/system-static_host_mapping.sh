@@ -3,6 +3,9 @@ set system static-host-mapping host-name gateway.greyrock.io inet 10.1.0.1
 set system static-host-mapping host-name gateway.greyrock.io alias vpn.greyrock.io
 set system static-host-mapping host-name gateway.greyrock.io alias ipv4.greyrock.io
 
+# 1Password Connect
+set system static-host-mapping host-name onepassword-connect.greyrock.io inet 10.5.0.5
+
 # NAS
 set system static-host-mapping host-name librarium.greyrock.io inet 10.1.1.3
 set system static-host-mapping host-name librarium.greyrock.io alias nas.greyrock.io
