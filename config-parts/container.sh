@@ -33,6 +33,21 @@ set container name coredns volume vyoshosts destination '/host/etc/hosts'
 set container name coredns volume vyoshosts source '/etc/hosts'
 set container name coredns volume vyoshosts mode 'ro'
 
+# bind
+set container name bind cap-add 'net-bind-service'
+set container name bind image 'docker.io/internetsystemsconsortium/bind9:9.19'
+set container name bind command '/usr/sbin/named -4 -f -c /etc/bind/named.conf -u bind'
+set container name bind memory '0'
+set container name bind network services address '10.5.0.30'
+set container name bind restart 'on-failure'
+set container name bind shared-memory '0'
+set container name bind volume config destination '/etc/bind'
+set container name bind volume config source '/config/containers/bind/config'
+set container name bind volume config mode 'ro'
+set container name bind volume cache source '/tmp/bind/cache'
+set container name bind volume cache destination '/var/cache/bind'
+set container name bind volume cache mode 'rw'
+
 # dnsdist
 set container name dnsdist cap-add 'net-bind-service'
 set container name dnsdist environment TZ value 'America/New_York'
@@ -42,23 +57,9 @@ set container name dnsdist memory '0'
 set container name dnsdist network services address '10.5.0.4'
 set container name dnsdist restart 'on-failure'
 set container name dnsdist shared-memory '0'
-set container name dnsdist volume config destination '/etc/dnsdist/dnsdist.conf'
 set container name dnsdist volume config source '/config/containers/dnsdist/config/dnsdist.conf'
+set container name dnsdist volume config destination '/etc/dnsdist/dnsdist.conf'
 set container name dnsdist volume config mode 'ro'
-
-# ctrld
-set container name ctrld cap-add 'net-bind-service'
-set container name ctrld environment TZ value 'America/New_York'
-set container name ctrld image 'ghcr.io/doonga/ctrld:1.1.4'
-set container name ctrld memory '512'
-set container name ctrld network services address '10.5.0.9'
-set container name ctrld restart 'on-failure'
-set container name ctrld shared-memory '0'
-set container name ctrld volume config destination '/config/ctrld.toml'
-set container name ctrld volume config source '/config/containers/ctrld/config/ctrld.toml'
-set container name ctrld volume config mode 'ro'
-set container name ctrld volume logs destination '/dev/log'
-set container name ctrld volume logs source '/dev/log'
 
 # haproxy-k8s-api
 set container name haproxy-k8s-api image 'docker.io/library/haproxy:2.7.7'
@@ -66,8 +67,8 @@ set container name haproxy-k8s-api memory '0'
 set container name haproxy-k8s-api network services address '10.5.0.2'
 set container name haproxy-k8s-api restart 'on-failure'
 set container name haproxy-k8s-api shared-memory '0'
-set container name haproxy-k8s-api volume config destination '/usr/local/etc/haproxy/haproxy.cfg'
 set container name haproxy-k8s-api volume config source '/config/containers/haproxy/config/haproxy.cfg'
+set container name haproxy-k8s-api volume config destination '/usr/local/etc/haproxy/haproxy.cfg'
 set container name haproxy-k8s-api volume config mode 'ro'
 
 # node-exporter
@@ -109,7 +110,6 @@ set container name udp-broadcast-relay-mdns memory '0'
 set container name udp-broadcast-relay-mdns restart 'on-failure'
 set container name udp-broadcast-relay-mdns shared-memory '0'
 
-
 # onepassword-connect
 set container name onepassword-connect image 'docker.io/1password/connect-api:1.6.1'
 set container name onepassword-connect environment TZ value 'America/New_York'
@@ -135,4 +135,3 @@ set container name onepassword-sync volume credentials mode 'ro'
 set container name onepassword-sync volume data source '/config/containers/onepassword-connect/data'
 set container name onepassword-sync volume data destination '/home/opuser/.op/data'
 set container name onepassword-sync volume data mode 'rw'
-
