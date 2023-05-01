@@ -5,7 +5,7 @@
 $TTL 3600
 $ORIGIN greyrock.tech.
 @ 3600 IN SOA gateway.greyrock.io. gateway.greyrock.io. (
-  1682790096         ; serial number (epoch timestamp)
+  1682960273         ; serial number (epoch timestamp)
   7200               ; refresh period
   3600               ; retry period
   1209600            ; expire time

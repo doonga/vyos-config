@@ -22,7 +22,7 @@ $ORIGIN in-addr.arpa.
 1.0.1.10                   IN  PTR  gateway.greyrock.io.
 
 ; Servers
-3.1.1.10                   IN  PTR  librarium.greyrock.io.
+3.1.1.10                   IN  PTR  nas.greyrock.io.
 4.1.1.10                   IN  PTR  k8s1.greyrock.io.
 5.1.1.10                   IN  PTR  k8s2.greyrock.io.
 6.1.1.10                   IN  PTR  k8s3.greyrock.io.
