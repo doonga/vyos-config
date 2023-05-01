@@ -39,4 +39,4 @@ courtyard-porch-doorbell   IN  A  10.1.4.254
 greyrock-ops               IN  A  10.5.0.2
 
 ; CNAME records
-s3                         IN  CNAME  gateway.greyrock.io.
+zigbee-coordinator         IN  CNAME slzb-06.greyrock.io.
