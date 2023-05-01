@@ -94,7 +94,7 @@ set container name udp-broadcast-relay-mdns restart 'on-failure'
 set container name udp-broadcast-relay-mdns shared-memory '0'
 
 # onepassword-connect
-set container name onepassword-connect image 'docker.io/1password/connect-api:1.6.1'
+set container name onepassword-connect image 'docker.io/1password/connect-api:1.7.0'
 set container name onepassword-connect environment TZ value 'America/New_York'
 set container name onepassword-connect memory '0'
 set container name onepassword-connect network services address '10.5.0.5'
