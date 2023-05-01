@@ -1,0 +1,39 @@
+; Make sure to update the epoch time in the SOA records so coreDNS picks up the changes automatically
+; https://www.epochconverter.com/
+
+; SOA Records
+$TTL 3600
+$ORIGIN 1.10.in-addr.arpa.
+@ 3600 IN SOA gateway.greyrock.io. gateway.greyrock.io. (
+  1682790096         ; serial number (epoch timestamp)
+  7200               ; refresh period
+  3600               ; retry period
+  1209600            ; expire time
+  3600               ; minimum ttl
+)
+
+; NS Records
+@                          IN  NS gateway.greyrock.io.
+
+; Reset origin
+$ORIGIN in-addr.arpa.
+
+; LAN
+1.0.1.10                   IN  PTR  gateway.greyrock.io.
+
+; Servers
+3.1.1.10                   IN  PTR  librarium.greyrock.io.
+4.1.1.10                   IN  PTR  k8s1.greyrock.io.
+5.1.1.10                   IN  PTR  k8s2.greyrock.io.
+6.1.1.10                   IN  PTR  k8s3.greyrock.io.
+7.1.1.10                   IN  PTR  k8s4.greyrock.io.
+8.1.1.10                   IN  PTR  k8s5.greyrock.io.
+9.1.1.10                   IN  PTR  k8s6.greyrock.io.
+10.1.1.10                  IN  PTR  gitops.greyrock.io.
+52.1.1.10                  IN  PTR  pikvm.greyrock.io.
+
+; IOT
+196.3.1.10                 IN  PTR  slzb-06.greyrock.io.
+
+; Video
+253.4.1.10                 IN  PTR  courtyard-porch-doorbell.greyrock.io.
