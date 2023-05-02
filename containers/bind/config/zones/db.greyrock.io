@@ -40,3 +40,4 @@ greyrock-ops               IN  A  10.5.0.2
 
 ; CNAME records
 zigbee-coordinator         IN  CNAME slzb-06.greyrock.io.
+vpn                        IN  CNAME gateway.greyrock.io.
