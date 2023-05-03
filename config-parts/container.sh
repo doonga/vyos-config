@@ -118,3 +118,12 @@ set container name onepassword-sync volume credentials mode 'ro'
 set container name onepassword-sync volume data source '/tmp/onepassword/data'
 set container name onepassword-sync volume data destination '/home/opuser/.op/data'
 set container name onepassword-sync volume data mode 'rw'
+
+# bind-exporter
+set container name bind-exporter arguments '--bind.stats-url http://10.5.0.3:8080 --bind.stats-groups server,view'
+set container name bind-exporter image 'quay.io/prometheuscommunity/bind-exporter:v0.6.1'
+set container name bind-exporter network services address '10.5.0.7'
+set container name bind-exporter memory '0'
+set container name bind-exporter restart 'on-failure'
+set container name bind-exporter shared-memory '0'
+
