@@ -1,5 +1,13 @@
 #!/bin/vbash
 
+set service dhcp-server dynamic-dns-update
+set service dhcp-server global-parameters "key ddnsupdate { algorithm hmac-md5; secret ${SECRET_DHCP_DDNS_UPDATE}; };"
+set service dhcp-server global-parameters "zone greyrock.io. { primary 10.5.0.3; key ddnsupdate; }"
+set service dhcp-server global-parameters "ddns-domainname &quot;greyrock.io.&quot;;"
+set service dhcp-server global-parameters "ddns-rev-domainname &quot;in-addr.arpa.&quot;;"
+set service dhcp-server global-parameters "zone in-addr.arpa. { primary 10.5.0.3; key ddnsupdate; }"
+set service dhcp-server global-parameters "zone 1.10.in-addr.arpa. { primary 10.5.0.3; key ddnsupdate; }"
+
 # Guest VLAN
 set service dhcp-server shared-network-name GUEST authoritative
 set service dhcp-server shared-network-name GUEST ping-check
