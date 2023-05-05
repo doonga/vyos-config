@@ -323,6 +323,8 @@ set firewall name local-video enable-default-log
 # From LOCAL to WAN
 set firewall name local-wan default-action 'accept'
 set firewall name local-wan description 'From LOCAL to WAN'
+set firewall ipv6-name local-wan default-action 'accept'
+set firewall ipv6-name local-wan description 'From LOCAL to WAN'
 
 # From SERVERS to VOIP
 set firewall name servers-voip default-action 'drop'
@@ -702,6 +704,17 @@ set firewall name wan-local rule 1 action 'accept'
 set firewall name wan-local rule 1 description 'Rule: accept_wireguard'
 set firewall name wan-local rule 1 destination port '51820'
 set firewall name wan-local rule 1 protocol 'udp'
+set firewall ipv6-name wan-local default-action 'drop'
+set firewall ipv6-name wan-local description 'From WAN to LOCAL'
+set firewall ipv6-name wan-local rule 10 action 'accept'
+set firewall ipv6-name wan-local rule 10 state established 'enable'
+set firewall ipv6-name wan-local rule 10 state related 'enable'
+set firewall ipv6-name wan-local rule 20 action 'accept'
+set firewall ipv6-name wan-local rule 20 protocol 'icmpv6'
+set firewall ipv6-name wan-local rule 30 action 'accept'
+set firewall ipv6-name wan-local rule 30 destination port '546'
+set firewall ipv6-name wan-local rule 30 protocol 'udp'
+set firewall ipv6-name wan-local rule 30 source port '547'
 
 # From WAN to SERVERS
 set firewall name wan-servers default-action 'drop'
