@@ -19,6 +19,7 @@ $ORIGIN greyrock.io.
 gateway                    IN  A  10.1.0.1
 
 ; Servers
+chronos                    IN  A  10.1.1.2
 nas                        IN  A  10.1.1.3
 k8s1                       IN  A  10.1.1.4
 k8s2                       IN  A  10.1.1.5
