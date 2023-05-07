@@ -4,8 +4,12 @@ set interfaces ethernet eth1 address 'dhcp'
 set interfaces ethernet eth1 address 'dhcpv6'
 set interfaces ethernet eth1 dhcp-options reject '192.168.100.0/24'
 set interfaces ethernet eth1 dhcpv6-options pd 0 length 56
+# LAN
 set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2 sla-id 0
 set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2 address 1
+# TRUSTED
+set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2.20 sla-id 2
+set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2.20 address 1
 set interfaces ethernet eth1 ipv6 address autoconf
 set interfaces ethernet eth1 description 'WAN'
 set interfaces ethernet eth1 hw-id '24:8a:07:ed:24:a0'
