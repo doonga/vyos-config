@@ -56,6 +56,7 @@ set firewall group address-group k8s_nodes address '10.1.1.7'
 set firewall group address-group k8s_nodes address '10.1.1.8'
 set firewall group address-group k8s_nodes address '10.1.1.9'
 
+set firewall group address-group k8s_hass address '10.45.0.5'
 set firewall group address-group k8s_plex address '10.45.0.20'
 
 set firewall group address-group k8s_vector_aggregator address '10.45.0.2'
@@ -68,6 +69,8 @@ set firewall group address-group mitsubishi_inverters address '10.1.3.204'
 
 set firewall group address-group mqtt_clients address '10.1.2.10'
 set firewall group address-group mqtt_clients address '10.1.2.11'
+
+set firewall group address-group hass_clients address '10.1.4.12'
 
 set firewall group address-group nas address '10.1.1.3'
 

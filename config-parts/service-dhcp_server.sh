@@ -208,6 +208,9 @@ set service dhcp-server shared-network-name VIDEO ntp-server 10.1.4.1
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping courtyard-porch-doorbell ip-address '10.1.4.253'
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping courtyard-porch-doorbell mac-address '9c:8e:cd:2c:28:38'
 
+# set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping courtyard-porch-doorbell ip-address '10.1.4.12'
+# set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping courtyard-porch-doorbell mac-address '##:##:##:##:##:##'
+
 # VoIP VLAN
 set service dhcp-server shared-network-name VOIP authoritative
 set service dhcp-server shared-network-name VOIP ping-check
