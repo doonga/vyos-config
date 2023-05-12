@@ -34,9 +34,9 @@ pikvm                      IN  A  10.1.1.52
 slzb-06                    IN  A  10.1.3.196
 
 ; Video
-courtyard-porch-doorbell   IN  A  10.1.4.253
+courtyard-porch-doorbell   IN  A  10.1.4.12
 
-; Services
+; Containers
 greyrock-ops               IN  A  10.5.0.2
 
 ; CNAME records
