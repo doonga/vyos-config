@@ -40,5 +40,6 @@ courtyard-porch-doorbell   IN  A  10.1.4.12
 greyrock-ops               IN  A  10.5.0.2
 
 ; CNAME records
+auth0                      IN  CNAME dev-mz0m268gay70grzm-cd-iyni5xx7oczwvdik.edge.tenants.us.auth0.com.
 zigbee-coordinator         IN  CNAME slzb-06.greyrock.io.
 vpn                        IN  CNAME gateway.greyrock.io.
