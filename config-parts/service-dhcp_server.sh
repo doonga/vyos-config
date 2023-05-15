@@ -19,7 +19,7 @@ set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 range 0 
 set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 range 0 stop '192.168.2.254'
 
 set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping todds-work-laptop ip-address '192.168.2.11'
-set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping todds-work-laptop mac-address '30:24:a9:a7:b8:66'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping todds-work-laptop mac-address 'dc:41:a9:ba:b1:ca'
 
 # IoT VLAN
 set service dhcp-server shared-network-name IOT authoritative
