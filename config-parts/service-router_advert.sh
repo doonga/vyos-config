@@ -13,5 +13,3 @@ set service router-advert interface eth2 prefix ::/64 valid-lifetime '172800'
 set service router-advert interface eth2.20 prefix ::/64 valid-lifetime '172800'
 
 # Video VLAN
-
-# VoIP VLAN
