@@ -7,9 +7,21 @@ set interfaces ethernet eth1 dhcpv6-options pd 0 length 56
 # LAN
 set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2 sla-id 0
 set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2 address 1
+# SERVERS
+set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2.10 sla-id 1
+set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2.10 address 1
 # TRUSTED
 set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2.20 sla-id 2
 set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2.20 address 1
+# GUEST
+set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2.30 sla-id 3
+set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2.30 address 1
+# IOT
+set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2.40 sla-id 4
+set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2.40 address 1
+# VIDEO
+set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2.50 sla-id 5
+set interfaces ethernet eth1 dhcpv6-options pd 0 interface eth2.50 address 1
 set interfaces ethernet eth1 ipv6 address autoconf
 set interfaces ethernet eth1 description 'WAN'
 set interfaces ethernet eth1 hw-id '24:8a:07:ed:24:a0'

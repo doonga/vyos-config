@@ -190,13 +190,6 @@ set firewall name lan-local rule 3 description 'Rule: accept_dhcp'
 set firewall name lan-local rule 3 destination port '67,68'
 set firewall name lan-local rule 3 protocol 'udp'
 set firewall name lan-local rule 3 source port '67,68'
-# IPv6
-set firewall ipv6-name lan-local default-action 'drop'
-set firewall ipv6-name lan-local description 'From LAN to LOCAL'
-set firewall ipv6-name lan-local enable-default-log
-set firewall ipv6-name lan-local rule 1 action 'accept'
-set firewall ipv6-name lan-local rule 1 description 'Rule: accept_icmpv6'
-set firewall ipv6-name lan-local rule 1 protocol 'icmpv6'
 
 # From LAN to SERVERS
 set firewall name lan-servers default-action 'drop'
@@ -227,9 +220,6 @@ set firewall name lan-video enable-default-log
 # From LAN to WAN
 set firewall name lan-wan default-action 'accept'
 set firewall name lan-wan description 'From LAN to WAN'
-# IPv6
-set firewall ipv6-name lan-wan default-action 'accept'
-set firewall ipv6-name lan-wan description 'From LOCAL to WAN'
 
 # From LOCAL to GUEST
 set firewall name local-guest default-action 'drop'
@@ -258,13 +248,6 @@ set firewall name local-lan rule 1 description 'Rule: accept_ntp'
 set firewall name local-lan rule 1 destination port 'ntp'
 set firewall name local-lan rule 1 protocol 'udp'
 set firewall name local-lan rule 1 destination fqdn chronos.greyrock.io
-# IPv6
-set firewall ipv6-name local-lan default-action 'drop'
-set firewall ipv6-name local-lan description 'From LOCAL to LAN'
-set firewall ipv6-name local-lan enable-default-log
-set firewall ipv6-name local-lan rule 1 action 'accept'
-set firewall ipv6-name local-lan rule 1 description 'Rule: accept_icmpv6'
-set firewall ipv6-name local-lan rule 1 protocol 'icmpv6'
 
 # From LOCAL to SERVERS
 set firewall name local-servers default-action 'drop'
@@ -316,13 +299,6 @@ set firewall name local-trusted rule 2 description 'Rule: accept_mdns'
 set firewall name local-trusted rule 2 destination port 'mdns'
 set firewall name local-trusted rule 2 protocol 'udp'
 set firewall name local-trusted rule 2 source port 'mdns'
-# IPv6
-set firewall ipv6-name local-trusted default-action 'drop'
-set firewall ipv6-name local-trusted description 'From LOCAL to LAN'
-set firewall ipv6-name local-trusted enable-default-log
-set firewall ipv6-name local-trusted rule 1 action 'accept'
-set firewall ipv6-name local-trusted rule 1 description 'Rule: accept_icmpv6'
-set firewall ipv6-name local-trusted rule 1 protocol 'icmpv6'
 
 # From LOCAL to VIDEO
 set firewall name local-video default-action 'drop'
@@ -537,13 +513,6 @@ set firewall name trusted-local rule 8 action 'accept'
 set firewall name trusted-local rule 8 description 'Rule: accept_vyos_api'
 set firewall name trusted-local rule 8 destination port '8443'
 set firewall name trusted-local rule 8 protocol 'tcp'
-# IPv6
-set firewall ipv6-name trusted-local default-action 'drop'
-set firewall ipv6-name trusted-local description 'From LOCAL to LAN'
-set firewall ipv6-name trusted-local enable-default-log
-set firewall ipv6-name trusted-local rule 1 action 'accept'
-set firewall ipv6-name trusted-local rule 1 description 'Rule: accept_icmpv6'
-set firewall ipv6-name trusted-local rule 1 protocol 'icmpv6'
 
 # From TRUSTED to SERVERS
 set firewall name trusted-servers default-action 'accept'
@@ -570,9 +539,6 @@ set firewall name trusted-video rule 1 protocol 'icmp'
 # From TRUSTED to WAN
 set firewall name trusted-wan default-action 'accept'
 set firewall name trusted-wan description 'From TRUSTED to WAN'
-# IPv6
-set firewall ipv6-name trusted-wan default-action 'accept'
-set firewall ipv6-name trusted-wan description 'From TRUSTED to WAN'
 
 # From VIDEO to GUEST
 set firewall name video-guest default-action 'drop'
@@ -681,14 +647,6 @@ set firewall name wan-containers enable-default-log
 set firewall name wan-trusted default-action 'drop'
 set firewall name wan-trusted description 'From WAN to TRUSTED'
 set firewall name wan-trusted enable-default-log
-# IPv6
-set firewall ipv6-name wan-trusted default-action 'drop'
-set firewall ipv6-name wan-trusted description 'From WAN to LOCAL'
-set firewall ipv6-name wan-trusted rule 1 action 'accept'
-set firewall ipv6-name wan-trusted rule 1 state established 'enable'
-set firewall ipv6-name wan-trusted rule 1 state related 'enable'
-set firewall ipv6-name wan-trusted rule 2 action 'accept'
-set firewall ipv6-name wan-trusted rule 2 protocol 'icmpv6'
 
 # From WAN to VIDEO
 set firewall name wan-video default-action 'drop'
