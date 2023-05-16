@@ -47,7 +47,10 @@ set interfaces wireguard wg01 peer iphone-todd persistent-keepalive '15'
 set interfaces wireguard wg01 peer iphone-todd public-key 'Nra9xTkUYNynIZvjAurDkYDaDOSVeb/COgmzcxRmHio='
 set interfaces wireguard wg01 peer laptop-todd allowed-ips '10.0.11.3/32'
 set interfaces wireguard wg01 peer laptop-todd persistent-keepalive '15'
-set interfaces wireguard wg01 peer laptop-todd public-key 'kf4C70WdtW5263fR5ykOIXvc2C2T5AhYqrsEl41XPh4='
+set interfaces wireguard wg01 peer laptop-todd public-key '/BSzNbCjmGzGtS8/3ojM3l+fL1IKLBgOhd3Gt9JQbjM='
+set interfaces wireguard wg01 peer surface-todd allowed-ips '10.0.11.4/32'
+set interfaces wireguard wg01 peer surface-todd persistent-keepalive '15'
+set interfaces wireguard wg01 peer surface-todd public-key 'oxotcOxhFjrZ+22acUD8C+11avaOEgWYpAknAstUXB8='
 set interfaces wireguard wg01 port '51820'
 set interfaces wireguard wg01 private-key "${SECRET_WIREGUARD_PRIVATE_KEY}"
 
