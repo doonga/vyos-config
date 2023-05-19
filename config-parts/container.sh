@@ -47,7 +47,7 @@ set container name dnsdist volume config mode 'ro'
 # ctrld
 set container name ctrld cap-add 'net-bind-service'
 set container name ctrld environment TZ value 'America/New_York'
-set container name ctrld image 'ghcr.io/doonga/ctrld:1.1.4'
+set container name ctrld image 'ghcr.io/doonga/ctrld:1.2.0'
 set container name ctrld memory '512'
 set container name ctrld network services address '10.5.0.9'
 set container name ctrld restart 'on-failure'
