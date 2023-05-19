@@ -1,7 +1,8 @@
 [service]
   log_level = "debug"
   log_path = ""
-  cache_enable = false
+  cache_enable = true
+  cache_size = 4096
 
 [network.0]
   cidrs = ["10.1.0.0/24"]
@@ -27,10 +28,14 @@
   cidrs = ["10.0.11.0/24"]
   name = "Wireguard"
 
+[network.6]
+  cidrs = ["192.168.2.0/24"]
+  name = "Guest"
+
 [upstream.0]
   bootstrap_ip = ""
   endpoint = "10.5.0.3"
-  name = "CoreDNS"
+  name = "Bind"
   timeout = 5000
   type = "legacy"
 
@@ -39,21 +44,28 @@
   endpoint = "https://dns.controld.com/zyogcvxe1j"
   name = "Control D - Servers"
   timeout = 5000
-  type = "doh"
+  type = "doq"
 
 [upstream.2]
   bootstrap_ip = ""
   endpoint = "https://dns.controld.com/b2qm1vgv9u"
   name = "Control D - Trusted"
   timeout = 5000
-  type = "doh"
+  type = "doq"
 
 [upstream.3]
   bootstrap_ip = ""
   endpoint = "https://dns.controld.com/1beo4ot1khf"
   name = "Control D - IoT"
   timeout = 5000
-  type = "doh"
+  type = "doq"
+
+[upstream.4]
+  bootstrap_ip = ""
+  endpoint = "1.1.1.1"
+  name = "Bind"
+  timeout = 5000
+  type = "legacy"
 
 [listener.0]
   ip = "10.5.0.9"
@@ -69,7 +81,7 @@
     {"network.3" = ["upstream.3"]},
     {"network.4" = ["upstream.3"]},
     {"network.5" = ["upstream.2"]},
-    {"network.6" = ["upstream.1"]},
+    {"network.6" = ["upstream.4"]},
   ]
   rules = [
     {"*.greyrock.io" = ["upstream.0"]},
