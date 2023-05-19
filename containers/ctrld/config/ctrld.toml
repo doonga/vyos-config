@@ -1,5 +1,5 @@
 [service]
-  log_level = ""
+  log_level = "debug"
   log_path = ""
   cache_enable = true
   cache_size = 4096
