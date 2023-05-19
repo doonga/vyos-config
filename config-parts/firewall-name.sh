@@ -308,9 +308,6 @@ set firewall name local-video enable-default-log
 # From LOCAL to WAN
 set firewall name local-wan default-action 'accept'
 set firewall name local-wan description 'From LOCAL to WAN'
-# IPv6
-set firewall ipv6-name local-wan default-action 'accept'
-set firewall ipv6-name local-wan description 'From LOCAL to WAN'
 
 # From SERVERS to GUEST
 set firewall name servers-guest default-action 'drop'
@@ -626,18 +623,6 @@ set firewall name wan-local rule 1 action 'accept'
 set firewall name wan-local rule 1 description 'Rule: accept_wireguard'
 set firewall name wan-local rule 1 destination port '51820'
 set firewall name wan-local rule 1 protocol 'udp'
-# IPv6
-set firewall ipv6-name wan-local default-action 'drop'
-set firewall ipv6-name wan-local description 'From WAN to LOCAL'
-set firewall ipv6-name wan-local rule 1 action 'accept'
-set firewall ipv6-name wan-local rule 1 state established 'enable'
-set firewall ipv6-name wan-local rule 1 state related 'enable'
-set firewall ipv6-name wan-local rule 2 action 'accept'
-set firewall ipv6-name wan-local rule 2 protocol 'icmpv6'
-set firewall ipv6-name wan-local rule 3 action 'accept'
-set firewall ipv6-name wan-local rule 3 destination port '546'
-set firewall ipv6-name wan-local rule 3 protocol 'udp'
-set firewall ipv6-name wan-local rule 3 source port '547'
 
 # From WAN to SERVERS
 set firewall name wan-servers default-action 'drop'
