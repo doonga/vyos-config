@@ -38,6 +38,7 @@
   name = "Bind"
   timeout = 5000
   type = "legacy"
+  ip_stack = "v4"
 
 [upstream.1]
   bootstrap_ip = ""
@@ -45,6 +46,7 @@
   name = "Control D - Servers"
   timeout = 5000
   type = "doq"
+  ip_stack = "v4"
 
 [upstream.2]
   bootstrap_ip = ""
@@ -52,6 +54,7 @@
   name = "Control D - Trusted"
   timeout = 5000
   type = "doq"
+  ip_stack = "v4"
 
 [upstream.3]
   bootstrap_ip = ""
@@ -59,6 +62,7 @@
   name = "Control D - IoT"
   timeout = 5000
   type = "doq"
+  ip_stack = "v4"
 
 [upstream.4]
   bootstrap_ip = ""
@@ -66,6 +70,7 @@
   name = "Bind"
   timeout = 5000
   type = "legacy"
+  ip_stack = "v4"
 
 [listener.0]
   ip = "10.5.0.4"
