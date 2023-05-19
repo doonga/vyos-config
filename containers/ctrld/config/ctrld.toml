@@ -1,5 +1,5 @@
 [service]
-  log_level = "debug"
+  log_level = ""
   log_path = ""
   cache_enable = true
   cache_size = 4096
@@ -41,21 +41,21 @@
 
 [upstream.1]
   bootstrap_ip = ""
-  endpoint = "https://dns.controld.com/zyogcvxe1j"
+  endpoint = "zyogcvxe1j.dns.controld.com"
   name = "Control D - Servers"
   timeout = 5000
   type = "doq"
 
 [upstream.2]
   bootstrap_ip = ""
-  endpoint = "https://dns.controld.com/b2qm1vgv9u"
+  endpoint = "b2qm1vgv9u.dns.controld.com"
   name = "Control D - Trusted"
   timeout = 5000
   type = "doq"
 
 [upstream.3]
   bootstrap_ip = ""
-  endpoint = "https://dns.controld.com/1beo4ot1khf"
+  endpoint = "1beo4ot1khf.dns.controld.com"
   name = "Control D - IoT"
   timeout = 5000
   type = "doq"
@@ -68,7 +68,7 @@
   type = "legacy"
 
 [listener.0]
-  ip = "10.5.0.9"
+  ip = "10.5.0.4"
   port = 53
   restricted = true
 
