@@ -171,7 +171,7 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-ma
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping gameroom-appletv mac-address '6c:4a:85:32:e2:09'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping gameroom-homepod ip-address '10.1.2.22'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping gameroom-homepod mac-address '94:ea:32:a1:15:65'
-set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping garage-homepod ip-address '10.1.2.17'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping garage-homepod ip-address '10.1.2.13'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping garage-homepod mac-address 'd4:90:9c:c6:de:0f'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping kitchen-homepod ip-address '10.1.2.17'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping kitchen-homepod mac-address 'e0:2b:96:8d:05:c4'
