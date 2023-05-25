@@ -4,8 +4,8 @@
 # Track certain files and directories
 !.gitignore
 
+!/blocky/
 !/bind/
-!/ctrld/
 !/dnsdist/
 !/haproxy/
 !/vector-agent/

@@ -6,4 +6,4 @@
 
 !/config/
 /config/*
-!/config/ctrld.toml
+!/config/config.yaml

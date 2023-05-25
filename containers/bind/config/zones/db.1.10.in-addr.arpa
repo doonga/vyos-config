@@ -20,6 +20,14 @@ $ORIGIN in-addr.arpa.
 
 ; LAN
 1.0.1.10                   IN  PTR  gateway.greyrock.io.
+2.0.1.10                   IN  PTR  gameroom-switch.greyrock.io.
+5.0.1.10                   IN  PTR  gameroom-access-point.greyrock.io.
+4.0.1.10                   IN  PTR  garage-switch.greyrock.io.
+6.0.1.10                   IN  PTR  kitchen-access-point.greyrock.io.
+9.0.1.10                   IN  PTR  office-switch-8.greyrock.io.
+3.0.1.10                   IN  PTR  office-switch-24.greyrock.io.
+7.0.1.10                   IN  PTR  outdoor-access-point.greyrock.io.
+8.0.1.10                   IN  PTR  upstairs-access-point.greyrock.io.
 
 ; Servers
 2.1.1.10                   IN  PTR  chronos.greyrock.io.
@@ -31,10 +39,55 @@ $ORIGIN in-addr.arpa.
 8.1.1.10                   IN  PTR  k8s5.greyrock.io.
 9.1.1.10                   IN  PTR  k8s6.greyrock.io.
 10.1.1.10                  IN  PTR  gitops.greyrock.io.
+51.1.1.10                  IN  PTR  nas-ipmi.greyrock.io.
 52.1.1.10                  IN  PTR  pikvm.greyrock.io.
 
 ; IOT
+198.3.1.10                 IN  PTR  ambient-ws5000.greyrock.io.
+251.3.1.10                 IN  PTR  basement-iotawatt.greyrock.io.
+13.3.1.10                  IN  PTR  brother-printer.greyrock.io.
+203.3.1.10                 IN  PTR  diningroom-mitsubishi-inverter.greyrock.io.
+193.3.1.10                 IN  PTR  downstairs-litter-robot.greyrock.io.
+192.3.1.10                 IN  PTR  formalsittingroom-lg-tv.greyrock.io.
+201.3.1.10                 IN  PTR  gameroom-mitsubhi-inverter.greyrock.io.
+11.3.1.10                  IN  PTR  gameroom-ps4.greyrock.io.
+10.3.1.10                  IN  PTR  gameroom-ps5.greyrock.io.
+189.3.1.10                 IN  PTR  gameroom-samsung-tv-left.greyrock.io.
+186.3.1.10                 IN  PTR  gameroom-samsung-tv-right.greyrock.io.
+250.3.1.10                 IN  PTR  garage-iotawatt.greyrock.io.
+195.3.1.10                 IN  PTR  garage-door-andy.greyrock.io.
+194.3.1.10                 IN  PTR  garage-door-todd.greyrock.io.
+174.3.1.10                 IN  PTR  hydrawise-sprinkler-controller.greyrock.io.
+200.3.1.10                 IN  PTR  kitchen-mitsubishi-inverter.greyrock.io.
+202.3.1.10                 IN  PTR  masterbedroom-mitsubishi-inverter.greyrock.io.
+197.3.1.10                 IN  PTR  office-hs110-rack.greyrock.io.
+204.3.1.10                 IN  PTR  office-mitsubishi-inverter.greyrock.io.
+190.3.1.10                 IN  PTR  office-samsung-tv.greyrock.io.
+199.3.1.10                 IN  PTR  solaredge-inverter.greyrock.io.
+12.3.1.10                  IN  PTR  nintendo-switch-todd.greyrock.io.
 196.3.1.10                 IN  PTR  slzb-06.greyrock.io.
+252.3.1.10                 IN  PTR  teslawallconnector-todd.greyrock.io.
+188.3.1.10                 IN  PTR  tesla-model-3-todd.greyrock.io.
+191.3.1.10                 IN  PTR  upstairs-litter-robot.greyrock.io.
+187.3.1.10                 IN  PTR  withings-scale.greyrock.io.
+
+; Trusted
+14.2.1.10                  IN  PTR  andys-desktop.greyrock.io.
+15.2.1.10                  IN  PTR  andys-iphone.greyrock.io.
+25.2.1.10                  IN  PTR  formalsittingroom-appletv.greyrock.io.
+20.2.1.10                  IN  PTR  formalsittingroom-homepod.greyrock.io.
+24.2.1.10                  IN  PTR  gameroom-appletv.greyrock.io.
+22.2.1.10                  IN  PTR  gameroom-homepod.greyrock.io.
+13.2.1.10                  IN  PTR  garage-homepod.greyrock.io.
+17.2.1.10                  IN  PTR  kitchen-homepod.greyrock.io.
+18.2.1.10                  IN  PTR  masterbedroom-homepod.greyrock.io.
+23.2.1.10                  IN  PTR  office-appletv.greyrock.io.
+21.2.1.10                  IN  PTR  office-homepod.greyrock.io.
+10.2.1.10                  IN  PTR  todds-desktop.greyrock.io.
+12.2.1.10                  IN  PTR  todds-iphone.greyrock.io.
+11.2.1.10                  IN  PTR  todds-laptop.greyrock.io.
+16.2.1.10                  IN  PTR  todds-surface.greyrock.io.
+26.2.1.10                  IN  PTR  todds-applewatch.greyrock.io.
 
 ; Video
 12.4.1.10                  IN  PTR  courtard-porch-doorbell.greyrock.io.
