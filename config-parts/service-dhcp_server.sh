@@ -205,3 +205,5 @@ set service dhcp-server shared-network-name VIDEO ntp-server 10.1.4.1
 
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping courtyard-porch-doorbell ip-address '10.1.4.12'
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping courtyard-porch-doorbell mac-address 'ec:71:db:9b:de:a9'
+set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping garage-camera ip-address '10.1.4.10'
+set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping garage-camera mac-address '24:52:6a:1f:f9:c4'
