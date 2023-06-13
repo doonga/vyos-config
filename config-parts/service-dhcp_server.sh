@@ -58,6 +58,8 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping garage-door-andy mac-address 'cc:6a:10:03:2a:2d'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping garage-door-todd ip-address '10.1.3.194'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping garage-door-todd mac-address 'cc:6a:10:03:29:cb'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hvac-office ip-address '10.1.3.20'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hvac-office mac-address 'bc:ff:4d:40:d1:4c'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hydrawise-sprinkler-controller ip-address '10.1.3.174'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hydrawise-sprinkler-controller mac-address '00:03:10:b3:72:fa'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s4 ip-address '10.1.3.7'

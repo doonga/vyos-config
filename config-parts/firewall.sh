@@ -71,8 +71,7 @@ set firewall group address-group mitsubishi_inverters address '10.1.3.202'
 set firewall group address-group mitsubishi_inverters address '10.1.3.203'
 set firewall group address-group mitsubishi_inverters address '10.1.3.204'
 
-set firewall group address-group mqtt_clients address '10.1.2.10'
-set firewall group address-group mqtt_clients address '10.1.2.11'
+set firewall group address-group mqtt_clients address '10.1.3.20'
 
 set firewall group address-group hass_clients address '10.1.4.12'
 
