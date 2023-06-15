@@ -17,6 +17,8 @@ set firewall group address-group aruba_devices address '10.1.0.8'
 
 set firewall group address-group ereaders address '10.1.2.10'
 
+set firewall group address-group homekit-devices address '10.1.2.12'
+set firewall group address-group homekit-devices address '10.1.2.15'
 set firewall group address-group homekit-devices address '10.1.2.17'
 set firewall group address-group homekit-devices address '10.1.2.18'
 set firewall group address-group homekit-devices address '10.1.2.19'
@@ -89,6 +91,8 @@ set firewall group address-group plex_clients address '10.1.3.25'
 set firewall group address-group printers address '10.1.3.13'
 
 set firewall group address-group scanners address '10.1.3.13'
+
+set firewall group address-group scrypted address '10.1.3.153'
 
 set firewall group address-group vector_journald_allowed address '10.1.3.60'
 
