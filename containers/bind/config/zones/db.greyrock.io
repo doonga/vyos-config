@@ -19,7 +19,7 @@ $ORIGIN greyrock.io.
 gateway                             IN  A  10.1.0.1
 gameroom-switch                     IN  A  10.1.0.2
 gameroom-access-point               IN  A  10.1.0.5
-garage-switch                       IN  A  10.1.0.4
+garage-switch                       IN  A  10.1.0.10
 kitchen-access-point                IN  A  10.1.0.6
 office-switch-8                     IN  A  10.1.0.9
 office-switch-24                    IN  A  10.1.0.3
