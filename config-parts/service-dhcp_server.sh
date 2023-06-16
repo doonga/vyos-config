@@ -8,6 +8,7 @@ set service dhcp-server global-parameters "ddns-rev-domainname &quot;in-addr.arp
 set service dhcp-server global-parameters "zone in-addr.arpa. { primary 10.5.0.3; key ddnsupdate; }"
 set service dhcp-server global-parameters "zone 1.10.in-addr.arpa. { primary 10.5.0.3; key ddnsupdate; }"
 set service dhcp-server global-parameters "update-optimization false;"
+set service dhcp-server global-parameters 'option omada-address code 138 = ip-address;'
 
 # Guest VLAN
 set service dhcp-server shared-network-name GUEST authoritative
@@ -104,6 +105,7 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 name-server '
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 range 0 start '10.1.0.200'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 range 0 stop '10.1.0.254'
 set service dhcp-server shared-network-name LAN ntp-server 10.1.0.1
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 subnet-parameters 'option omada-address 10.45.0.30;'
 
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch ip-address '10.1.0.2'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch mac-address '64:e8:81:b1:62:14'

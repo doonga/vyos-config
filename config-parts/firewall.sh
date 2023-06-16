@@ -79,6 +79,8 @@ set firewall group address-group hass_clients address '10.1.4.12'
 
 set firewall group address-group nas address '10.1.1.3'
 
+set firewall group address-group omada address '10.45.0.30'
+
 set firewall group address-group plex_clients address '10.1.2.11'
 set firewall group address-group plex_clients address '10.1.2.12'
 set firewall group address-group plex_clients address '10.1.2.13'

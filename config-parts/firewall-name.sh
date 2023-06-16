@@ -267,6 +267,10 @@ set firewall name lan-local rule 999 log 'enable'
 set firewall name lan-servers default-action 'drop'
 set firewall name lan-servers description 'From LAN to SERVERS'
 set firewall name lan-servers enable-default-log
+set firewall name lan-servers rule 100 action 'accept'
+set firewall name lan-servers rule 100 description 'Rule: accept_omada_traffic'
+set firewall name lan-servers rule 100 protocol 'tcp_udp'
+set firewall name lan-servers rule 100 destination group address-group omada
 set firewall name lan-servers rule 999 action 'drop'
 set firewall name lan-servers rule 999 description 'Rule: drop_invalid'
 set firewall name lan-servers rule 999 state invalid 'enable'
