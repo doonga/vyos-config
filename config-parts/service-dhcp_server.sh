@@ -108,7 +108,9 @@ set service dhcp-server shared-network-name LAN ntp-server 10.1.0.1
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 subnet-parameters 'option omada-address 10.45.0.30;'
 
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping garage-switch ip-address '10.1.0.10'
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping garage-switch mac-address '9c:53:22:9d:8d:81'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping garage-switch mac-address '64:e8:81:b1:51:e1'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-switch-24 ip-address '10.1.0.11'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-switch-24 mac-address '9c:53:22:a1:05:94'
 
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch ip-address '10.1.0.2'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch mac-address '64:e8:81:b1:62:14'
@@ -118,8 +120,6 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mappin
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping kitchen-access-point mac-address 'b0:1f:8c:c7:c0:6a'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-switch-8 ip-address '10.1.0.9'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-switch-8 mac-address '44:5b:ed:7a:d8:81'
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-switch-24 ip-address '10.1.0.3'
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-switch-24 mac-address '8c:85:c1:1f:fb:55'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-access-point ip-address '10.1.0.7'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-access-point mac-address 'bc:9f:e4:c2:00:68'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping upstairs-access-point ip-address '10.1.0.8'
