@@ -21,7 +21,7 @@ gameroom-switch                     IN  A  10.1.0.13
 gameroom-access-point               IN  A  10.1.0.5
 garage-switch                       IN  A  10.1.0.10
 kitchen-access-point                IN  A  10.1.0.6
-office-switch-8                     IN  A  10.1.0.9
+office-switch-8                     IN  A  10.1.0.12
 office-switch-24                    IN  A  10.1.0.11
 outdoor-access-point                IN  A  10.1.0.7
 upstairs-access-point               IN  A  10.1.0.8
