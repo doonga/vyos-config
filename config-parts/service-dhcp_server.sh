@@ -117,9 +117,9 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mappin
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch mac-address '48:22:54:5e:bc:38'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping upstairs-access-point ip-address '10.1.0.14'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping upstairs-access-point mac-address '1c:61:b4:cc:69:d4'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-access-point ip-address '10.1.0.15'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-access-point mac-address '1c:61:b4:cc:69:b0'
 
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-access-point ip-address '10.1.0.5'
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-access-point mac-address 'b0:1f:8c:c7:cb:28'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping kitchen-access-point ip-address '10.1.0.6'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping kitchen-access-point mac-address 'b0:1f:8c:c7:c0:6a'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-access-point ip-address '10.1.0.7'

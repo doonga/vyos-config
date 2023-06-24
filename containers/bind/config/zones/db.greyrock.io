@@ -18,13 +18,13 @@ $ORIGIN greyrock.io.
 ; LAN
 gateway                             IN  A  10.1.0.1
 gameroom-switch                     IN  A  10.1.0.13
-gameroom-access-point               IN  A  10.1.0.5
+gameroom-access-point               IN  A  10.1.0.15
 garage-switch                       IN  A  10.1.0.10
 kitchen-access-point                IN  A  10.1.0.6
 office-switch-8                     IN  A  10.1.0.12
 office-switch-24                    IN  A  10.1.0.11
 outdoor-access-point                IN  A  10.1.0.7
-upstairs-access-point               IN  A  10.1.0.8
+upstairs-access-point               IN  A  10.1.0.14
 
 ; Servers
 chronos                             IN  A  10.1.1.2
