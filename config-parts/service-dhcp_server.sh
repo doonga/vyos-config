@@ -105,7 +105,7 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 name-server '
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 range 0 start '10.1.0.200'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 range 0 stop '10.1.0.254'
 set service dhcp-server shared-network-name LAN ntp-server 10.1.0.1
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 subnet-parameters 'option omada-address 10.45.0.30;'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 subnet-parameters 'option omada-address 10.1.1.11;'
 
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping garage-switch ip-address '10.1.0.10'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping garage-switch mac-address '9c:53:22:9d:8d:81'
@@ -152,6 +152,8 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s5 mac-address '48:21:0b:3e:db:da'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s6 ip-address '10.1.1.9'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s6 mac-address '48:21:0b:3e:d8:14'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping oc300 ip-address '10.1.1.11'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping oc300 mac-address '48:22:54:dd:79:7b'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas ip-address '10.1.1.3'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas mac-address '3c:ec:ef:57:eb:24'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas-ipmi ip-address '10.1.1.51'

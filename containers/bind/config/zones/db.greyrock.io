@@ -37,6 +37,7 @@ k8s4                                IN  A  10.1.1.7
 k8s5                                IN  A  10.1.1.8
 k8s6                                IN  A  10.1.1.9
 gitops                              IN  A  10.1.1.10
+oc300                               IN  A  10.1.1.11
 pikvm                               IN  A  10.1.1.52
 
 ; IOT
