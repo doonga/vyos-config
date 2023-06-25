@@ -36,7 +36,7 @@ set firewall name guest-servers rule 100 action 'accept'
 set firewall name guest-servers rule 100 description 'Rule: accept_omada_traffic'
 set firewall name guest-servers rule 100 protocol 'tcp_udp'
 set firewall name guest-servers rule 100 destination group address-group omada
-set firewall name guest-servers rule 100 destination port '8188,8443'
+set firewall name guest-servers rule 100 destination port '8088,8443'
 set firewall name guest-servers rule 999 action 'drop'
 set firewall name guest-servers rule 999 description 'Rule: drop_invalid'
 set firewall name guest-servers rule 999 state invalid 'enable'
