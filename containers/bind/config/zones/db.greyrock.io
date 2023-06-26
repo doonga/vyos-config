@@ -20,7 +20,7 @@ gateway                             IN  A  10.1.0.1
 gameroom-switch                     IN  A  10.1.0.13
 gameroom-access-point               IN  A  10.1.0.15
 garage-switch                       IN  A  10.1.0.10
-kitchen-access-point                IN  A  10.1.0.6
+kitchen-access-point                IN  A  10.1.0.16
 office-switch-8                     IN  A  10.1.0.12
 office-switch-24                    IN  A  10.1.0.11
 outdoor-access-point                IN  A  10.1.0.7
