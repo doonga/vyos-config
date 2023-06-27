@@ -55,6 +55,7 @@ gameroom-samsung-tv-right           IN  A  10.1.3.186
 garage-iotawatt                     IN  A  10.1.3.250
 garage-door-andy                    IN  A  10.1.3.195
 garage-door-todd                    IN  A  10.1.3.194
+hvac-office                         IN  A  10.1.3.20
 hydrawise-sprinkler-controller      IN  A  10.1.3.174
 kitchen-mitsubishi-inverter         IN  A  10.1.3.200
 masterbedroom-mitsubishi-inverter   IN  A  10.1.3.202
