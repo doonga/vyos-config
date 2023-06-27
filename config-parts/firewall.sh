@@ -70,6 +70,8 @@ set firewall group address-group k8s_vector_aggregator address '10.45.0.2'
 set firewall group address-group mqtt_clients address '10.1.3.20'
 set firewall group address-group mqtt_clients address '10.1.3.21'
 set firewall group address-group mqtt_clients address '10.1.3.22'
+set firewall group address-group mqtt_clients address '10.1.3.23'
+set firewall group address-group mqtt_clients address '10.1.3.24'
 
 set firewall group address-group hass_clients address '10.1.4.12'
 

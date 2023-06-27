@@ -55,6 +55,8 @@ gameroom-samsung-tv-right           IN  A  10.1.3.186
 garage-iotawatt                     IN  A  10.1.3.250
 garage-door-andy                    IN  A  10.1.3.195
 garage-door-todd                    IN  A  10.1.3.194
+hvac-dining-room                    IN  A  10.1.3.23
+hvac-game-room                      IN  A  10.1.3.24
 hvac-kitchen                        IN  A  10.1.3.22
 hvac-master-bedroom                 IN  A  10.1.3.21
 hvac-office                         IN  A  10.1.3.20

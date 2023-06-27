@@ -51,6 +51,8 @@ $ORIGIN in-addr.arpa.
 20.3.1.10                  IN  PTR  hvac-office.greyrock.io.
 21.3.1.10                  IN  PTR  hvac-master-bedroom.greyrock.io.
 22.3.1.10                  IN  PTR  hvac-kitchen.greyrock.io.
+23.3.1.10                  IN  PTR  hvac-dining-room.greyrock.io.
+24.3.1.10                  IN  PTR  hvac-game-room.greyrock.io.
 174.3.1.10                 IN  PTR  hydrawise-sprinkler-controller.greyrock.io.
 186.3.1.10                 IN  PTR  gameroom-samsung-tv-right.greyrock.io.
 187.3.1.10                 IN  PTR  withings-scale.greyrock.io.
