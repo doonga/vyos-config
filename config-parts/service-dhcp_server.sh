@@ -59,6 +59,8 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping garage-door-andy mac-address 'cc:6a:10:03:2a:2d'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping garage-door-todd ip-address '10.1.3.194'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping garage-door-todd mac-address 'cc:6a:10:03:29:cb'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hvac-kitchen ip-address '10.1.3.22'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hvac-kitchen mac-address 'bc:ff:4d:40:80:0d'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hvac-master-bedroom ip-address '10.1.3.21'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hvac-master-bedroom mac-address 'bc:ff:4d:40:d7:ef'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hvac-office ip-address '10.1.3.20'
