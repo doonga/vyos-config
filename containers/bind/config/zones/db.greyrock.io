@@ -97,6 +97,7 @@ courtyard-porch-doorbell            IN  A  10.1.4.12
 
 ; Containers
 greyrock-ops                        IN  A  10.5.0.2
+pihole                              IN  A  10.5.0.7
 
 ; CNAME records
 auth0                               IN  CNAME  dev-mz0m268gay70grzm-cd-iyni5xx7oczwvdik.edge.tenants.us.auth0.com.
