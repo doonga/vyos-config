@@ -129,9 +129,9 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mappin
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-access-point mac-address '1c:61:b4:cc:69:b0'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping kitchen-access-point ip-address '10.1.0.16'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping kitchen-access-point mac-address '1c:61:b4:cc:69:ce'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-access-point ip-address '10.1.0.17'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-access-point mac-address 'ac:15:a2:65:b7:d0'
 
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-access-point ip-address '10.1.0.7'
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-access-point mac-address 'bc:9f:e4:c2:00:68'
 
 # Servers VLAN
 set service dhcp-server shared-network-name SERVERS authoritative

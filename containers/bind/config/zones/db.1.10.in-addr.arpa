@@ -20,14 +20,14 @@ $ORIGIN in-addr.arpa.
 
 ; LAN
 1.0.1.10                   IN  PTR  gateway.greyrock.io.
-7.0.1.10                   IN  PTR  outdoor-access-point.greyrock.io.
 10.0.1.10                  IN  PTR  garage-switch.greyrock.io.
 11.0.1.10                  IN  PTR  office-switch-24.greyrock.io.
 12.0.1.10                  IN  PTR  office-switch-8.greyrock.io.
 13.0.1.10                  IN  PTR  gameroom-switch.greyrock.io.
 14.0.1.10                  IN  PTR  upstairs-access-point.greyrock.io.
 15.0.1.10                  IN  PTR  gameroom-access-point.greyrock.io.
-16.0.1.10                   IN  PTR  kitchen-access-point.greyrock.io.
+16.0.1.10                  IN  PTR  kitchen-access-point.greyrock.io.
+17.0.1.10                  IN  PTR  outdoor-access-point.greyrock.io.
 
 ; Servers
 2.1.1.10                   IN  PTR  chronos.greyrock.io.

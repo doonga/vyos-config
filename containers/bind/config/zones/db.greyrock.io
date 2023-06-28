@@ -23,7 +23,7 @@ garage-switch                       IN  A  10.1.0.10
 kitchen-access-point                IN  A  10.1.0.16
 office-switch-8                     IN  A  10.1.0.12
 office-switch-24                    IN  A  10.1.0.11
-outdoor-access-point                IN  A  10.1.0.7
+outdoor-access-point                IN  A  10.1.0.17
 upstairs-access-point               IN  A  10.1.0.14
 
 ; Servers
