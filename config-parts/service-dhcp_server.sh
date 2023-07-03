@@ -165,9 +165,9 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping oc300 ip-address '10.1.1.11'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping oc300 mac-address '48:22:54:dd:79:7b'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas ip-address '10.1.1.3'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas mac-address '3c:ec:ef:57:eb:24'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas mac-address '3c:ec:ef:43:5d:08'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas-ipmi ip-address '10.1.1.51'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas-ipmi mac-address '3c:ec:ef:5a:e2:b2'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas-ipmi mac-address '3c:ec:ef:43:64:83'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm ip-address '10.1.1.52'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm mac-address 'e4:5f:01:85:3b:2e'
 
