@@ -41,6 +41,7 @@ $ORIGIN in-addr.arpa.
 9.1.1.10                   IN  PTR  k8s6.greyrock.io.
 10.1.1.10                  IN  PTR  gitops.greyrock.io.
 11.1.1.10                  IN  PTR  oc300.greyrock.io.
+50.1.1.10                  IN  PTR  gateway-ipmi.greyrock.io.
 51.1.1.10                  IN  PTR  nas-ipmi.greyrock.io.
 52.1.1.10                  IN  PTR  pikvm.greyrock.io.
 
