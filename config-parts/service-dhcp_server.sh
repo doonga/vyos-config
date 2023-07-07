@@ -189,7 +189,7 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-ma
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping andys-iphone ip-address '10.1.2.15'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping andys-iphone mac-address '44:90:bb:c9:44:79'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping fsr-appletv ip-address '10.1.2.25'
-set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping fsr-appletv mac-address '4c:ab:4f:8e:e4:3e'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping fsr-appletv mac-address '4c:ab:4f:8c:3f:50'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping fsr-homepod ip-address '10.1.2.20'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping fsr-homepod mac-address '94:ea:32:a2:a1:d5'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping gameroom-appletv ip-address '10.1.2.24'
