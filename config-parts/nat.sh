@@ -66,6 +66,14 @@ set nat destination rule 109 protocol 'udp'
 set nat destination rule 109 translation address '10.0.11.1'
 set nat destination rule 109 translation port '123'
 
+set nat destination rule 110 description 'Force NTP for Wireless'
+set nat destination rule 110 destination address '!10.1.5.1'
+set nat destination rule 110 destination port '123'
+set nat destination rule 110 inbound-interface 'eth2.60'
+set nat destination rule 110 protocol 'udp'
+set nat destination rule 110 translation address '10.1.5.1'
+set nat destination rule 110 translation port '123'
+
 # LAN -> WAN masquerade
 set nat source rule 100 description 'LAN -> WAN'
 set nat source rule 100 destination address '0.0.0.0/0'

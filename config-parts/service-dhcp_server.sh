@@ -219,6 +219,20 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-ma
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping todds-watch ip-address '10.1.2.26'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping todds-watch mac-address '08:25:73:b2:e6:e0'
 
+# Wireless VLAN
+set service dhcp-server shared-network-name WIRELESS authoritative
+set service dhcp-server shared-network-name WIRELESS ping-check
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 default-router '10.1.5.1'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 domain-name 'greyrock.io'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 lease '86400'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 name-server '10.5.0.4'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 range 0 start '10.1.5.200'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 range 0 stop '10.1.5.254'
+set service dhcp-server shared-network-name WIRELESS ntp-server 10.1.5.1
+
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping office-appletv ip-address '10.1.5.23'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping office-appletv mac-address 'c0:95:6d:82:42:2b'
+
 # Video VLAN
 set service dhcp-server shared-network-name VIDEO authoritative
 set service dhcp-server shared-network-name VIDEO ping-check

@@ -17,6 +17,8 @@ set interfaces ethernet eth2 vif 40 address '10.1.3.1/24'
 set interfaces ethernet eth2 vif 40 description 'IOT'
 set interfaces ethernet eth2 vif 50 address '10.1.4.1/24'
 set interfaces ethernet eth2 vif 50 description 'VIDEO'
+set interfaces ethernet eth2 vif 60 address '10.1.5.1/24'
+set interfaces ethernet eth2 vif 60 description 'WIRELESS'
 
 set interfaces wireguard wg01 address '10.0.11.1/24'
 set interfaces wireguard wg01 description 'WIREGUARD'

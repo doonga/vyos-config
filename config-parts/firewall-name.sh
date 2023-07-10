@@ -64,6 +64,15 @@ set firewall name guest-trusted rule 999 description 'Rule: drop_invalid'
 set firewall name guest-trusted rule 999 state invalid 'enable'
 set firewall name guest-trusted rule 999 log 'enable'
 
+# From GUEST to WIRELESS
+set firewall name guest-wireless default-action 'drop'
+set firewall name guest-wireless description 'From GUEST to WIRELESS'
+set firewall name guest-wireless enable-default-log
+set firewall name guest-wireless rule 999 action 'drop'
+set firewall name guest-wireless rule 999 description 'Rule: drop_invalid'
+set firewall name guest-wireless rule 999 state invalid 'enable'
+set firewall name guest-wireless rule 999 log 'enable'
+
 # From GUEST to VIDEO
 set firewall name guest-video default-action 'drop'
 set firewall name guest-video description 'From GUEST to VIDEO'
@@ -209,6 +218,24 @@ set firewall name iot-trusted rule 999 description 'Rule: drop_invalid'
 set firewall name iot-trusted rule 999 state invalid 'enable'
 set firewall name iot-trusted rule 999 log 'enable'
 
+# From IOT to WIRELESS
+set firewall name iot-wireless default-action 'drop'
+set firewall name iot-wireless description 'From IOT to WIRELESS'
+set firewall name iot-wireless enable-default-log
+set firewall name iot-wireless rule 100 action 'accept'
+set firewall name iot-wireless rule 100 description 'Rule: accept_scrypted_for_homekit'
+set firewall name iot-wireless rule 100 protocol 'tcp_udp'
+set firewall name iot-wireless rule 100 source group address-group 'scrypted'
+set firewall name iot-wireless rule 100 destination group address-group 'homekit-devices'
+set firewall name iot-wireless rule 110 action 'accept'
+set firewall name iot-wireless rule 110 description 'Rule: accept_mdns'
+set firewall name iot-wireless rule 110 destination port 'mdns'
+set firewall name iot-wireless rule 110 protocol 'udp'
+set firewall name iot-wireless rule 999 action 'drop'
+set firewall name iot-wireless rule 999 description 'Rule: drop_invalid'
+set firewall name iot-wireless rule 999 state invalid 'enable'
+set firewall name iot-wireless rule 999 log 'enable'
+
 # From IOT to VIDEO
 set firewall name iot-video default-action 'drop'
 set firewall name iot-video description 'From IOT to VIDEO'
@@ -299,6 +326,15 @@ set firewall name lan-trusted rule 999 action 'drop'
 set firewall name lan-trusted rule 999 description 'Rule: drop_invalid'
 set firewall name lan-trusted rule 999 state invalid 'enable'
 set firewall name lan-trusted rule 999 log 'enable'
+
+# From LAN to WIRELESS
+set firewall name lan-wireless default-action 'drop'
+set firewall name lan-wireless description 'From LAN to WIRELESS'
+set firewall name lan-wireless enable-default-log
+set firewall name lan-wireless rule 999 action 'drop'
+set firewall name lan-wireless rule 999 description 'Rule: drop_invalid'
+set firewall name lan-wireless rule 999 state invalid 'enable'
+set firewall name lan-wireless rule 999 log 'enable'
 
 # From LAN to VIDEO
 set firewall name lan-video default-action 'drop'
@@ -404,7 +440,7 @@ set firewall name local-containers rule 999 log 'enable'
 
 # From LOCAL to TRUSTED
 set firewall name local-trusted default-action 'drop'
-set firewall name local-trusted description 'From LOCAL to TRUSTED'
+set firewall name local-trusted description 'From LOCAL to WIRELESS'
 set firewall name local-trusted enable-default-log
 set firewall name local-trusted rule 100 action 'accept'
 set firewall name local-trusted rule 100 description 'Rule: accept_igmp'
@@ -417,6 +453,22 @@ set firewall name local-trusted rule 999 action 'drop'
 set firewall name local-trusted rule 999 description 'Rule: drop_invalid'
 set firewall name local-trusted rule 999 state invalid 'enable'
 set firewall name local-trusted rule 999 log 'enable'
+
+# From LOCAL to WIRELESS
+set firewall name local-wireless default-action 'drop'
+set firewall name local-wireless description 'From LOCAL to WIRELESS'
+set firewall name local-wireless enable-default-log
+set firewall name local-wireless rule 100 action 'accept'
+set firewall name local-wireless rule 100 description 'Rule: accept_igmp'
+set firewall name local-wireless rule 100 protocol '2'
+set firewall name local-wireless rule 110 action 'accept'
+set firewall name local-wireless rule 110 description 'Rule: accept_mdns'
+set firewall name local-wireless rule 110 destination port 'mdns'
+set firewall name local-wireless rule 110 protocol 'udp'
+set firewall name local-wireless rule 999 action 'drop'
+set firewall name local-wireless rule 999 description 'Rule: drop_invalid'
+set firewall name local-wireless rule 999 state invalid 'enable'
+set firewall name local-wireless rule 999 log 'enable'
 
 # From LOCAL to VIDEO
 set firewall name local-video default-action 'drop'
@@ -535,6 +587,14 @@ set firewall name servers-trusted rule 999 description 'Rule: drop_invalid'
 set firewall name servers-trusted rule 999 state invalid 'enable'
 set firewall name servers-trusted rule 999 log 'enable'
 
+# From SERVERS to WIRELESS
+set firewall name servers-wireless default-action 'drop'
+set firewall name servers-wireless description 'From SERVERS to WIRELESS'
+set firewall name servers-wireless rule 999 action 'drop'
+set firewall name servers-wireless rule 999 description 'Rule: drop_invalid'
+set firewall name servers-wireless rule 999 state invalid 'enable'
+set firewall name servers-wireless rule 999 log 'enable'
+
 # From SERVERS to VIDEO
 set firewall name servers-video default-action 'drop'
 set firewall name servers-video description 'From SERVERS to VIDEO'
@@ -620,6 +680,15 @@ set firewall name containers-trusted rule 999 action 'drop'
 set firewall name containers-trusted rule 999 description 'Rule: drop_invalid'
 set firewall name containers-trusted rule 999 state invalid 'enable'
 set firewall name containers-trusted rule 999 log 'enable'
+
+# From CONTAINERS to WIRELESS
+set firewall name containers-wireless default-action 'drop'
+set firewall name containers-wireless description 'From CONTAINERS to WIRELESS'
+set firewall name containers-wireless enable-default-log
+set firewall name containers-wireless rule 999 action 'drop'
+set firewall name containers-wireless rule 999 description 'Rule: drop_invalid'
+set firewall name containers-wireless rule 999 state invalid 'enable'
+set firewall name containers-wireless rule 999 log 'enable'
 
 # From CONTAINERS to VIDEO
 set firewall name containers-video default-action 'drop'
@@ -726,6 +795,14 @@ set firewall name trusted-containers rule 999 description 'Rule: drop_invalid'
 set firewall name trusted-containers rule 999 state invalid 'enable'
 set firewall name trusted-containers rule 999 log 'enable'
 
+# From TRUSTED to WIRELESS
+set firewall name trusted-wireless default-action 'accept'
+set firewall name trusted-wireless description 'From TRUSTED to WIRELESS'
+set firewall name trusted-wireless rule 999 action 'drop'
+set firewall name trusted-wireless rule 999 description 'Rule: drop_invalid'
+set firewall name trusted-wireless rule 999 state invalid 'enable'
+set firewall name trusted-wireless rule 999 log 'enable'
+
 # From TRUSTED to VIDEO
 set firewall name trusted-video default-action 'accept'
 set firewall name trusted-video description 'From TRUSTED to VIDEO'
@@ -741,6 +818,118 @@ set firewall name trusted-wan rule 999 action 'drop'
 set firewall name trusted-wan rule 999 description 'Rule: drop_invalid'
 set firewall name trusted-wan rule 999 state invalid 'enable'
 set firewall name trusted-wan rule 999 log 'enable'
+
+# From WIRELESS to GUEST
+set firewall name wireless-guest default-action 'drop'
+set firewall name wireless-guest description 'From WIRELESS to GUEST'
+set firewall name wireless-guest enable-default-log
+set firewall name wireless-guest rule 999 action 'drop'
+set firewall name wireless-guest rule 999 description 'Rule: drop_invalid'
+set firewall name wireless-guest rule 999 state invalid 'enable'
+set firewall name wireless-guest rule 999 log 'enable'
+
+# From WIRELESS to IOT
+set firewall name wireless-iot default-action 'accept'
+set firewall name wireless-iot description 'From WIRELESS to IOT'
+set firewall name wireless-iot rule 999 action 'drop'
+set firewall name wireless-iot rule 999 description 'Rule: drop_invalid'
+set firewall name wireless-iot rule 999 state invalid 'enable'
+set firewall name wireless-iot rule 999 log 'enable'
+
+# From WIRELESS to LAN
+set firewall name wireless-lan default-action 'accept'
+set firewall name wireless-lan description 'From WIRELESS to LAN'
+set firewall name wireless-lan rule 999 action 'drop'
+set firewall name wireless-lan rule 999 description 'Rule: drop_invalid'
+set firewall name wireless-lan rule 999 state invalid 'enable'
+set firewall name wireless-lan rule 999 log 'enable'
+
+# From WIRELESS to LOCAL
+set firewall name wireless-local default-action 'drop'
+set firewall name wireless-local description 'From WIRELESS to LOCAL'
+set firewall name wireless-local enable-default-log
+set firewall name wireless-local rule 50 action 'accept'
+set firewall name wireless-local rule 50 description 'Rule: accept_dhcp'
+set firewall name wireless-local rule 50 destination port '67,68'
+set firewall name wireless-local rule 50 protocol 'udp'
+set firewall name wireless-local rule 50 source port '67,68'
+set firewall name wireless-local rule 60 action 'accept'
+set firewall name wireless-local rule 60 description 'Rule: accept_ntp'
+set firewall name wireless-local rule 60 destination port 'ntp'
+set firewall name wireless-local rule 60 protocol 'udp'
+set firewall name wireless-local rule 100 action 'accept'
+set firewall name wireless-local rule 100 description 'Rule: accept_igmp'
+set firewall name wireless-local rule 100 protocol '2'
+set firewall name wireless-local rule 110 action 'accept'
+set firewall name wireless-local rule 110 description 'Rule: accept_mdns'
+set firewall name wireless-local rule 110 destination port 'mdns'
+set firewall name wireless-local rule 110 protocol 'udp'
+set firewall name wireless-local rule 200 action 'accept'
+set firewall name wireless-local rule 200 description 'Rule: accept_ssh'
+set firewall name wireless-local rule 200 destination port 'ssh'
+set firewall name wireless-local rule 200 protocol 'tcp'
+set firewall name wireless-local rule 210 action 'accept'
+set firewall name wireless-local rule 210 description 'Rule: accept_vyos_api'
+set firewall name wireless-local rule 210 destination port '8443'
+set firewall name wireless-local rule 210 protocol 'tcp'
+set firewall name wireless-local rule 220 action 'accept'
+set firewall name wireless-local rule 220 description 'Rule: accept_wireguard'
+set firewall name wireless-local rule 220 destination port '51820'
+set firewall name wireless-local rule 220 protocol 'udp'
+set firewall name wireless-local rule 999 action 'drop'
+set firewall name wireless-local rule 999 description 'Rule: drop_invalid'
+set firewall name wireless-local rule 999 state invalid 'enable'
+set firewall name wireless-local rule 999 log 'enable'
+
+# From WIRELESS to SERVERS
+set firewall name wireless-servers default-action 'accept'
+set firewall name wireless-servers description 'From WIRELESS to SERVERS'
+set firewall name wireless-servers rule 200 action 'accept'
+set firewall name wireless-servers rule 200 description 'Rule: accept_plex_from_plex_clients'
+set firewall name wireless-servers rule 200 destination group address-group 'k8s_plex'
+set firewall name wireless-servers rule 200 destination port '32400'
+set firewall name wireless-servers rule 200 protocol 'tcp'
+set firewall name wireless-servers rule 200 source group address-group 'plex_clients'
+set firewall name wireless-servers rule 999 action 'drop'
+set firewall name wireless-servers rule 999 description 'Rule: drop_invalid'
+set firewall name wireless-servers rule 999 state invalid 'enable'
+set firewall name wireless-servers rule 999 log 'enable'
+
+# From WIRELESS to CONTAINERS
+set firewall name wireless-containers default-action 'accept'
+set firewall name wireless-containers description 'From WIRELESS to CONTAINERS'
+set firewall name wireless-containers rule 40 action 'accept'
+set firewall name wireless-containers rule 40 description 'Rule: accept_dns'
+set firewall name wireless-containers rule 40 destination port 'domain,domain-s'
+set firewall name wireless-containers rule 40 protocol 'tcp_udp'
+set firewall name wireless-containers rule 999 action 'drop'
+set firewall name wireless-containers rule 999 description 'Rule: drop_invalid'
+set firewall name wireless-containers rule 999 state invalid 'enable'
+set firewall name wireless-containers rule 999 log 'enable'
+
+# From WIRELESS to TRUSTED
+set firewall name wireless-trusted default-action 'accept'
+set firewall name wireless-trusted description 'From WIRELESS to TRUSTED'
+set firewall name wireless-trusted rule 999 action 'drop'
+set firewall name wireless-trusted rule 999 description 'Rule: drop_invalid'
+set firewall name wireless-trusted rule 999 state invalid 'enable'
+set firewall name wireless-trusted rule 999 log 'enable'
+
+# From WIRELESS to VIDEO
+set firewall name wireless-video default-action 'accept'
+set firewall name wireless-video description 'From WIRELESS to VIDEO'
+set firewall name wireless-video rule 999 action 'drop'
+set firewall name wireless-video rule 999 description 'Rule: drop_invalid'
+set firewall name wireless-video rule 999 state invalid 'enable'
+set firewall name wireless-video rule 999 log 'enable'
+
+# From WIRELESS to WAN
+set firewall name wireless-wan default-action 'accept'
+set firewall name wireless-wan description 'From WIRELESS to WAN'
+set firewall name wireless-wan rule 999 action 'drop'
+set firewall name wireless-wan rule 999 description 'Rule: drop_invalid'
+set firewall name wireless-wan rule 999 state invalid 'enable'
+set firewall name wireless-wan rule 999 log 'enable'
 
 # From VIDEO to GUEST
 set firewall name video-guest default-action 'drop'
@@ -827,6 +1016,15 @@ set firewall name video-trusted rule 999 description 'Rule: drop_invalid'
 set firewall name video-trusted rule 999 state invalid 'enable'
 set firewall name video-trusted rule 999 log 'enable'
 
+# From VIDEO to WIRELESS
+set firewall name video-wireless default-action 'drop'
+set firewall name video-wireless description 'From VIDEO to WIRELESS'
+set firewall name video-wireless enable-default-log
+set firewall name video-wireless rule 999 action 'drop'
+set firewall name video-wireless rule 999 description 'Rule: drop_invalid'
+set firewall name video-wireless rule 999 state invalid 'enable'
+set firewall name video-wireless rule 999 log 'enable'
+
 # From VIDEO to WAN
 set firewall name video-wan default-action 'drop'
 set firewall name video-wan description 'From VIDEO to WAN'
@@ -901,6 +1099,15 @@ set firewall name wan-trusted rule 999 action 'drop'
 set firewall name wan-trusted rule 999 description 'Rule: drop_invalid'
 set firewall name wan-trusted rule 999 state invalid 'enable'
 set firewall name wan-trusted rule 999 log 'enable'
+
+# From WAN to WIRELESS
+set firewall name wan-wireless default-action 'drop'
+set firewall name wan-wireless description 'From WAN to WIRELESS'
+set firewall name wan-wireless enable-default-log
+set firewall name wan-wireless rule 999 action 'drop'
+set firewall name wan-wireless rule 999 description 'Rule: drop_invalid'
+set firewall name wan-wireless rule 999 state invalid 'enable'
+set firewall name wan-wireless rule 999 log 'enable'
 
 # From WAN to VIDEO
 set firewall name wan-video default-action 'drop'
