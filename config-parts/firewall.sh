@@ -7,16 +7,6 @@ set firewall all-ping enable
 set firewall broadcast-ping disable
 
 # Address Groups
-set firewall group address-group aruba_devices address '10.1.0.2'
-set firewall group address-group aruba_devices address '10.1.0.3'
-set firewall group address-group aruba_devices address '10.1.0.4'
-set firewall group address-group aruba_devices address '10.1.0.5'
-set firewall group address-group aruba_devices address '10.1.0.6'
-set firewall group address-group aruba_devices address '10.1.0.7'
-set firewall group address-group aruba_devices address '10.1.0.8'
-
-set firewall group address-group ereaders address '10.1.2.10'
-
 set firewall group address-group homekit-devices address '10.1.2.12'
 set firewall group address-group homekit-devices address '10.1.2.15'
 set firewall group address-group homekit-devices address '10.1.2.17'
@@ -25,7 +15,7 @@ set firewall group address-group homekit-devices address '10.1.2.19'
 set firewall group address-group homekit-devices address '10.1.2.20'
 set firewall group address-group homekit-devices address '10.1.2.21'
 set firewall group address-group homekit-devices address '10.1.2.22'
-set firewall group address-group homekit-devices address '10.1.2.23'
+set firewall group address-group homekit-devices address '10.1.5.23'
 set firewall group address-group homekit-devices address '10.1.2.24'
 set firewall group address-group homekit-devices address '10.1.2.25'
 
@@ -84,7 +74,7 @@ set firewall group address-group plex_clients address '10.1.2.12'
 set firewall group address-group plex_clients address '10.1.2.13'
 set firewall group address-group plex_clients address '10.1.2.14'
 set firewall group address-group plex_clients address '10.1.2.15'
-set firewall group address-group plex_clients address '10.1.2.23'
+set firewall group address-group plex_clients address '10.1.5.23'
 set firewall group address-group plex_clients address '10.1.2.24'
 set firewall group address-group plex_clients address '10.1.3.25'
 
