@@ -30,6 +30,9 @@ $ORIGIN in-addr.arpa.
 17.0.1.10                  IN  PTR  outdoor-access-point.greyrock.io.
 18.0.1.10                  IN  PTR  gameroom-switch-1-gb.greyrock.io.
 19.0.1.10                  IN  PTR  office-switch-10-gb.greyrock.io.
+20.0.1.10                  IN  PTR  office-switch-media.greyrock.io.
+21.0.1.10                  IN  PTR  gameroom-switch-media.greyrock.io.
+22.0.1.10                  IN  PTR  fsr-switch-media.greyrock.io.
 
 ; Servers
 2.1.1.10                   IN  PTR  chronos.greyrock.io.
