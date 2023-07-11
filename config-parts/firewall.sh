@@ -75,8 +75,8 @@ set firewall group address-group plex_clients address '10.1.2.13'
 set firewall group address-group plex_clients address '10.1.2.14'
 set firewall group address-group plex_clients address '10.1.2.15'
 set firewall group address-group plex_clients address '10.1.5.23'
-set firewall group address-group plex_clients address '10.1.2.24'
-set firewall group address-group plex_clients address '10.1.3.25'
+set firewall group address-group plex_clients address '10.1.5.24'
+set firewall group address-group plex_clients address '10.1.5.25'
 
 set firewall group address-group printers address '10.1.3.13'
 
