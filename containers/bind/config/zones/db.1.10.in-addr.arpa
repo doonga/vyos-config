@@ -86,20 +86,22 @@ $ORIGIN in-addr.arpa.
 ; Trusted
 14.2.1.10                  IN  PTR  andys-desktop.greyrock.io.
 15.2.1.10                  IN  PTR  andys-iphone.greyrock.io.
-25.2.1.10                  IN  PTR  formalsittingroom-appletv.greyrock.io.
 20.2.1.10                  IN  PTR  formalsittingroom-homepod.greyrock.io.
-24.2.1.10                  IN  PTR  gameroom-appletv.greyrock.io.
 22.2.1.10                  IN  PTR  gameroom-homepod.greyrock.io.
 13.2.1.10                  IN  PTR  garage-homepod.greyrock.io.
 17.2.1.10                  IN  PTR  kitchen-homepod.greyrock.io.
 18.2.1.10                  IN  PTR  masterbedroom-homepod.greyrock.io.
-23.2.1.10                  IN  PTR  office-appletv.greyrock.io.
 21.2.1.10                  IN  PTR  office-homepod.greyrock.io.
 10.2.1.10                  IN  PTR  todds-desktop.greyrock.io.
 12.2.1.10                  IN  PTR  todds-iphone.greyrock.io.
 11.2.1.10                  IN  PTR  todds-laptop.greyrock.io.
 16.2.1.10                  IN  PTR  todds-surface.greyrock.io.
 26.2.1.10                  IN  PTR  todds-applewatch.greyrock.io.
+
+; Wireless
+23.5.1.10                  IN  PTR  office-appletv.greyrock.io.
+24.5.1.10                  IN  PTR  gameroom-appletv.greyrock.io.
+25.5.1.10                  IN  PTR  fsr-appletv.greyrock.io.
 
 ; Video
 12.4.1.10                  IN  PTR  courtard-porch-doorbell.greyrock.io.

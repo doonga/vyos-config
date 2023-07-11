@@ -83,14 +83,14 @@ withings-scale                      IN  A  10.1.3.187
 ; Trusted
 andys-desktop                       IN  A  10.1.2.14
 andys-iphone                        IN  A  10.1.2.15
-formalsittingroom-appletv           IN  A  10.1.2.25
+formalsittingroom-appletv           IN  A  10.1.5.25
 formalsittingroom-homepod           IN  A  10.1.2.20
-gameroom-appletv                    IN  A  10.1.2.24
+gameroom-appletv                    IN  A  10.1.5.24
 gameroom-homepod                    IN  A  10.1.2.22
 garage-homepod                      IN  A  10.1.2.13
 kitchen-homepod                     IN  A  10.1.2.17
 masterbedroom-homepod               IN  A  10.1.2.18
-office-appletv                      IN  A  10.1.2.23
+office-appletv                      IN  A  10.1.5.23
 office-homepod                      IN  A  10.1.2.21
 todds-desktop                       IN  A  10.1.2.10
 todds-iphone                        IN  A  10.1.2.12
