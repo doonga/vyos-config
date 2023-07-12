@@ -59,24 +59,24 @@ $ORIGIN 3.1.10.in-addr.arpa.
 22                         IN  PTR  hvac-kitchen.greyrock.io.
 23                         IN  PTR  hvac-dining-room.greyrock.io.
 24                         IN  PTR  hvac-game-room.greyrock.io.
-174                        IN  PTR  hydrawise-sprinkler-controller.greyrock.io.
-186                        IN  PTR  gameroom-samsung-tv-right.greyrock.io.
-187                        IN  PTR  withings-scale.greyrock.io.
-188                        IN  PTR  tesla-model-3-todd.greyrock.io.
-189                        IN  PTR  gameroom-samsung-tv-left.greyrock.io.
-190                        IN  PTR  office-samsung-tv.greyrock.io.
-191                        IN  PTR  upstairs-litter-robot.greyrock.io.
-192                        IN  PTR  formalsittingroom-lg-tv.greyrock.io.
-193                        IN  PTR  downstairs-litter-robot.greyrock.io.
-194                        IN  PTR  garage-door-todd.greyrock.io.
-195                        IN  PTR  garage-door-andy.greyrock.io.
+25                         IN  PTR  hydrawise-sprinkler-controller.greyrock.io.
+26                         IN  PTR  gameroom-samsung-tv-right.greyrock.io.
+27                         IN  PTR  withings-scale.greyrock.io.
+28                         IN  PTR  tesla-model-3-todd.greyrock.io.
+29                         IN  PTR  gameroom-samsung-tv-left.greyrock.io.
+30                         IN  PTR  office-samsung-tv.greyrock.io.
+31                         IN  PTR  upstairs-litter-robot.greyrock.io.
+32                         IN  PTR  formalsittingroom-lg-tv.greyrock.io.
+33                         IN  PTR  downstairs-litter-robot.greyrock.io.
+34                         IN  PTR  garage-door-todd.greyrock.io.
+35                         IN  PTR  garage-door-andy.greyrock.io.
 196                        IN  PTR  slzb-06.greyrock.io.
 197                        IN  PTR  office-hs110-rack.greyrock.io.
 198                        IN  PTR  ambient-ws5000.greyrock.io.
+39                         IN  PTR  garage-iotawatt.greyrock.io.
+40                         IN  PTR  basement-iotawatt.greyrock.io.
+41                         IN  PTR  teslawallconnector-todd.greyrock.io.
 199                        IN  PTR  solaredge-inverter.greyrock.io.
-250                        IN  PTR  garage-iotawatt.greyrock.io.
-251                        IN  PTR  basement-iotawatt.greyrock.io.
-252                        IN  PTR  teslawallconnector-todd.greyrock.io.
 
 ; Trusted
 $ORIGIN 2.1.10.in-addr.arpa.

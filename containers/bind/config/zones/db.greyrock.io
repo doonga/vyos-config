@@ -48,37 +48,32 @@ pikvm                               IN  A  10.1.1.52
 
 ; IOT
 ambient-ws5000                      IN  A  10.1.3.198
-basement-iotawatt                   IN  A  10.1.3.251
+basement-iotawatt                   IN  A  10.1.3.40
 brother-printer                     IN  A  10.1.3.13
-diningroom-mitsubishi-inverter      IN  A  10.1.3.203
-downstairs-litter-robot             IN  A  10.1.3.193
-formalsittingroom-lg-tv             IN  A  10.1.3.192
-gameroom-mitsubishi-inverter        IN  A  10.1.3.201
+downstairs-litter-robot             IN  A  10.1.3.33
+fsr-lg-tv                           IN  A  10.1.3.32
 gameroom-ps4                        IN  A  10.1.3.11
 gameroom-ps5                        IN  A  10.1.3.10
-gameroom-samsung-tv-left            IN  A  10.1.3.189
-gameroom-samsung-tv-right           IN  A  10.1.3.186
-garage-iotawatt                     IN  A  10.1.3.250
-garage-door-andy                    IN  A  10.1.3.195
-garage-door-todd                    IN  A  10.1.3.194
+gameroom-samsung-tv-left            IN  A  10.1.3.29
+gameroom-samsung-tv-right           IN  A  10.1.3.26
+garage-iotawatt                     IN  A  10.1.3.39
+garage-door-andy                    IN  A  10.1.3.35
+garage-door-todd                    IN  A  10.1.3.34
 hvac-dining-room                    IN  A  10.1.3.23
 hvac-game-room                      IN  A  10.1.3.24
 hvac-kitchen                        IN  A  10.1.3.22
 hvac-master-bedroom                 IN  A  10.1.3.21
 hvac-office                         IN  A  10.1.3.20
-hydrawise-sprinkler-controller      IN  A  10.1.3.174
-kitchen-mitsubishi-inverter         IN  A  10.1.3.200
-masterbedroom-mitsubishi-inverter   IN  A  10.1.3.202
+hydrawise-sprinkler-controller      IN  A  10.1.3.25
 office-hs110-rack                   IN  A  10.1.3.197
-office-mitsubishi-inverter          IN  A  10.1.3.204
-office-samsung-tv                   IN  A  10.1.3.190
+office-samsung-tv                   IN  A  10.1.3.30
 solaredge-inverter                  IN  A  10.1.3.199
 nintendo-switch-todd                IN  A  10.1.3.12
 slzb-06                             IN  A  10.1.3.196
-teslawallconnector-todd             IN  A  10.1.3.252
-tesla-model-3-todd                  IN  A  10.1.3.188
-upstairs-litter-robot               IN  A  10.1.3.191
-withings-scale                      IN  A  10.1.3.187
+teslawallconnector-todd             IN  A  10.1.3.41
+tesla-model-3-todd                  IN  A  10.1.3.28
+upstairs-litter-robot               IN  A  10.1.3.31
+withings-scale                      IN  A  10.1.3.27
 
 ; Trusted
 andys-desktop                       IN  A  10.1.2.11
