@@ -65,7 +65,7 @@ hvac-kitchen                        IN  A  10.1.3.22
 hvac-master-bedroom                 IN  A  10.1.3.21
 hvac-office                         IN  A  10.1.3.20
 hydrawise-sprinkler-controller      IN  A  10.1.3.25
-office-hs110-rack                   IN  A  10.1.3.197
+office-hs110-rack                   IN  A  10.1.3.37
 office-samsung-tv                   IN  A  10.1.3.30
 solaredge-inverter                  IN  A  10.1.3.199
 nintendo-switch-todd                IN  A  10.1.3.12
