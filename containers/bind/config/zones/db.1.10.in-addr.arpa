@@ -74,11 +74,6 @@ $ORIGIN 3.1.10.in-addr.arpa.
 197                        IN  PTR  office-hs110-rack.greyrock.io.
 198                        IN  PTR  ambient-ws5000.greyrock.io.
 199                        IN  PTR  solaredge-inverter.greyrock.io.
-200                        IN  PTR  kitchen-mitsubishi-inverter.greyrock.io.
-201                        IN  PTR  gameroom-mitsubhi-inverter.greyrock.io.
-202                        IN  PTR  masterbedroom-mitsubishi-inverter.greyrock.io.
-203                        IN  PTR  diningroom-mitsubishi-inverter.greyrock.io.
-204                        IN  PTR  office-mitsubishi-inverter.greyrock.io.
 250                        IN  PTR  garage-iotawatt.greyrock.io.
 251                        IN  PTR  basement-iotawatt.greyrock.io.
 252                        IN  PTR  teslawallconnector-todd.greyrock.io.
