@@ -69,7 +69,7 @@ office-hs110-rack                   IN  A  10.1.3.197
 office-samsung-tv                   IN  A  10.1.3.30
 solaredge-inverter                  IN  A  10.1.3.199
 nintendo-switch-todd                IN  A  10.1.3.12
-slzb-06                             IN  A  10.1.3.196
+slzb-06                             IN  A  10.1.3.36
 teslawallconnector-todd             IN  A  10.1.3.41
 tesla-model-3-todd                  IN  A  10.1.3.28
 upstairs-litter-robot               IN  A  10.1.3.31
