@@ -98,7 +98,7 @@ office-homepod                      IN  A  10.1.5.20
 todds-iphone                        IN  A  10.1.5.11
 todds-laptop                        IN  A  10.1.5.10
 todds-surface                       IN  A  10.1.5.12
-todds-apple                         IN  A  10.1.5.13
+todds-watch                         IN  A  10.1.5.13
 
 ; Video
 courtyard-porch-doorbell            IN  A  10.1.4.12
