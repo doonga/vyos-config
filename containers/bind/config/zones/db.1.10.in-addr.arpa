@@ -72,7 +72,7 @@ $ORIGIN 3.1.10.in-addr.arpa.
 35                         IN  PTR  garage-door-andy.greyrock.io.
 36                         IN  PTR  slzb-06.greyrock.io.
 37                         IN  PTR  office-hs110-rack.greyrock.io.
-198                        IN  PTR  ambient-ws5000.greyrock.io.
+38                         IN  PTR  ambient-ws5000.greyrock.io.
 39                         IN  PTR  garage-iotawatt.greyrock.io.
 40                         IN  PTR  basement-iotawatt.greyrock.io.
 41                         IN  PTR  teslawallconnector-todd.greyrock.io.

@@ -47,7 +47,7 @@ oc300                               IN  A  10.1.1.11
 pikvm                               IN  A  10.1.1.52
 
 ; IOT
-ambient-ws5000                      IN  A  10.1.3.198
+ambient-ws5000                      IN  A  10.1.3.38
 basement-iotawatt                   IN  A  10.1.3.40
 brother-printer                     IN  A  10.1.3.13
 downstairs-litter-robot             IN  A  10.1.3.33

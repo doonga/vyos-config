@@ -33,7 +33,7 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 range 0 start
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 range 0 stop '10.1.3.254'
 set service dhcp-server shared-network-name IOT ntp-server 10.1.3.1
 
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping ambient-ws5000 ip-address '10.1.3.198'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping ambient-ws5000 ip-address '10.1.3.38'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping ambient-ws5000 mac-address 'd8:f1:5b:15:83:9e'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping basement-iotawatt ip-address '10.1.3.40'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping basement-iotawatt mac-address '44:17:93:06:8e:8f'
