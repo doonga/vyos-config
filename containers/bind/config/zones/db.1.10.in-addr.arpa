@@ -84,24 +84,24 @@ $ORIGIN in-addr.arpa.
 252.3.1.10                 IN  PTR  teslawallconnector-todd.greyrock.io.
 
 ; Trusted
-14.2.1.10                  IN  PTR  andys-desktop.greyrock.io.
-15.2.1.10                  IN  PTR  andys-iphone.greyrock.io.
-20.2.1.10                  IN  PTR  formalsittingroom-homepod.greyrock.io.
-22.2.1.10                  IN  PTR  gameroom-homepod.greyrock.io.
-13.2.1.10                  IN  PTR  garage-homepod.greyrock.io.
-17.2.1.10                  IN  PTR  kitchen-homepod.greyrock.io.
-18.2.1.10                  IN  PTR  masterbedroom-homepod.greyrock.io.
-21.2.1.10                  IN  PTR  office-homepod.greyrock.io.
 10.2.1.10                  IN  PTR  todds-desktop.greyrock.io.
-12.2.1.10                  IN  PTR  todds-iphone.greyrock.io.
-11.2.1.10                  IN  PTR  todds-laptop.greyrock.io.
-16.2.1.10                  IN  PTR  todds-surface.greyrock.io.
-26.2.1.10                  IN  PTR  todds-applewatch.greyrock.io.
+11.2.1.10                  IN  PTR  andys-desktop.greyrock.io.
+12.2.1.10                  IN  PTR  fsr-appletv.greyrock.io.
+13.2.1.10                  IN  PTR  gameroom-appletv.greyrock.io.
+14.2.1.10                  IN  PTR  office-appletv.greyrock.io.
 
 ; Wireless
-23.5.1.10                  IN  PTR  office-appletv.greyrock.io.
-24.5.1.10                  IN  PTR  gameroom-appletv.greyrock.io.
-25.5.1.10                  IN  PTR  fsr-appletv.greyrock.io.
+10.5.1.10                  IN  PTR  todds-laptop.greyrock.io.
+11.5.1.10                  IN  PTR  todds-iphone.greyrock.io.
+12.5.1.10                  IN  PTR  todds-surface.greyrock.io.
+13.5.1.10                  IN  PTR  todds-watch.greyrock.io.
+14.5.1.10                  IN  PTR  andys-iphone.greyrock.io.
+15.5.1.10                  IN  PTR  formalsittingroom-homepod.greyrock.io.
+16.5.1.10                  IN  PTR  gameroom-homepod.greyrock.io.
+17.5.1.10                  IN  PTR  garage-homepod.greyrock.io.
+18.5.1.10                  IN  PTR  kitchen-homepod.greyrock.io.
+19.5.1.10                  IN  PTR  masterbedroom-homepod.greyrock.io.
+20.5.1.10                  IN  PTR  office-homepod.greyrock.io.
 
 ; Video
 12.4.1.10                  IN  PTR  courtard-porch-doorbell.greyrock.io.
