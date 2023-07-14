@@ -38,7 +38,7 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping basement-iotawatt ip-address '10.1.3.40'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping basement-iotawatt mac-address '44:17:93:06:8e:8f'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping brother-printer ip-address '10.1.3.13'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping brother-printer mac-address 'cc:6b:1e:5e:7a:1d'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping brother-printer mac-address 'b4:22:00:44:a0:d7'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping downstairs-litter-robot ip-address '10.1.3.33'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping downstairs-litter-robot mac-address 'ec:fa:bc:0e:80:9f'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping fsr-lg-tv ip-address '10.1.3.32'
