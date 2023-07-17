@@ -50,6 +50,7 @@ pikvm                               IN  A  10.1.1.52
 ambient-ws5000                      IN  A  10.1.3.38
 basement-iotawatt                   IN  A  10.1.3.40
 brother-printer                     IN  A  10.1.3.13
+canon-printer                       IN  A  10.1.3.42
 downstairs-litter-robot             IN  A  10.1.3.33
 fsr-lg-tv                           IN  A  10.1.3.32
 gameroom-ps4                        IN  A  10.1.3.11
