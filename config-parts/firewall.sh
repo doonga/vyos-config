@@ -20,25 +20,14 @@ set firewall group address-group homekit-devices address '10.1.5.18'
 set firewall group address-group homekit-devices address '10.1.5.19'
 set firewall group address-group homekit-devices address '10.1.5.20'
 
-set firewall group address-group jellyfin_clients address '10.1.2.10'
-set firewall group address-group jellyfin_clients address '10.1.2.11'
-set firewall group address-group jellyfin_clients address '10.1.2.12'
-set firewall group address-group jellyfin_clients address '10.1.2.13'
-set firewall group address-group jellyfin_clients address '10.1.2.14'
-set firewall group address-group jellyfin_clients address '10.1.5.10'
-set firewall group address-group jellyfin_clients address '10.1.5.11'
-set firewall group address-group jellyfin_clients address '10.1.5.12'
-set firewall group address-group jellyfin_clients address '10.1.5.14'
-
 set firewall group address-group k8s_api address '10.5.0.2'
 
 set firewall group address-group k8s_awnet address '10.45.0.26'
 
 set firewall group address-group k8s_ingress address '10.45.0.1'
+set firewall group address-group k8s_ingress address '10.45.0.3'
 
 set firewall group address-group k8s_ingress_allowed address '10.1.3.198'
-
-set firewall group address-group k8s_jellyfin address '10.45.0.21'
 
 set firewall group address-group k8s_mqtt address '10.45.0.10'
 
