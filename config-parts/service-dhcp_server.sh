@@ -122,7 +122,7 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mappin
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch-1-gb ip-address '10.1.0.18'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch-1-gb mac-address '48:22:54:50:eb:89'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch-2-5-gb ip-address '10.1.0.13'
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch-2-5-gb mac-address '48:22:54:5e:bc:38'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch-2-5-gb mac-address '9c:53:22:72:b2:e4'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch-media ip-address '10.1.0.21'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping gameroom-switch-media mac-address '78:8c:b5:37:bd:ab'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping upstairs-access-point ip-address '10.1.0.14'
