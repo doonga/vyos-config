@@ -92,7 +92,7 @@ kitchen-homepod                     IN  A  10.1.5.18
 masterbedroom-homepod               IN  A  10.1.5.19
 office-homepod                      IN  A  10.1.5.20
 todds-iphone                        IN  A  10.1.5.11
-todds-laptop                        IN  A  10.1.5.10
+todds-macbook                       IN  A  10.1.5.10
 todds-surface                       IN  A  10.1.5.12
 todds-watch                         IN  A  10.1.5.13
 
