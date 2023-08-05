@@ -150,8 +150,6 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping chronos mac-address '4e:90:51:6f:5b:40'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gateway-ipmi mac-address '3c:ec:ef:5a:e2:b2'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gateway-ipmi ip-address '10.1.1.50'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gitops ip-address '10.1.1.10'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gitops mac-address 'f4:4d:30:68:d3:ae'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s1 ip-address '10.1.1.4'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s1 mac-address 'f4:4d:30:69:99:65'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s2 ip-address '10.1.1.5'
