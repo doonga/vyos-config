@@ -106,5 +106,6 @@ pihole                              IN  A  10.5.0.7
 auth0                               IN  CNAME  dev-mz0m268gay70grzm-cd-iyni5xx7oczwvdik.edge.tenants.us.auth0.com.
 minio                               IN  CNAME  nas.greyrock.io.
 s3                                  IN  CNAME  nas.greyrock.io.
+vault                               IN  CNAME  nas.greyrock.io.
 vpn                                 IN  CNAME  gateway.greyrock.io.
 zigbee-coordinator                  IN  CNAME  slzb-06.greyrock.io.
