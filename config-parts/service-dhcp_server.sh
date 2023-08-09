@@ -222,8 +222,8 @@ set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-m
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-iphone mac-address '70:b3:06:4c:04:65'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-macbook ip-address '10.1.5.10'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-macbook mac-address 'bc:d0:74:68:c2:94'
-set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-surface ip-address '10.1.5.12'
-set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-surface mac-address '38:fc:98:0a:e8:08'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-ipad ip-address '10.1.5.12'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-ipad mac-address '7c:2a:ca:81:b3:fd'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-watch ip-address '10.1.5.13'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-watch mac-address '08:25:73:b2:e6:e0'
 

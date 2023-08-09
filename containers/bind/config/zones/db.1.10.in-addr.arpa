@@ -90,7 +90,7 @@ $ORIGIN 2.1.10.in-addr.arpa.
 $ORIGIN 5.1.10.in-addr.arpa.
 10                         IN  PTR  todds-macbook.greyrock.io.
 11                         IN  PTR  todds-iphone.greyrock.io.
-12                         IN  PTR  todds-surface.greyrock.io.
+12                         IN  PTR  todds-ipad.greyrock.io.
 13                         IN  PTR  todds-watch.greyrock.io.
 14                         IN  PTR  andys-iphone.greyrock.io.
 15                         IN  PTR  formalsittingroom-homepod.greyrock.io.
