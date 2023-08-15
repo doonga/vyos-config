@@ -84,6 +84,7 @@ office-appletv                      IN  A  10.1.5.14
 
 ; Wireless
 andys-iphone                        IN  A  10.1.5.14
+andys-ipad                          IN  A  10.1.5.21
 formalsittingroom-homepod           IN  A  10.1.5.15
 gameroom-homepod                    IN  A  10.1.5.16
 garage-homepod                      IN  A  10.1.5.17

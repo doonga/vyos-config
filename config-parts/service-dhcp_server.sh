@@ -206,6 +206,8 @@ set service dhcp-server shared-network-name WIRELESS ntp-server 10.1.5.1
 
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping andys-iphone ip-address '10.1.5.14'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping andys-iphone mac-address '44:90:bb:c9:44:79'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping andys-ipad ip-address '10.1.5.21'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping andys-ipad mac-address '70:72:fe:16:57:65'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping formalsittingroom-homepod ip-address '10.1.5.15'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping formalsittingroom-homepod mac-address '94:ea:32:a2:a1:d5'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping gameroom-homepod ip-address '10.1.5.16'
