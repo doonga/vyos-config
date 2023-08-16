@@ -347,6 +347,9 @@ set firewall name lan-wan rule 999 description 'Rule: drop_invalid'
 set firewall name lan-wan rule 999 state invalid 'enable'
 set firewall name lan-wan rule 999 log 'enable'
 
+set firewall ipv6-name local-wan default-action 'accept'
+set firewall ipv6-name local-wan description 'From LOCAL to WAN'
+
 # From LOCAL to GUEST
 set firewall name local-guest default-action 'drop'
 set firewall name local-guest description 'From LOCAL to GUEST'
@@ -448,6 +451,13 @@ set firewall name local-trusted rule 999 description 'Rule: drop_invalid'
 set firewall name local-trusted rule 999 state invalid 'enable'
 set firewall name local-trusted rule 999 log 'enable'
 
+set firewall ipv6-name local-trusted default-action 'drop'
+set firewall ipv6-name local-trusted description 'From LOCAL to TRUSTED'
+set firewall ipv6-name local-trusted enable-default-log
+set firewall ipv6-name local-trusted rule 1 action 'accept'
+set firewall ipv6-name local-trusted rule 1 description 'Rule: accept_icmpv6'
+set firewall ipv6-name local-trusted rule 1 protocol 'icmpv6'
+
 # From LOCAL to WIRELESS
 set firewall name local-wireless default-action 'drop'
 set firewall name local-wireless description 'From LOCAL to WIRELESS'
@@ -463,6 +473,13 @@ set firewall name local-wireless rule 999 action 'drop'
 set firewall name local-wireless rule 999 description 'Rule: drop_invalid'
 set firewall name local-wireless rule 999 state invalid 'enable'
 set firewall name local-wireless rule 999 log 'enable'
+
+set firewall ipv6-name local-wireless default-action 'drop'
+set firewall ipv6-name local-wireless description 'From LOCAL to WIRELESSS'
+set firewall ipv6-name local-wireless enable-default-log
+set firewall ipv6-name local-wireless rule 1 action 'accept'
+set firewall ipv6-name local-wireless rule 1 description 'Rule: accept_icmpv6'
+set firewall ipv6-name local-wireless rule 1 protocol 'icmpv6'
 
 # From LOCAL to VIDEO
 set firewall name local-video default-action 'drop'
@@ -763,6 +780,13 @@ set firewall name trusted-local rule 999 description 'Rule: drop_invalid'
 set firewall name trusted-local rule 999 state invalid 'enable'
 set firewall name trusted-local rule 999 log 'enable'
 
+set firewall ipv6-name trusted-local default-action 'drop'
+set firewall ipv6-name trusted-local description 'From TRUSTED to LOCAL'
+set firewall ipv6-name trusted-local enable-default-log
+set firewall ipv6-name trusted-local rule 1 action 'accept'
+set firewall ipv6-name trusted-local rule 1 description 'Rule: accept_icmpv6'
+set firewall ipv6-name trusted-local rule 1 protocol 'icmpv6'
+
 # From TRUSTED to SERVERS
 set firewall name trusted-servers default-action 'accept'
 set firewall name trusted-servers description 'From TRUSTED to SERVERS'
@@ -812,6 +836,9 @@ set firewall name trusted-wan rule 999 action 'drop'
 set firewall name trusted-wan rule 999 description 'Rule: drop_invalid'
 set firewall name trusted-wan rule 999 state invalid 'enable'
 set firewall name trusted-wan rule 999 log 'enable'
+
+set firewall ipv6-name trusted-wan default-action 'accept'
+set firewall ipv6-name trusted-wan description 'From TRUSTED to WAN'
 
 # From WIRELESS to GUEST
 set firewall name wireless-guest default-action 'drop'
@@ -875,6 +902,13 @@ set firewall name wireless-local rule 999 description 'Rule: drop_invalid'
 set firewall name wireless-local rule 999 state invalid 'enable'
 set firewall name wireless-local rule 999 log 'enable'
 
+set firewall ipv6-name wireless-local default-action 'drop'
+set firewall ipv6-name wireless-local description 'From WIRELESS to LOCAL'
+set firewall ipv6-name wireless-local enable-default-log
+set firewall ipv6-name wireless-local rule 1 action 'accept'
+set firewall ipv6-name wireless-local rule 1 description 'Rule: accept_icmpv6'
+set firewall ipv6-name wireless-local rule 1 protocol 'icmpv6'
+
 # From WIRELESS to SERVERS
 set firewall name wireless-servers default-action 'accept'
 set firewall name wireless-servers description 'From WIRELESS to SERVERS'
@@ -924,6 +958,9 @@ set firewall name wireless-wan rule 999 action 'drop'
 set firewall name wireless-wan rule 999 description 'Rule: drop_invalid'
 set firewall name wireless-wan rule 999 state invalid 'enable'
 set firewall name wireless-wan rule 999 log 'enable'
+
+set firewall ipv6-name wireless-wan default-action 'accept'
+set firewall ipv6-name wireless-wan description 'From WIRELESS to WAN'
 
 # From VIDEO to GUEST
 set firewall name video-guest default-action 'drop'
@@ -1067,6 +1104,18 @@ set firewall name wan-local rule 100 description 'Rule: accept_wireguard'
 set firewall name wan-local rule 100 destination port '51820'
 set firewall name wan-local rule 100 protocol 'udp'
 
+set firewall ipv6-name wan-local default-action 'drop'
+set firewall ipv6-name wan-local description 'From WAN to LOCAL'
+set firewall ipv6-name wan-local rule 10 action 'accept'
+set firewall ipv6-name wan-local rule 10 state established 'enable'
+set firewall ipv6-name wan-local rule 10 state related 'enable'
+set firewall ipv6-name wan-local rule 20 action 'accept'
+set firewall ipv6-name wan-local rule 20 protocol 'icmpv6'
+set firewall ipv6-name wan-local rule 30 action 'accept'
+set firewall ipv6-name wan-local rule 30 destination port '546'
+set firewall ipv6-name wan-local rule 30 protocol 'udp'
+set firewall ipv6-name wan-local rule 30 source port '547'
+
 # From WAN to SERVERS
 set firewall name wan-servers default-action 'drop'
 set firewall name wan-servers description 'From WAN to SERVERS'
@@ -1094,6 +1143,14 @@ set firewall name wan-trusted rule 999 description 'Rule: drop_invalid'
 set firewall name wan-trusted rule 999 state invalid 'enable'
 set firewall name wan-trusted rule 999 log 'enable'
 
+set firewall ipv6-name wan-trusted default-action 'drop'
+set firewall ipv6-name wan-trusted description 'From WAN to TRUSTED'
+set firewall ipv6-name wan-trusted rule 1 action 'accept'
+set firewall ipv6-name wan-trusted rule 1 state established 'enable'
+set firewall ipv6-name wan-trusted rule 1 state related 'enable'
+set firewall ipv6-name wan-trusted rule 2 action 'accept'
+set firewall ipv6-name wan-trusted rule 2 protocol 'icmpv6'
+
 # From WAN to WIRELESS
 set firewall name wan-wireless default-action 'drop'
 set firewall name wan-wireless description 'From WAN to WIRELESS'
@@ -1102,6 +1159,14 @@ set firewall name wan-wireless rule 999 action 'drop'
 set firewall name wan-wireless rule 999 description 'Rule: drop_invalid'
 set firewall name wan-wireless rule 999 state invalid 'enable'
 set firewall name wan-wireless rule 999 log 'enable'
+
+set firewall ipv6-name wan-wireless default-action 'drop'
+set firewall ipv6-name wan-wireless description 'From WAN to WIRELESS'
+set firewall ipv6-name wan-wireless rule 1 action 'accept'
+set firewall ipv6-name wan-wireless rule 1 state established 'enable'
+set firewall ipv6-name wan-wireless rule 1 state related 'enable'
+set firewall ipv6-name wan-wireless rule 2 action 'accept'
+set firewall ipv6-name wan-wireless rule 2 protocol 'icmpv6'
 
 # From WAN to VIDEO
 set firewall name wan-video default-action 'drop'

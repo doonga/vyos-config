@@ -1,8 +1,16 @@
 #!/bin/vbash
 
 set interfaces ethernet eth4 address 'dhcp'
+set interfaces ethernet eth4 address 'dhcpv6'
 set interfaces ethernet eth4 description 'WAN'
 set interfaces ethernet eth4 hw-id '68:05:ca:39:a4:e4'
+set interfaces ethernet eth4 dhcp-options reject '192.168.100.0/24'
+set interfaces ethernet eth4 dhcpv6-options pd 0 length 56
+set interfaces ethernet eth4 dhcpv6-options pd 0 interface eth5.20 sla-id 2
+set interfaces ethernet eth4 dhcpv6-options pd 0 interface eth5.20 address 1
+set interfaces ethernet eth4 dhcpv6-options pd 0 interface eth5.60 sla-id 6
+set interfaces ethernet eth4 dhcpv6-options pd 0 interface eth5.60 address 1
+set interfaces ethernet eth4 ipv6 address autoconf
 
 set interfaces ethernet eth5 address '10.1.0.1/24'
 set interfaces ethernet eth5 description 'LAN'
