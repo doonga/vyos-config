@@ -134,6 +134,17 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mappin
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-access-point ip-address '10.1.0.17'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-access-point mac-address 'ac:15:a2:65:b7:d0'
 
+# NTP
+set service dhcp-server shared-network-name NTP authoritative
+set service dhcp-server shared-network-name NTP ping-check
+set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 default-router '10.1.7.1'
+set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 lease '86400'
+set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 name-server '10.5.0.4'
+set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 range 0 start '10.1.7.200'
+set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 range 0 stop '10.1.7.254'
+
+set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 static-mapping chronos ip-address '10.1.7.2'
+set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 static-mapping chronos mac-address '4e:90:51:6f:5b:40'
 
 # Servers VLAN
 set service dhcp-server shared-network-name SERVERS authoritative
@@ -146,8 +157,6 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 s
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 stop '10.1.1.254'
 set service dhcp-server shared-network-name SERVERS ntp-server 10.1.1.1
 
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping chronos ip-address '10.1.1.2'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping chronos mac-address '4e:90:51:6f:5b:40'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gateway-ipmi mac-address '3c:ec:ef:5a:e2:b2'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gateway-ipmi ip-address '10.1.1.50'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s1 ip-address '10.1.1.4'

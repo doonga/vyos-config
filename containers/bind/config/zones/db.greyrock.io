@@ -32,7 +32,6 @@ outdoor-access-point                IN  A  10.1.0.17
 upstairs-access-point               IN  A  10.1.0.14
 
 ; Servers
-chronos                             IN  A  10.1.1.2
 gateway-ipmi                        IN  A  10.1.1.50
 nas                                 IN  A  10.1.1.3
 nas-ipmi                            IN  A  10.1.1.51
@@ -44,6 +43,9 @@ k8s5                                IN  A  10.1.1.8
 k8s6                                IN  A  10.1.1.9
 oc300                               IN  A  10.1.1.11
 pikvm                               IN  A  10.1.1.52
+
+; NTP
+chronos                             IN  A  10.1.7.2
 
 ; IOT
 ambient-ws5000                      IN  A  10.1.3.38

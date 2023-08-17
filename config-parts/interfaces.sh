@@ -27,6 +27,8 @@ set interfaces ethernet eth5 vif 50 address '10.1.4.1/24'
 set interfaces ethernet eth5 vif 50 description 'VIDEO'
 set interfaces ethernet eth5 vif 60 address '10.1.5.1/24'
 set interfaces ethernet eth5 vif 60 description 'WIRELESS'
+set interfaces ethernet eth5 vif 70 address '10.1.7.1/24'
+set interfaces ethernet eth5 vif 70 description 'NTP'
 
 set interfaces wireguard wg01 address '10.0.11.1/24'
 set interfaces wireguard wg01 description 'WIREGUARD'

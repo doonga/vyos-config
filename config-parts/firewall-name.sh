@@ -14,6 +14,15 @@ set firewall name guest-lan rule 999 description 'Rule: drop_invalid'
 set firewall name guest-lan rule 999 state invalid 'enable'
 set firewall name guest-lan rule 999 log 'enable'
 
+# From GUEST to NTP
+set firewall name guest-ntp default-action 'drop'
+set firewall name guest-ntp description 'From GUEST to NTP'
+set firewall name guest-ntp enable-default-log
+set firewall name guest-ntp rule 999 action 'drop'
+set firewall name guest-ntp rule 999 description 'Rule: drop_invalid'
+set firewall name guest-ntp rule 999 state invalid 'enable'
+set firewall name guest-ntp rule 999 log 'enable'
+
 # From GUEST to LOCAL
 set firewall name guest-local default-action 'drop'
 set firewall name guest-local description 'From GUEST to LOCAL'
@@ -107,6 +116,15 @@ set firewall name iot-lan rule 999 action 'drop'
 set firewall name iot-lan rule 999 description 'Rule: drop_invalid'
 set firewall name iot-lan rule 999 state invalid 'enable'
 set firewall name iot-lan rule 999 log 'enable'
+
+# From IOT to NTP
+set firewall name iot-ntp default-action 'drop'
+set firewall name iot-ntp description 'From IOT to NTP'
+set firewall name iot-ntp enable-default-log
+set firewall name iot-ntp rule 999 action 'drop'
+set firewall name iot-ntp rule 999 description 'Rule: drop_invalid'
+set firewall name iot-ntp rule 999 state invalid 'enable'
+set firewall name iot-ntp rule 999 log 'enable'
 
 # From IOT to LOCAL
 set firewall name iot-local default-action 'drop'
@@ -260,6 +278,15 @@ set firewall name lan-guest rule 999 description 'Rule: drop_invalid'
 set firewall name lan-guest rule 999 state invalid 'enable'
 set firewall name lan-guest rule 999 log 'enable'
 
+# From LAN to NTP
+set firewall name lan-ntp default-action 'drop'
+set firewall name lan-ntp description 'From LAN to NTP'
+set firewall name lan-ntp enable-default-log
+set firewall name lan-ntp rule 999 action 'drop'
+set firewall name lan-ntp rule 999 description 'Rule: drop_invalid'
+set firewall name lan-ntp rule 999 state invalid 'enable'
+set firewall name lan-ntp rule 999 log 'enable'
+
 # From LAN to IOT
 set firewall name lan-iot default-action 'drop'
 set firewall name lan-iot description 'From LAN to IOT'
@@ -347,8 +374,106 @@ set firewall name lan-wan rule 999 description 'Rule: drop_invalid'
 set firewall name lan-wan rule 999 state invalid 'enable'
 set firewall name lan-wan rule 999 log 'enable'
 
-set firewall ipv6-name local-wan default-action 'accept'
-set firewall ipv6-name local-wan description 'From LOCAL to WAN'
+# From NTP to GUEST
+set firewall name ntp-guest default-action 'drop'
+set firewall name ntp-guest description 'From NTP to GUEST'
+set firewall name ntp-guest enable-default-log
+set firewall name ntp-guest rule 999 action 'drop'
+set firewall name ntp-guest rule 999 description 'Rule: drop_invalid'
+set firewall name ntp-guest rule 999 state invalid 'enable'
+set firewall name ntp-guest rule 999 log 'enable'
+
+# From NTP to LAN
+set firewall name ntp-lan default-action 'drop'
+set firewall name ntp-lan description 'From NTP to LAN'
+set firewall name ntp-lan enable-default-log
+set firewall name ntp-lan rule 999 action 'drop'
+set firewall name ntp-lan rule 999 description 'Rule: drop_invalid'
+set firewall name ntp-lan rule 999 state invalid 'enable'
+set firewall name ntp-lan rule 999 log 'enable'
+
+# From NTP to IOT
+set firewall name ntp-iot default-action 'drop'
+set firewall name ntp-iot description 'From NTP to IOT'
+set firewall name ntp-iot enable-default-log
+set firewall name ntp-iot rule 999 action 'drop'
+set firewall name ntp-iot rule 999 description 'Rule: drop_invalid'
+set firewall name ntp-iot rule 999 state invalid 'enable'
+set firewall name ntp-iot rule 999 log 'enable'
+
+# From NTP to LOCAL
+set firewall name ntp-local default-action 'drop'
+set firewall name ntp-local description 'From NTP to LOCAL'
+set firewall name ntp-local enable-default-log
+set firewall name ntp-local rule 50 action 'accept'
+set firewall name ntp-local rule 50 description 'Rule: accept_dhcp'
+set firewall name ntp-local rule 50 destination port '67,68'
+set firewall name ntp-local rule 50 protocol 'udp'
+set firewall name ntp-local rule 50 source port '67,68'
+set firewall name ntp-local rule 999 action 'drop'
+set firewall name ntp-local rule 999 description 'Rule: drop_invalid'
+set firewall name ntp-local rule 999 state invalid 'enable'
+set firewall name ntp-local rule 999 log 'enable'
+
+# From NTP to SERVERS
+set firewall name ntp-servers default-action 'drop'
+set firewall name ntp-servers description 'From NTP to SERVERS'
+set firewall name ntp-servers enable-default-log
+set firewall name ntp-servers rule 100 action 'accept'
+set firewall name ntp-servers rule 100 description 'Rule: accept_omada_traffic'
+set firewall name ntp-servers rule 100 protocol 'tcp_udp'
+set firewall name ntp-servers rule 100 destination group address-group omada
+set firewall name ntp-servers rule 999 action 'drop'
+set firewall name ntp-servers rule 999 description 'Rule: drop_invalid'
+set firewall name ntp-servers rule 999 state invalid 'enable'
+set firewall name ntp-servers rule 999 log 'enable'
+
+# From NTP to CONTAINERS
+set firewall name ntp-containers default-action 'accept'
+set firewall name ntp-containers description 'From NTP to CONTAINERS'
+set firewall name ntp-containers rule 40 action 'accept'
+set firewall name ntp-containers rule 40 description 'Rule: accept_dns'
+set firewall name ntp-containers rule 40 destination port 'domain,domain-s'
+set firewall name ntp-containers rule 40 protocol 'tcp_udp'
+set firewall name ntp-containers rule 999 action 'drop'
+set firewall name ntp-containers rule 999 description 'Rule: drop_invalid'
+set firewall name ntp-containers rule 999 state invalid 'enable'
+set firewall name ntp-containers rule 999 log 'enable'
+
+# From NTP to TRUSTED
+set firewall name ntp-trusted default-action 'drop'
+set firewall name ntp-trusted description 'From NTP to TRUSTED'
+set firewall name ntp-trusted enable-default-log
+set firewall name ntp-trusted rule 999 action 'drop'
+set firewall name ntp-trusted rule 999 description 'Rule: drop_invalid'
+set firewall name ntp-trusted rule 999 state invalid 'enable'
+set firewall name ntp-trusted rule 999 log 'enable'
+
+# From NTP to WIRELESS
+set firewall name ntp-wireless default-action 'drop'
+set firewall name ntp-wireless description 'From NTP to WIRELESS'
+set firewall name ntp-wireless enable-default-log
+set firewall name ntp-wireless rule 999 action 'drop'
+set firewall name ntp-wireless rule 999 description 'Rule: drop_invalid'
+set firewall name ntp-wireless rule 999 state invalid 'enable'
+set firewall name ntp-wireless rule 999 log 'enable'
+
+# From NTP to VIDEO
+set firewall name ntp-video default-action 'drop'
+set firewall name ntp-video description 'From NTP to VIDEO'
+set firewall name ntp-video enable-default-log
+set firewall name ntp-video rule 999 action 'drop'
+set firewall name ntp-video rule 999 description 'Rule: drop_invalid'
+set firewall name ntp-video rule 999 state invalid 'enable'
+set firewall name ntp-video rule 999 log 'enable'
+
+# From NTP to WAN
+set firewall name ntp-wan default-action 'accept'
+set firewall name ntp-wan description 'From NTP to WAN'
+set firewall name ntp-wan rule 999 action 'drop'
+set firewall name ntp-wan rule 999 description 'Rule: drop_invalid'
+set firewall name ntp-wan rule 999 state invalid 'enable'
+set firewall name ntp-wan rule 999 log 'enable'
 
 # From LOCAL to GUEST
 set firewall name local-guest default-action 'drop'
@@ -375,19 +500,28 @@ set firewall name local-iot rule 999 description 'Rule: drop_invalid'
 set firewall name local-iot rule 999 state invalid 'enable'
 set firewall name local-iot rule 999 log 'enable'
 
-# From LOCAL to LAN
+# From LOCAL to NTP
 set firewall name local-lan default-action 'drop'
-set firewall name local-lan description 'From LOCAL to LAN'
+set firewall name local-lan description 'From LOCAL to NTP'
 set firewall name local-lan enable-default-log
-set firewall name local-lan rule 100 action 'accept'
-set firewall name local-lan rule 100 description 'Rule: accept_ntp'
-set firewall name local-lan rule 100 destination port 'ntp'
-set firewall name local-lan rule 100 protocol 'udp'
-set firewall name local-lan rule 100 destination fqdn chronos.greyrock.io
 set firewall name local-lan rule 999 action 'drop'
 set firewall name local-lan rule 999 description 'Rule: drop_invalid'
 set firewall name local-lan rule 999 state invalid 'enable'
 set firewall name local-lan rule 999 log 'enable'
+
+# From LOCAL to NTP
+set firewall name local-ntp default-action 'drop'
+set firewall name local-ntp description 'From LOCAL to NTP'
+set firewall name local-ntp enable-default-log
+set firewall name local-ntp rule 100 action 'accept'
+set firewall name local-ntp rule 100 description 'Rule: accept_ntp'
+set firewall name local-ntp rule 100 destination port 'ntp'
+set firewall name local-ntp rule 100 protocol 'udp'
+set firewall name local-ntp rule 100 destination fqdn chronos.greyrock.io
+set firewall name local-ntp rule 999 action 'drop'
+set firewall name local-ntp rule 999 description 'Rule: drop_invalid'
+set firewall name local-ntp rule 999 state invalid 'enable'
+set firewall name local-ntp rule 999 log 'enable'
 
 # From LOCAL to SERVERS
 set firewall name local-servers default-action 'drop'
@@ -498,6 +632,9 @@ set firewall name local-wan rule 999 description 'Rule: drop_invalid'
 set firewall name local-wan rule 999 state invalid 'enable'
 set firewall name local-wan rule 999 log 'enable'
 
+set firewall ipv6-name local-wan default-action 'accept'
+set firewall ipv6-name local-wan description 'From LOCAL to WAN'
+
 # From SERVERS to GUEST
 set firewall name servers-guest default-action 'drop'
 set firewall name servers-guest description 'From SERVERS to GUEST'
@@ -531,6 +668,14 @@ set firewall name servers-lan rule 999 action 'drop'
 set firewall name servers-lan rule 999 description 'Rule: drop_invalid'
 set firewall name servers-lan rule 999 state invalid 'enable'
 set firewall name servers-lan rule 999 log 'enable'
+
+# From SERVERS to NTP
+set firewall name servers-ntp default-action 'drop'
+set firewall name servers-ntp description 'From SERVERS to NTP'
+set firewall name servers-ntp rule 999 action 'drop'
+set firewall name servers-ntp rule 999 description 'Rule: drop_invalid'
+set firewall name servers-ntp rule 999 state invalid 'enable'
+set firewall name servers-ntp rule 999 log 'enable'
 
 # From SERVERS to LOCAL
 set firewall name servers-local default-action 'drop'
@@ -654,6 +799,15 @@ set firewall name containers-lan rule 999 description 'Rule: drop_invalid'
 set firewall name containers-lan rule 999 state invalid 'enable'
 set firewall name containers-lan rule 999 log 'enable'
 
+# From CONTAINERS to NTP
+set firewall name containers-ntp default-action 'drop'
+set firewall name containers-ntp description 'From CONTAINERS to NTP'
+set firewall name containers-ntp enable-default-log
+set firewall name containers-ntp rule 999 action 'drop'
+set firewall name containers-ntp rule 999 description 'Rule: drop_invalid'
+set firewall name containers-ntp rule 999 state invalid 'enable'
+set firewall name containers-ntp rule 999 log 'enable'
+
 # From CONTAINERS to LOCAL
 set firewall name containers-local default-action 'drop'
 set firewall name containers-local description 'From CONTAINERS to LOCAL'
@@ -742,6 +896,14 @@ set firewall name trusted-lan rule 999 action 'drop'
 set firewall name trusted-lan rule 999 description 'Rule: drop_invalid'
 set firewall name trusted-lan rule 999 state invalid 'enable'
 set firewall name trusted-lan rule 999 log 'enable'
+
+# From TRUSTED to NTP
+set firewall name trusted-ntp default-action 'accept'
+set firewall name trusted-ntp description 'From TRUSTED to NTP'
+set firewall name trusted-ntp rule 999 action 'drop'
+set firewall name trusted-ntp rule 999 description 'Rule: drop_invalid'
+set firewall name trusted-ntp rule 999 state invalid 'enable'
+set firewall name trusted-ntp rule 999 log 'enable'
 
 # From TRUSTED to LOCAL
 set firewall name trusted-local default-action 'drop'
@@ -864,6 +1026,14 @@ set firewall name wireless-lan rule 999 action 'drop'
 set firewall name wireless-lan rule 999 description 'Rule: drop_invalid'
 set firewall name wireless-lan rule 999 state invalid 'enable'
 set firewall name wireless-lan rule 999 log 'enable'
+
+# From WIRELESS to NTP
+set firewall name wireless-ntp default-action 'accept'
+set firewall name wireless-ntp description 'From WIRELESS to NTP'
+set firewall name wireless-ntp rule 999 action 'drop'
+set firewall name wireless-ntp rule 999 description 'Rule: drop_invalid'
+set firewall name wireless-ntp rule 999 state invalid 'enable'
+set firewall name wireless-ntp rule 999 log 'enable'
 
 # From WIRELESS to LOCAL
 set firewall name wireless-local default-action 'drop'
@@ -994,6 +1164,15 @@ set firewall name video-lan rule 999 description 'Rule: drop_invalid'
 set firewall name video-lan rule 999 state invalid 'enable'
 set firewall name video-lan rule 999 log 'enable'
 
+# From VIDEO to NTP
+set firewall name video-ntp default-action 'drop'
+set firewall name video-ntp description 'From VIDEO to NTP'
+set firewall name video-ntp enable-default-log
+set firewall name video-ntp rule 999 action 'drop'
+set firewall name video-ntp rule 999 description 'Rule: drop_invalid'
+set firewall name video-ntp rule 999 state invalid 'enable'
+set firewall name video-ntp rule 999 log 'enable'
+
 # From VIDEO to LOCAL
 set firewall name video-local default-action 'drop'
 set firewall name video-local description 'From VIDEO to LOCAL'
@@ -1090,6 +1269,15 @@ set firewall name wan-lan rule 999 action 'drop'
 set firewall name wan-lan rule 999 description 'Rule: drop_invalid'
 set firewall name wan-lan rule 999 state invalid 'enable'
 set firewall name wan-lan rule 999 log 'enable'
+
+# From WAN to NTP
+set firewall name wan-ntp default-action 'drop'
+set firewall name wan-ntp description 'From WAN to NTP'
+set firewall name wan-ntp enable-default-log
+set firewall name wan-ntp rule 999 action 'drop'
+set firewall name wan-ntp rule 999 description 'Rule: drop_invalid'
+set firewall name wan-ntp rule 999 state invalid 'enable'
+set firewall name wan-ntp rule 999 log 'enable'
 
 # From WAN to LOCAL
 set firewall name wan-local default-action 'drop'
