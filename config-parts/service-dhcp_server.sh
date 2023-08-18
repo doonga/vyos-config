@@ -143,8 +143,8 @@ set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 name-server '
 set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 range 0 start '10.1.7.200'
 set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 range 0 stop '10.1.7.254'
 
-set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 static-mapping chronos ip-address '10.1.7.2'
-set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 static-mapping chronos mac-address '4e:90:51:6f:5b:40'
+set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 static-mapping time1 ip-address '10.1.7.2'
+set service dhcp-server shared-network-name NTP subnet 10.1.7.0/24 static-mapping time1 mac-address '4e:90:51:6f:5b:40'
 
 # Servers VLAN
 set service dhcp-server shared-network-name SERVERS authoritative

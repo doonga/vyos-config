@@ -517,7 +517,6 @@ set firewall name local-ntp rule 100 action 'accept'
 set firewall name local-ntp rule 100 description 'Rule: accept_ntp'
 set firewall name local-ntp rule 100 destination port 'ntp'
 set firewall name local-ntp rule 100 protocol 'udp'
-set firewall name local-ntp rule 100 destination fqdn chronos.greyrock.io
 set firewall name local-ntp rule 999 action 'drop'
 set firewall name local-ntp rule 999 description 'Rule: drop_invalid'
 set firewall name local-ntp rule 999 state invalid 'enable'
