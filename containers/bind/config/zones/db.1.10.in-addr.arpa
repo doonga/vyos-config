@@ -48,7 +48,10 @@ $ORIGIN 1.1.10.in-addr.arpa.
 
 ; NTP
 $ORIGIN 7.1.10.in-addr.arpa.
-2                          IN  PTR  chronos.greyrock.io.
+2                          IN  PTR  time1.greyrock.io.
+3                          IN  PTR  time2.greyrock.io.
+4                          IN  PTR  time3.greyrock.io.
+5                          IN  PTR  time4.greyrock.io.
 
 ; IOT
 $ORIGIN 3.1.10.in-addr.arpa.

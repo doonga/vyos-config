@@ -45,7 +45,10 @@ oc300                               IN  A  10.1.1.11
 pikvm                               IN  A  10.1.1.52
 
 ; NTP
-chronos                             IN  A  10.1.7.2
+time1                             IN  A  10.1.7.2
+time2                             IN  A  10.1.7.3
+time3                             IN  A  10.1.7.4
+time4                             IN  A  10.1.7.5
 
 ; IOT
 ambient-ws5000                      IN  A  10.1.3.38

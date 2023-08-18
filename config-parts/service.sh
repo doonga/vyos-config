@@ -7,12 +7,11 @@ set service ntp allow-client address '10.0.0.0/8'
 set service ntp allow-client address '172.16.0.0/12'
 set service ntp allow-client address '192.168.0.0/16'
 delete service ntp server
-set service ntp server 10.1.1.2 # chronos.greyrock.io
-set service ntp server 0.us.pool.ntp.org
-set service ntp server 1.us.pool.ntp.org
-set service ntp server 2.us.pool.ntp.org
-set service ntp server 3.us.pool.ntp.org
-set service ntp server 4.us.pool.ntp.org
+set service ntp server 10.1.7.2 # time1.greyrock.io
+set service ntp server 10.1.7.3 # time2.greyrock.io
+set service ntp server 10.1.7.4 # time3.greyrock.io
+set service ntp server 10.1.7.5 # time4.greyrock.io
+
 
 # SSH server
 set service ssh disable-password-authentication
