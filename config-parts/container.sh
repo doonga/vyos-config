@@ -147,7 +147,7 @@ set container name udp-broadcast-relay-mdns shared-memory '0'
 
 # bind-exporter
 set container name bind-exporter arguments '--bind.stats-url http://10.5.0.3:8080 --bind.stats-groups server,view'
-set container name bind-exporter image 'quay.io/prometheuscommunity/bind-exporter:v0.6.1'
+set container name bind-exporter image 'quay.io/prometheuscommunity/bind-exporter:v0.7.0'
 set container name bind-exporter network containers address '10.5.0.8'
 set container name bind-exporter memory '0'
 set container name bind-exporter restart 'on-failure'
