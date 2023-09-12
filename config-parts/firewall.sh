@@ -70,8 +70,6 @@ set firewall group address-group scanners address '10.1.3.13'
 
 set firewall group address-group scrypted address '10.1.3.153'
 
-set firewall group address-group vector_journald_allowed address '10.1.3.60'
-
 set firewall group address-group weather_stations address '10.1.3.38'
 
 set firewall group address-group zigbee_coordinator address '10.1.3.36'
