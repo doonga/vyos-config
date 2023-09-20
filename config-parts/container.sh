@@ -202,3 +202,12 @@ set container name registry-quay-io network containers address '10.5.0.14'
 set container name registry-quay-io volume cache source '/config/containers/registry/quay-io'
 set container name registry-quay-io volume cache destination '/var/lib/registry'
 set container name registry-quay-io volume cache mode 'rw'
+
+# netboot.xyz
+set container name netboot-xyz image 'ghcr.io/netbootxyz/netbootxyz:0.6.8-nbxyz4'
+set container name netboot-xyz memory '0'
+set container name netboot-xyz allow-host-networks
+#remove this if it breaks
+set container name netboot-xyz cap-add 'net-bind-service'
+set container name netboot-xyz restart 'on-failure'
+set container name netboot-xyz shared-memory '0'

@@ -1,6 +1,7 @@
 #!/bin/vbash
 
 set service dhcp-server dynamic-dns-update
+set service dhcp-server global-parameters 'option arch code 93 = unsigned integer 16;'
 set service dhcp-server global-parameters "key ddnsupdate { algorithm hmac-md5; secret ${SECRET_DHCP_DDNS_UPDATE}; };"
 set service dhcp-server global-parameters "zone greyrock.io. { primary 10.5.0.3; key ddnsupdate; }"
 set service dhcp-server global-parameters "ddns-domainname &quot;greyrock.io.&quot;;"
@@ -70,11 +71,11 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hydrawise-sprinkler-controller ip-address '10.1.3.25'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hydrawise-sprinkler-controller mac-address '00:03:10:b3:72:fa'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s4 ip-address '10.1.3.7'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s4 mac-address '00:30:93:12:38:8c'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s4 mac-address '00:30:93:12:38:d3'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s5 ip-address '10.1.3.8'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s5 mac-address '00:30:93:12:38:d6'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s6 ip-address '10.1.3.9'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s6 mac-address '00:30:93:12:38:d3'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s6 mac-address '00:30:93:12:38:8c'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-hs110-rack ip-address '10.1.3.37'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-hs110-rack mac-address '50:c7:bf:7c:ee:70'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-samsung-tv ip-address '10.1.3.30'
@@ -162,21 +163,28 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 name-serv
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 start '10.1.1.200'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 stop '10.1.1.254'
 set service dhcp-server shared-network-name SERVERS ntp-server 10.1.1.1
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 bootfile-server '10.1.1.1'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if option arch = 00:00 { filename &quot;netboot.xyz-undionly.kpxe&quot;; }'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if option arch = 00:02 { filename &quot;netboot.xyz-snponly.efi&quot;; }'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if option arch = 00:06 { filename &quot;netboot.xyz-snponly.efi&quot;; }'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if option arch = 00:07 { filename &quot;netboot.xyz-snponly.efi&quot;; }'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if option arch = 00:08 { filename &quot;netboot.xyz-snponly.efi&quot;; }'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if option arch = 00:09 { filename &quot;netboot.xyz-snponly.efi&quot;; }'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gateway-ipmi mac-address '3c:ec:ef:5a:e2:b2'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gateway-ipmi ip-address '10.1.1.50'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s1 ip-address '10.1.1.4'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s1 mac-address 'f4:4d:30:69:99:65'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s1 mac-address '48:21:0b:3e:d8:14'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s2 ip-address '10.1.1.5'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s2 mac-address 'f4:4d:30:63:5d:d6'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s2 mac-address '48:21:0b:3e:db:da'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s3 ip-address '10.1.1.6'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s3 mac-address 'b8:ae:ed:73:2c:7f'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s3 mac-address '48:21:0b:3e:d8:02'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s4 ip-address '10.1.1.7'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s4 mac-address '00:30:93:12:38:8c'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s4 mac-address '00:30:93:12:38:d3'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s5 ip-address '10.1.1.8'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s5 mac-address '00:30:93:12:38:d6'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s6 ip-address '10.1.1.9'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s6 mac-address '00:30:93:12:38:d3'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s6 mac-address '00:30:93:12:38:8c'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping oc300 ip-address '10.1.1.11'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping oc300 mac-address '48:22:54:dd:79:7b'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas ip-address '10.1.1.3'

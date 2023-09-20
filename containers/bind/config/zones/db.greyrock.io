@@ -70,6 +70,9 @@ hvac-kitchen                        IN  A  10.1.3.22
 hvac-master-bedroom                 IN  A  10.1.3.21
 hvac-office                         IN  A  10.1.3.20
 hydrawise-sprinkler-controller      IN  A  10.1.3.25
+k8s4-iot                            IN  A  10.1.3.7
+k8s5-iot                            IN  A  10.1.3.8
+k8s6-iot                            IN  A  10.1.3.9
 office-hs110-rack                   IN  A  10.1.3.37
 office-samsung-tv                   IN  A  10.1.3.30
 solaredge-inverter                  IN  A  10.1.3.199
