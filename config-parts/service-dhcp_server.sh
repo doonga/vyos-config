@@ -76,6 +76,8 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s5 mac-address '00:30:93:12:38:d6'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s6 ip-address '10.1.3.9'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s6 mac-address '00:30:93:12:38:8c'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping myq-f99-homekit ip-address '10.1.3.43'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping myq-f99-homekit mac-address '64:52:99:7b:b4:20'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-hs110-rack ip-address '10.1.3.37'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-hs110-rack mac-address '50:c7:bf:7c:ee:70'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-samsung-tv ip-address '10.1.3.30'
@@ -244,13 +246,13 @@ set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-m
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping office-homepod ip-address '10.1.5.20'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping office-homepod mac-address '4c:20:b8:de:46:e8'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-iphone ip-address '10.1.5.11'
-set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-iphone mac-address '70:b3:06:4c:04:65'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-iphone mac-address '80:b9:89:8d:87:3f'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-macbook ip-address '10.1.5.10'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-macbook mac-address 'bc:d0:74:68:c2:94'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-ipad ip-address '10.1.5.12'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-ipad mac-address '7c:2a:ca:81:b3:fd'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-watch ip-address '10.1.5.13'
-set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-watch mac-address '08:25:73:b2:e6:e0'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-watch mac-address '40:92:1a:30:40:f8'
 
 # Video VLAN
 set service dhcp-server shared-network-name VIDEO authoritative
