@@ -108,9 +108,10 @@ $ORIGIN 5.1.10.in-addr.arpa.
 17                         IN  PTR  garage-homepod.greyrock.io.
 18                         IN  PTR  kitchen-homepod.greyrock.io.
 19                         IN  PTR  masterbedroom-homepod.greyrock.io.
-20                         IN  PTR  office-homepod.greyrock.io.
+20                         IN  PTR  office-homepod-right.greyrock.io.
 21                         IN  PTR  andys-ipad.greyrock.io.
 22                         IN  PTR  formalsittingroom-homepod-right.greyrock.io.
+23                         IN  PTR  office-homepod-left.greyrock.io.
 
 ; Video
 $ORIGIN 4.1.10.in-addr.arpa.

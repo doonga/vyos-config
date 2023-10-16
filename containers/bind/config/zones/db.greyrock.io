@@ -100,7 +100,8 @@ gameroom-homepod                    IN  A  10.1.5.16
 garage-homepod                      IN  A  10.1.5.17
 kitchen-homepod                     IN  A  10.1.5.18
 masterbedroom-homepod               IN  A  10.1.5.19
-office-homepod                      IN  A  10.1.5.20
+office-homepod-left                 IN  A  10.1.5.23
+office-homepod-right                IN  A  10.1.5.20
 todds-iphone                        IN  A  10.1.5.11
 todds-macbook                       IN  A  10.1.5.10
 todds-ipad                          IN  A  10.1.5.12
