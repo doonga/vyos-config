@@ -76,8 +76,6 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s5 mac-address '00:30:93:12:38:d6'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s6 ip-address '10.1.3.9'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping k8s6 mac-address '00:30:93:12:38:8c'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping myq-f99-homekit ip-address '10.1.3.43'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping myq-f99-homekit mac-address '64:52:99:7b:b4:20'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-hs110-rack ip-address '10.1.3.37'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-hs110-rack mac-address '50:c7:bf:7c:ee:70'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-samsung-tv ip-address '10.1.3.30'
