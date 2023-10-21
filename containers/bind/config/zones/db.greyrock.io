@@ -97,7 +97,7 @@ formalsittingroom-homepod-left      IN  A  10.1.5.15
 formalsittingroom-homepod-right     IN  A  10.1.5.22
 gameroom-homepod-left               IN  A  10.1.5.24
 gameroom-homepod-right              IN  A  10.1.5.25
-; gameroom-homepod                    IN  A  10.1.5.16
+downstairs-bathroom-homepod         IN  A  10.1.5.16
 garage-homepod                      IN  A  10.1.5.17
 kitchen-homepod                     IN  A  10.1.5.18
 masterbedroom-homepod               IN  A  10.1.5.19
