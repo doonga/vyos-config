@@ -85,6 +85,8 @@ $ORIGIN 3.1.10.in-addr.arpa.
 40                         IN  PTR  basement-iotawatt.greyrock.io.
 41                         IN  PTR  teslawallconnector-todd.greyrock.io.
 42                         IN  PTR  canon-printer.greyrock.io.
+43                         IN  PTR  garage-door-ratgdo-andy.greyrock.io.
+44                         IN  PTR  garage-door-ratgdo-todd.greyrock.io.
 199                        IN  PTR  solaredge-inverter.greyrock.io.
 
 ; Trusted

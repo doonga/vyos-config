@@ -51,6 +51,8 @@ set firewall group address-group mqtt_clients address '10.1.3.21'
 set firewall group address-group mqtt_clients address '10.1.3.22'
 set firewall group address-group mqtt_clients address '10.1.3.23'
 set firewall group address-group mqtt_clients address '10.1.3.24'
+set firewall group address-group mqtt_clients address '10.1.3.43'
+set firewall group address-group mqtt_clients address '10.1.3.44'
 
 set firewall group address-group nas address '10.1.1.3'
 
