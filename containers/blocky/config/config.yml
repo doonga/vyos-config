@@ -34,10 +34,10 @@ blocking:
     gambling:
       - https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts
 
-  whiteLists:
-    ads:
-      - |
-        rabobank.nl
+  # whiteLists:
+  #   ads:
+  #     - |
+  #       rabobank.nl
 
   clientGroupsBlock:
     default:
