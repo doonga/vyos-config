@@ -9,6 +9,9 @@ upstreams:
       # Cloudflare
       - tcp-tls:1.1.1.1:853
       - tcp-tls:1.0.0.1:853
+      # Quad9
+      - tcp-tls:9.9.9.9:853
+      - tcp-tls:149.112.112.112:853
 
 # configuration of client name resolution
 clientLookup:
@@ -20,6 +23,10 @@ ecs:
 prometheus:
   enable: true
   path: /metrics
+
+caching:
+  prefetching: true
+  cacheTimeNegative: -1
 
 blocking:
   loading:
