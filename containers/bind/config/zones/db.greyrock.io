@@ -35,7 +35,6 @@ upstairs-access-point               IN  A  10.1.0.14
 gateway-ipmi                        IN  A  10.1.1.50
 nas                                 IN  A  10.1.1.3
 nas-ipmi                            IN  A  10.1.1.51
-nas-test                            IN  A  10.1.1.220
 k8s1                                IN  A  10.1.1.4
 k8s2                                IN  A  10.1.1.5
 k8s3                                IN  A  10.1.1.6

@@ -2,6 +2,10 @@ ports:
   dns: 53
   http: 4000
 
+bootstrapDns:
+  - upstream: tcp-tls:1.1.1.1
+  - upstream: tcp-tls:9.9.9.9
+
 upstreams:
   groups:
     # these external DNS resolvers will be used. Blocky picks 2 random resolvers from the list for each query
@@ -19,14 +23,19 @@ clientLookup:
 
 ecs:
   useAsClient: true
+  forward: true
+
+ede:
+  enable: true
 
 prometheus:
   enable: true
   path: /metrics
 
 caching:
+  minTime: 5m
+  maxTime: 30m
   prefetching: true
-  cacheTimeNegative: -1
 
 blocking:
   loading:
