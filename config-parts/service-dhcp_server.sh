@@ -192,9 +192,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping oc300 ip-address '10.1.1.11'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping oc300 mac-address '48:22:54:dd:79:7b'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas ip-address '10.1.1.3'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas mac-address '3c:ec:ef:43:5d:08'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas-ipmi ip-address '10.1.1.51'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas-ipmi mac-address '3c:ec:ef:43:64:83'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas mac-address 'e4:1d:2d:12:32:40'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm ip-address '10.1.1.52'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm mac-address 'e4:5f:01:e4:93:32'
 
@@ -208,6 +206,8 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 name-serv
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 range 0 start '10.1.2.200'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 range 0 stop '10.1.2.254'
 set service dhcp-server shared-network-name TRUSTED ntp-server 10.1.2.1
+set service dhcp-server shared-network-name TRUSTED domain-search greyrock.io
+set service dhcp-server shared-network-name TRUSTED domain-search greyrock.casa
 
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping andys-desktop ip-address '10.1.2.11'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping andys-desktop mac-address '2c:f0:5d:ad:e5:b4'
@@ -230,6 +230,8 @@ set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 name-ser
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 range 0 start '10.1.5.200'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 range 0 stop '10.1.5.254'
 set service dhcp-server shared-network-name WIRELESS ntp-server 10.1.5.1
+set service dhcp-server shared-network-name WIRELESS domain-search greyrock.io
+set service dhcp-server shared-network-name WIRELESS domain-search greyrock.casa
 
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping andys-iphone ip-address '10.1.5.14'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping andys-iphone mac-address '44:90:bb:c9:44:79'
@@ -258,7 +260,7 @@ set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-m
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-iphone ip-address '10.1.5.11'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-iphone mac-address '80:b9:89:8d:87:3f'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-macbook ip-address '10.1.5.10'
-set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-macbook mac-address 'bc:d0:74:68:c2:94'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-macbook mac-address '60:3e:5f:49:40:f0'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-ipad ip-address '10.1.5.12'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-ipad mac-address '7c:2a:ca:81:b3:fd'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping todds-watch ip-address '10.1.5.13'
