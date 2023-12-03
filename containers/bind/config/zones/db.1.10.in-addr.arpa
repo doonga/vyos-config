@@ -34,7 +34,7 @@ $ORIGIN 0.1.10.in-addr.arpa.
 
 ; SERVERS
 $ORIGIN 1.1.10.in-addr.arpa.
-3                          IN  PTR  nas.greyrock.io.
+3                          IN  PTR  nas.greyrock.casa.
 4                          IN  PTR  k8s1.greyrock.io.
 5                          IN  PTR  k8s2.greyrock.io.
 6                          IN  PTR  k8s3.greyrock.io.
