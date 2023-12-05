@@ -155,56 +155,6 @@ set container name onepassword-sync volume data source '/tmp/onepassword/data'
 set container name onepassword-sync volume data destination '/home/opuser/.op/data'
 set container name onepassword-sync volume data mode 'rw'
 
-# registry - docker.io
-set container name registry-docker-io image 'docker.io/library/registry:2'
-set container name registry-docker-io memory '0'
-set container name registry-docker-io shared-memory '0'
-set container name registry-docker-io environment REGISTRY_PROXY_REMOTEURL value 'https://docker.io'
-set container name registry-docker-io network containers address '10.5.0.10'
-set container name registry-docker-io volume cache source '/config/containers/registry/docker-io'
-set container name registry-docker-io volume cache destination '/var/lib/registry'
-set container name registry-docker-io volume cache mode 'rw'
-
-# registry - registry.k8s.io
-set container name registry-registry-k8s-io image 'docker.io/library/registry:2'
-set container name registry-registry-k8s-io memory '0'
-set container name registry-registry-k8s-io shared-memory '0'
-set container name registry-registry-k8s-io environment REGISTRY_PROXY_REMOTEURL value 'https://registry.k8s.io'
-set container name registry-registry-k8s-io network containers address '10.5.0.11'
-set container name registry-registry-k8s-io volume cache source '/config/containers/registry/registry-k8s-io'
-set container name registry-registry-k8s-io volume cache destination '/var/lib/registry'
-set container name registry-registry-k8s-io volume cache mode 'rw'
-
-# registry - gcr.io
-set container name gcr-io image 'docker.io/library/registry:2'
-set container name gcr-io memory '0'
-set container name gcr-io shared-memory '0'
-set container name gcr-io environment REGISTRY_PROXY_REMOTEURL value 'https://gcr.io'
-set container name gcr-io network containers address '10.5.0.12'
-set container name gcr-io volume cache source '/config/containers/registry/gcr-io'
-set container name gcr-io volume cache destination '/var/lib/registry'
-set container name gcr-io volume cache mode 'rw'
-
-# registry - ghcr.io
-set container name registry-ghcr-io image 'docker.io/library/registry:2'
-set container name registry-ghcr-io memory '0'
-set container name registry-ghcr-io shared-memory '0'
-set container name registry-ghcr-io environment REGISTRY_PROXY_REMOTEURL value 'https://ghcr.io'
-set container name registry-ghcr-io network containers address '10.5.0.13'
-set container name registry-ghcr-io volume cache source '/config/containers/registry/ghcr-io'
-set container name registry-ghcr-io volume cache destination '/var/lib/registry'
-set container name registry-ghcr-io volume cache mode 'rw'
-
-# registry - quay.io
-set container name registry-quay-io image 'docker.io/library/registry:2'
-set container name registry-quay-io memory '0'
-set container name registry-quay-io shared-memory '0'
-set container name registry-quay-io environment REGISTRY_PROXY_REMOTEURL value 'https://quay.io'
-set container name registry-quay-io network containers address '10.5.0.14'
-set container name registry-quay-io volume cache source '/config/containers/registry/quay-io'
-set container name registry-quay-io volume cache destination '/var/lib/registry'
-set container name registry-quay-io volume cache mode 'rw'
-
 # netboot.xyz
 set container name netboot-xyz image 'ghcr.io/netbootxyz/netbootxyz:0.6.8-nbxyz4'
 set container name netboot-xyz memory '0'
