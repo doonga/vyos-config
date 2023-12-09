@@ -36,9 +36,6 @@ gateway-ipmi                        IN  A  10.1.1.50
 k8s1                                IN  A  10.1.1.4
 k8s2                                IN  A  10.1.1.5
 k8s3                                IN  A  10.1.1.6
-k8s4                                IN  A  10.1.1.7
-k8s5                                IN  A  10.1.1.8
-k8s6                                IN  A  10.1.1.9
 nas                                 IN  A  10.1.1.3
 oc300                               IN  A  10.1.1.11
 pikvm                               IN  A  10.1.1.52
@@ -71,9 +68,9 @@ hvac-kitchen                        IN  A  10.1.3.22
 hvac-master-bedroom                 IN  A  10.1.3.21
 hvac-office                         IN  A  10.1.3.20
 hydrawise-sprinkler-controller      IN  A  10.1.3.25
-k8s4-iot                            IN  A  10.1.3.7
-k8s5-iot                            IN  A  10.1.3.8
-k8s6-iot                            IN  A  10.1.3.9
+k8s1-iot                            IN  A  10.1.3.4
+k8s2-iot                            IN  A  10.1.3.5
+k8s3-iot                            IN  A  10.1.3.6
 office-hs110-rack                   IN  A  10.1.3.37
 office-samsung-tv                   IN  A  10.1.3.30
 solaredge-inverter                  IN  A  10.1.3.199
