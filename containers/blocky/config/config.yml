@@ -50,10 +50,10 @@ blocking:
     gambling:
       - https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts
 
-  # whiteLists:
-  #   ads:
-  #     - |
-  #       rabobank.nl
+  whiteLists:
+    ads:
+      - |
+        int.vaicore.xyz # Paramount+ app
 
   clientGroupsBlock:
     default:
