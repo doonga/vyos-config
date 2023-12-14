@@ -121,6 +121,23 @@ set container name udp-broadcast-relay-mdns memory '0'
 set container name udp-broadcast-relay-mdns restart 'on-failure'
 set container name udp-broadcast-relay-mdns shared-memory '0'
 
+# omada
+set container name omada environment TZ value 'America/New_York'
+set container name omada environment SSL_CERT_NAME value 'cert.pem'
+set container name omada environment SSL_KEY_NAME value 'privkey.pem'
+set container name omada environment PGID value '102'
+set container name omada image 'mbentley/omada-controller:5.13@sha256:c8b3ae8f44af42faf05920c49ed579e05f47af93d25087296aef59ddd20f1f04'
+set container name omada memory '0'
+set container name omada network containers address '10.5.0.10'
+set container name omada restart 'on-failure'
+set container name omada shared-memory '0'
+set container name omada volume cert source '/config/secrets/certs/_.greyrock.io'
+set container name omada volume cert destination '/cert'
+set container name omada volume cert mode 'ro'
+set container name omada volume data source '/config/containers/omada/data'
+set container name omada volume data destination '/opt/tplink/EAPController/data'
+set container name omada volume data mode 'rw'
+
 # bind-exporter
 set container name bind-exporter arguments '--bind.stats-url http://10.5.0.3:8080 --bind.stats-groups server,view'
 set container name bind-exporter image 'quay.io/prometheuscommunity/bind-exporter:v0.7.0'

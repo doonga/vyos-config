@@ -37,7 +37,6 @@ k8s1                                IN  A  10.1.1.4
 k8s2                                IN  A  10.1.1.5
 k8s3                                IN  A  10.1.1.6
 nas                                 IN  A  10.1.1.3
-oc300                               IN  A  10.1.1.11
 pikvm                               IN  A  10.1.1.52
 
 ; NTP
@@ -111,6 +110,7 @@ courtyard-porch-doorbell            IN  A  10.1.4.12
 
 ; Containers
 main                                IN  A  10.5.0.2
+omada-controller                    IN  A  10.5.0.10
 
 ; CNAME records
 vpn                                 IN  CNAME  gateway.greyrock.io.

@@ -2,11 +2,5 @@
 /*
 
 # Track certain files and directories
+!/data/
 !.gitignore
-
-!/bind/
-!/blocky/
-!/dnsdist/
-!/haproxy/
-!/omada/
-!/vector-agent/
