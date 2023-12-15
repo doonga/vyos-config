@@ -26,7 +26,6 @@ garage-switch                       IN  A  10.1.0.10
 kitchen-access-point                IN  A  10.1.0.16
 office-switch-8                     IN  A  10.1.0.12
 office-switch-10-gb                 IN  A  10.1.0.19
-office-switch-24                    IN  A  10.1.0.11
 office-switch-media                 IN  A  10.1.0.20
 outdoor-access-point                IN  A  10.1.0.17
 upstairs-access-point               IN  A  10.1.0.14
@@ -59,8 +58,8 @@ gameroom-samsung-tv-right           IN  A  10.1.3.26
 garage-iotawatt                     IN  A  10.1.3.39
 garage-door-andy                    IN  A  10.1.3.35
 garage-door-todd                    IN  A  10.1.3.34
-garage-door-ratgdo-andy             IN  A  10.1.3.43
-garage-door-ratgdo-todd             IN  A  10.1.3.44
+garage-door-andy-ratgdo             IN  A  10.1.3.43
+garage-door-todd-ratgdo             IN  A  10.1.3.44
 hvac-dining-room                    IN  A  10.1.3.23
 hvac-game-room                      IN  A  10.1.3.24
 hvac-kitchen                        IN  A  10.1.3.22
