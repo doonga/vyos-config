@@ -116,8 +116,6 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mappin
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping fsr-switch-media mac-address '78:8c:b5:37:bd:b1'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping garage-switch ip-address '10.1.0.10'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping garage-switch mac-address '9c:53:22:9d:8e:4b'
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-switch-24 ip-address '10.1.0.11'
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-switch-24 mac-address '9c:53:22:a1:05:94'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-switch-8 ip-address '10.1.0.12'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-switch-8 mac-address '48:22:54:5e:bc:c2'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-switch-10-gb ip-address '10.1.0.19'
