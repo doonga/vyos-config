@@ -224,7 +224,7 @@ set service dhcp-server shared-network-name WIRELESS domain-search greyrock.io
 set service dhcp-server shared-network-name WIRELESS domain-search greyrock.casa
 
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping andys-iphone ip-address '10.1.5.14'
-set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping andys-iphone mac-address '44:90:bb:c9:44:79'
+set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping andys-iphone mac-address 'f8:e5:ce:8a:8f:a1'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping andys-ipad ip-address '10.1.5.21'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping andys-ipad mac-address '70:72:fe:16:57:65'
 set service dhcp-server shared-network-name WIRELESS subnet 10.1.5.0/24 static-mapping downstairs-bathroom-homepod ip-address '10.1.5.16'
