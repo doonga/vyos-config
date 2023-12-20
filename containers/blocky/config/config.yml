@@ -53,6 +53,8 @@ blocking:
   whiteLists:
     ads:
       - |
+        mobile-collector.newrelic.com  # Paramount+ app
+        tags.tiqcdn.com  # Paramount+ app
         int.vaicore.xyz # Paramount+ app
 
   clientGroupsBlock:
