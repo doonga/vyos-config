@@ -11,8 +11,8 @@ if [ -d "/home/vyos" ]; then
 [safe]
   directory = /config
 [user]
-  email = me@bjw-s.dev
-  name = Bernd Schorgers
+  email = agile.car7544@undercovermail.org
+  name = Todd Punderson
 END
   chown vyos:users /home/vyos/.gitconfig
 
