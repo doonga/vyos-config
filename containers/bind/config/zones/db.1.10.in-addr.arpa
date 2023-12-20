@@ -19,6 +19,7 @@ $ORIGIN 1.10.in-addr.arpa.
 $ORIGIN 0.1.10.in-addr.arpa.
 1                          IN  PTR  gateway.greyrock.io.
 10                         IN  PTR  garage-switch.greyrock.io.
+11                         IN  PTR  office-switch-8-poe.greyrock.io.
 12                         IN  PTR  office-switch-8.greyrock.io.
 13                         IN  PTR  gameroom-switch-2-5-gb.greyrock.io.
 14                         IN  PTR  upstairs-access-point.greyrock.io.

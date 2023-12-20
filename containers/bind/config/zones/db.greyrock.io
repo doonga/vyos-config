@@ -25,6 +25,7 @@ gameroom-access-point               IN  A  10.1.0.15
 garage-switch                       IN  A  10.1.0.10
 kitchen-access-point                IN  A  10.1.0.16
 office-switch-8                     IN  A  10.1.0.12
+office-switch-8-poe                 IN  A  10.1.0.11
 office-switch-10-gb                 IN  A  10.1.0.19
 office-switch-media                 IN  A  10.1.0.20
 outdoor-access-point                IN  A  10.1.0.17
