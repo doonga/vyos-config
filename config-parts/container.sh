@@ -138,14 +138,6 @@ set container name omada volume data source '/config/containers/omada/data'
 set container name omada volume data destination '/opt/tplink/EAPController/data'
 set container name omada volume data mode 'rw'
 
-# bind-exporter
-set container name bind-exporter arguments '--bind.stats-url http://10.5.0.3:8080 --bind.stats-groups server,view'
-set container name bind-exporter image 'quay.io/prometheuscommunity/bind-exporter:v0.7.0'
-set container name bind-exporter network containers address '10.5.0.8'
-set container name bind-exporter memory '0'
-set container name bind-exporter restart 'on-failure'
-set container name bind-exporter shared-memory '0'
-
 # onepassword-connect
 set container name onepassword-connect image 'docker.io/1password/connect-api:1.7.2'
 set container name onepassword-connect environment TZ value 'America/New_York'
@@ -171,12 +163,3 @@ set container name onepassword-sync volume credentials mode 'ro'
 set container name onepassword-sync volume data source '/tmp/onepassword/data'
 set container name onepassword-sync volume data destination '/home/opuser/.op/data'
 set container name onepassword-sync volume data mode 'rw'
-
-# netboot.xyz
-set container name netboot-xyz image 'ghcr.io/netbootxyz/netbootxyz:0.6.8-nbxyz4'
-set container name netboot-xyz memory '0'
-set container name netboot-xyz allow-host-networks
-#remove this if it breaks
-set container name netboot-xyz cap-add 'net-bind-service'
-set container name netboot-xyz restart 'on-failure'
-set container name netboot-xyz shared-memory '0'

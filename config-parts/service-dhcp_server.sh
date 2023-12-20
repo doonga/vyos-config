@@ -165,13 +165,6 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 name-serv
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 start '10.1.1.200'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 stop '10.1.1.254'
 set service dhcp-server shared-network-name SERVERS ntp-server 10.1.1.1
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 bootfile-server '10.1.1.1'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if option arch = 00:00 { filename &quot;netboot.xyz-undionly.kpxe&quot;; }'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if option arch = 00:02 { filename &quot;netboot.xyz-snponly.efi&quot;; }'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if option arch = 00:06 { filename &quot;netboot.xyz-snponly.efi&quot;; }'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if option arch = 00:07 { filename &quot;netboot.xyz-snponly.efi&quot;; }'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if option arch = 00:08 { filename &quot;netboot.xyz-snponly.efi&quot;; }'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if option arch = 00:09 { filename &quot;netboot.xyz-snponly.efi&quot;; }'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gateway-ipmi mac-address '3c:ec:ef:5a:e2:b2'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gateway-ipmi ip-address '10.1.1.50'
