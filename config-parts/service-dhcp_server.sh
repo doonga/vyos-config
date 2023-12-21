@@ -177,7 +177,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s3 ip-address '10.1.1.6'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s3 mac-address '00:30:93:12:38:8c'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas ip-address '10.1.1.3'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas mac-address 'e4:1d:2d:12:32:40'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas mac-address 'f8:f2:1e:6e:ce:e0'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm ip-address '10.1.1.52'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm mac-address 'e4:5f:01:e4:93:32'
 
