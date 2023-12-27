@@ -1,10 +1,10 @@
 #!/bin/vbash
 
 # General configuration
-set firewall state-policy established action 'accept'
-set firewall state-policy related action 'accept'
-set firewall all-ping enable
-set firewall broadcast-ping disable
+set firewall global-options state-policy established action 'accept'
+set firewall global-options state-policy related action 'accept'
+set firewall global-options all-ping enable
+set firewall global-options broadcast-ping disable
 
 # Address Groups
 set firewall group address-group homekit-devices address '10.1.2.12'
