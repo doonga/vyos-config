@@ -1,5 +1,9 @@
 #!/bin/vbash
 
+set interfaces ethernet eth0 hw-id '00:f0:cb:fe:c5:f4'
+set interfaces ethernet eth1 hw-id '00:f0:cb:fe:c5:f5'
+set interfaces ethernet eth2 hw-id '00:f0:cb:fe:c5:f6'
+
 set interfaces ethernet eth3 address 'dhcp'
 set interfaces ethernet eth3 address 'dhcpv6'
 set interfaces ethernet eth3 description 'WAN'
@@ -43,4 +47,3 @@ set interfaces wireguard wg01 peer ipad-todd persistent-keepalive '15'
 set interfaces wireguard wg01 peer ipad-todd public-key 'Ph2TMWzVtGzRnMTR3VxupiSZK2yZE+4PNTFJKzb3pyM='
 set interfaces wireguard wg01 port '51820'
 set interfaces wireguard wg01 private-key "${SECRET_WIREGUARD_PRIVATE_KEY}"
-
