@@ -52,9 +52,9 @@ $ORIGIN 7.1.10.in-addr.arpa.
 
 ; IOT
 $ORIGIN 3.1.10.in-addr.arpa.
-4                          IN  PTR  k8s1-iot.greyrock.io.
-5                          IN  PTR  k8s2-iot.greyrock.io.
-6                          IN  PTR  k8s3-iot.greyrock.io.
+7                          IN  PTR  k8s4-iot.greyrock.io.
+8                          IN  PTR  k8s5-iot.greyrock.io.
+9                          IN  PTR  k8s6-iot.greyrock.io.
 10                         IN  PTR  gameroom-ps5.greyrock.io.
 11                         IN  PTR  gameroom-ps4.greyrock.io.
 12                         IN  PTR  nintendo-switch-todd.greyrock.io.
