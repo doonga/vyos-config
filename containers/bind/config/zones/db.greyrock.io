@@ -32,10 +32,12 @@ outdoor-access-point                IN  A  10.1.0.17
 upstairs-access-point               IN  A  10.1.0.14
 
 ; Servers
-gateway-ipmi                        IN  A  10.1.1.50
 k8s1                                IN  A  10.1.1.4
 k8s2                                IN  A  10.1.1.5
 k8s3                                IN  A  10.1.1.6
+k8s4                                IN  A  10.1.1.7
+k8s5                                IN  A  10.1.1.8
+k8s6                                IN  A  10.1.1.9
 nas                                 IN  A  10.1.1.3
 pikvm                               IN  A  10.1.1.52
 
