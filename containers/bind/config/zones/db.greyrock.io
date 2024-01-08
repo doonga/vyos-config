@@ -49,6 +49,7 @@ time4                             IN  A  10.1.7.5
 
 ; IOT
 ambient-ws5000                      IN  A  10.1.3.38
+basement-hs110-sump-pump            IN  A  10.1.3.45
 basement-iotawatt                   IN  A  10.1.3.40
 brother-printer                     IN  A  10.1.3.13
 canon-printer                       IN  A  10.1.3.42
