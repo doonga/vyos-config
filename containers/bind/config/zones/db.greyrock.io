@@ -73,6 +73,7 @@ hydrawise-sprinkler-controller      IN  A  10.1.3.25
 k8s4-iot                            IN  A  10.1.3.7
 k8s5-iot                            IN  A  10.1.3.8
 k8s6-iot                            IN  A  10.1.3.9
+motion-sensor-office-screek-1u      IN  A  10.1.3.46
 office-hs110-rack                   IN  A  10.1.3.37
 office-samsung-tv                   IN  A  10.1.3.30
 solaredge-inverter                  IN  A  10.1.3.199
