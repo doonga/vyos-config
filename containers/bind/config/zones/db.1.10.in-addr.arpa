@@ -86,6 +86,7 @@ $ORIGIN 3.1.10.in-addr.arpa.
 44                         IN  PTR  garage-door-todd-ratgdo.greyrock.io.
 45                         IN  PTR  basement-hs110-sump-pump.greyrock.io.
 46                         IN  PTR  motion-sensor-office-screek-1u.greyrock.io.
+47                         IN  PTR  bambu-a1-3d-printer.greyrock.io.
 199                        IN  PTR  solaredge-inverter.greyrock.io.
 
 ; Trusted
