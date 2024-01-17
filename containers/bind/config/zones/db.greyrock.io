@@ -52,6 +52,7 @@ ambient-ws5000                      IN  A  10.1.3.38
 bambu-a1-3d-printer                 IN  A  10.1.3.47
 basement-hs110-sump-pump            IN  A  10.1.3.45
 basement-iotawatt                   IN  A  10.1.3.40
+bluetooth-proxy-office-olimex       IN  A  10.1.3.49
 brother-printer                     IN  A  10.1.3.13
 canon-printer                       IN  A  10.1.3.42
 downstairs-litter-robot             IN  A  10.1.3.33

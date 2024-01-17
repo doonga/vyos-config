@@ -42,6 +42,8 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping basement-iotawatt mac-address '44:17:93:06:8e:8f'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping basement-hs110-sump-pump ip-address '10.1.3.45'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping basement-hs110-sump-pump mac-address '50:c7:bf:7c:d0:ef'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping bluetooth-proxy-office-olimex ip-address '10.1.3.49'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping bluetooth-proxy-office-olimex mac-address '24:4c:ab:06:99:8f'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping brother-printer ip-address '10.1.3.13'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping brother-printer mac-address 'b4:22:00:44:a0:d7'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping canon-printer ip-address '10.1.3.42'

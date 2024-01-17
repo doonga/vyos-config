@@ -50,13 +50,6 @@ blocking:
     gambling:
       - https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts
 
-  whiteLists:
-    ads:
-      - |
-        mobile-collector.newrelic.com  # Paramount+ app
-        tags.tiqcdn.com  # Paramount+ app
-        int.vaicore.xyz # Paramount+ app
-
   clientGroupsBlock:
     default:
       - ads
