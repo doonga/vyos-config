@@ -35,9 +35,6 @@ upstairs-access-point               IN  A  10.1.0.14
 k8s1                                IN  A  10.1.1.4
 k8s2                                IN  A  10.1.1.5
 k8s3                                IN  A  10.1.1.6
-k8s4                                IN  A  10.1.1.7
-k8s5                                IN  A  10.1.1.8
-k8s6                                IN  A  10.1.1.9
 nas                                 IN  A  10.1.1.3
 pikvm                               IN  A  10.1.1.52
 
@@ -72,9 +69,9 @@ hvac-kitchen                        IN  A  10.1.3.22
 hvac-master-bedroom                 IN  A  10.1.3.21
 hvac-office                         IN  A  10.1.3.20
 hydrawise-sprinkler-controller      IN  A  10.1.3.25
-k8s4-iot                            IN  A  10.1.3.7
-k8s5-iot                            IN  A  10.1.3.8
-k8s6-iot                            IN  A  10.1.3.9
+k8s1-iot                            IN  A  10.1.3.7
+k8s2-iot                            IN  A  10.1.3.8
+k8s3-iot                            IN  A  10.1.3.9
 motion-sensor-fsr-screek-1u         IN  A  10.1.3.48
 motion-sensor-office-screek-1u      IN  A  10.1.3.46
 office-hs110-rack                   IN  A  10.1.3.37
