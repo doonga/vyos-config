@@ -115,6 +115,7 @@ courtyard-porch-doorbell            IN  A  10.1.4.12
 ; Containers
 main                                IN  A  10.5.0.2
 omada-controller                    IN  A  10.5.0.10
+onepassword-connect                 IN  A  10.5.0.5
 
 ; CNAME records
 vpn                                 IN  CNAME  gateway.greyrock.io.

@@ -42,6 +42,7 @@ set firewall group address-group k8s_nodes address '10.1.3.8'
 set firewall group address-group k8s_nodes address '10.1.3.9'
 
 set firewall group address-group k8s_hass address '10.1.3.151'
+set firewall group address-group k8s_scrypted address '10.1.3.153'
 set firewall group address-group k8s_plex address '10.45.0.20'
 
 set firewall group address-group k8s_vector_aggregator address '10.45.0.2'
@@ -79,3 +80,8 @@ set firewall group address-group tftp_server address '10.5.0.20'
 set firewall group address-group weather_stations address '10.1.3.38'
 
 set firewall group address-group zigbee_coordinator address '10.1.3.36'
+
+# Apple devices
+ set firewall group address-group apple_devices address '10.1.3.16' # Apple TV
+
+ set firewall group port-group apple_services_ports port '3722'

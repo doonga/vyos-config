@@ -12,7 +12,12 @@ set service ntp server 10.1.7.3 # time2.greyrock.io
 set service ntp server 10.1.7.4 # time3.greyrock.io
 set service ntp server 10.1.7.5 # time4.greyrock.io
 
-
 # SSH server
 set service ssh disable-password-authentication
 set service ssh port '22'
+
+# mDNS Repeater
+set service mdns repeater interface 'eth4.10'
+set service mdns repeater interface 'eth4.20'
+set service mdns repeater interface 'eth4.40'
+set service mdns repeater interface 'eth4.60'

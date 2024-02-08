@@ -15,7 +15,4 @@ $ORIGIN greyrock.casa.
 ; NS Records
 @                          IN  NS gateway.greyrock.io.
 
-; Containers
-onepassword-connect        IN  A 10.5.0.5
-
 ; CNAME Records
