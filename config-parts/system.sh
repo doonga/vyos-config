@@ -18,7 +18,5 @@ set system syslog host 10.45.0.2 format octet-counted
 
 set system task-scheduler task backup-config crontab-spec '30 0 * * *'
 set system task-scheduler task backup-config executable path '/config/scripts/task-config-backup-usb.sh'
-set system task-scheduler task restart-onepassword-connect crontab-spec '15 0 * * 7'
-set system task-scheduler task restart-onepassword-connect executable path '/config/scripts/task-restart-onepassword-connect.sh'
 
 set system time-zone 'America/New_York'

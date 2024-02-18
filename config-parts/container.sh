@@ -141,8 +141,6 @@ set container name omada volume data mode 'rw'
 # onepassword-connect
 set container name onepassword-connect image 'docker.io/1password/connect-api:1.7.2'
 set container name onepassword-connect environment TZ value 'America/New_York'
-set container name onepassword-connect environment OP_TLS_KEY_FILE value '/cert/privkey.pem'
-set container name onepassword-connect environment OP_TLS_CERT_FILE value '/cert/combined.pem'
 set container name onepassword-connect memory '0'
 set container name onepassword-connect network containers address '10.5.0.5'
 set container name onepassword-connect shared-memory '0'
@@ -152,9 +150,6 @@ set container name onepassword-connect volume credentials mode 'ro'
 set container name onepassword-connect volume data source '/tmp/onepassword/data'
 set container name onepassword-connect volume data destination '/home/opuser/.op/data'
 set container name onepassword-connect volume data mode 'rw'
-set container name onepassword-connect volume cert source '/config/secrets/certs/_.greyrock.io'
-set container name onepassword-connect volume cert destination '/cert'
-set container name onepassword-connect volume cert mode 'ro'
 
 # onepassword-sync
 set container name onepassword-sync image 'docker.io/1password/connect-sync:1.7.2'
