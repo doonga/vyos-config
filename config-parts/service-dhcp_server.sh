@@ -1,5 +1,6 @@
 #!/bin/vbash
 
+# Global options
 set service dhcp-server dynamic-dns-update
 set service dhcp-server global-parameters 'option arch code 93 = unsigned integer 16;'
 set service dhcp-server global-parameters "key ddnsupdate { algorithm hmac-md5; secret ${SECRET_DHCP_DDNS_UPDATE}; };"
@@ -10,6 +11,7 @@ set service dhcp-server global-parameters "zone in-addr.arpa. { primary 10.5.0.3
 set service dhcp-server global-parameters "zone 1.10.in-addr.arpa. { primary 10.5.0.3; key ddnsupdate; }"
 set service dhcp-server global-parameters "update-optimization false;"
 set service dhcp-server global-parameters 'option omada-address code 138 = ip-address;'
+set service dhcp-server global-parameters 'option system-arch code 93 = unsigned integer 16;'
 
 # Guest VLAN
 set service dhcp-server shared-network-name GUEST authoritative
@@ -188,6 +190,14 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas mac-address 'f8:f2:1e:6e:ce:e0'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm ip-address '10.1.1.52'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm mac-address 'e4:5f:01:e4:93:32'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'allow bootp;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'allow booting;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'next-server 10.1.1.1;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if exists user-class and option user-class = &quot;iPXE&quot; {'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'filename &quot;http://10.5.0.8/boot.ipxe&quot;;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters '} else {'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'filename &quot;ipxe.efi&quot;;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters '}'
 
 # Trusted VLAN
 set service dhcp-server shared-network-name TRUSTED authoritative
