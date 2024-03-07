@@ -36,6 +36,7 @@ k8s1                                IN  A  10.1.1.4
 k8s2                                IN  A  10.1.1.5
 k8s3                                IN  A  10.1.1.6
 nas                                 IN  A  10.1.1.3
+omada                               IN  A  10.1.1.11
 pikvm                               IN  A  10.1.1.52
 
 ; NTP
