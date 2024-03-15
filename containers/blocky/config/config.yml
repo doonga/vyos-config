@@ -38,6 +38,8 @@ caching:
   prefetching: true
 
 blocking:
+  blockType: nxDomain
+
   loading:
     downloads:
       timeout: 4m
@@ -49,9 +51,14 @@ blocking:
       - https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-only/hosts
     gambling:
       - https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts
+    icloud-private-relay:
+      - |
+        mask.icloud.com
+        mask-h2.icloud.com
 
   clientGroupsBlock:
     default:
       - ads
       - fakenews
       - gambling
+      - icloud-private-relay
