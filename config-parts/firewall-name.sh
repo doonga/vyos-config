@@ -1323,9 +1323,6 @@ set firewall ipv6 name wan-ntp rule 1 state "established"
 set firewall ipv6 name wan-ntp rule 1 state "related"
 set firewall ipv6 name wan-ntp rule 2 action "accept"
 set firewall ipv6 name wan-ntp rule 2 protocol "icmpv6"
-set firewall ipv6 name wan-ntp rule 10 action "accept"
-set firewall ipv6 name wan-ntp rule 10 destination port "123"
-set firewall ipv6 name wan-ntp rule 10 protocol "udp"
 
 # From WAN to LOCAL
 set firewall ipv4 name wan-local default-action 'drop'
