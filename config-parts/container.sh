@@ -108,6 +108,23 @@ set container name speedtest-exporter allow-host-networks
 set container name speedtest-exporter restart 'on-failure'
 set container name speedtest-exporter shared-memory '0'
 
+# omada
+set container name omada environment TZ value 'America/New_York'
+set container name omada environment SSL_CERT_NAME value 'cert.pem'
+set container name omada environment SSL_KEY_NAME value 'privkey.pem'
+set container name omada environment PGID value '102'
+set container name omada image 'mbentley/omada-controller:5.13-chromium'
+set container name omada memory '0'
+set container name omada network containers address '10.5.0.10'
+set container name omada restart 'on-failure'
+set container name omada shared-memory '0'
+set container name omada volume cert source '/config/secrets/certs/_.greyrock.io'
+set container name omada volume cert destination '/cert'
+set container name omada volume cert mode 'ro'
+set container name omada volume data source '/config/containers/omada/data'
+set container name omada volume data destination '/opt/tplink/EAPController/data'
+set container name omada volume data mode 'rw'
+
 # onepassword-connect
 set container name onepassword-connect image 'docker.io/1password/connect-api:1.7.2'
 set container name onepassword-connect environment TZ value 'America/New_York'

@@ -122,7 +122,7 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 name-server '
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 range 0 start '10.1.0.200'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 range 0 stop '10.1.0.254'
 set service dhcp-server shared-network-name LAN ntp-server 10.1.0.1
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 subnet-parameters 'option omada-address 10.45.0.11;'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 subnet-parameters 'option omada-address 10.5.0.10;'
 
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping fsr-switch-media ip-address '10.1.0.22'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping fsr-switch-media mac-address '78:8c:b5:37:bd:b1'
