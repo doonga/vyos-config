@@ -14,11 +14,31 @@ set interfaces ethernet eth3 dhcpv6-options pd 0 interface eth4.20 sla-id 2
 set interfaces ethernet eth3 dhcpv6-options pd 0 interface eth4.20 address 1
 set interfaces ethernet eth3 dhcpv6-options pd 0 interface eth4.60 sla-id 6
 set interfaces ethernet eth3 dhcpv6-options pd 0 interface eth4.60 address 1
+set interfaces ethernet eth3 dhcpv6-options pd 0 interface eth4.70 sla-id 7
+set interfaces ethernet eth3 dhcpv6-options pd 0 interface eth4.70 address 1
 set interfaces ethernet eth3 ipv6 address autoconf
+set interfaces ethernet eth3 offload gro
+set interfaces ethernet eth3 offload gso
+set interfaces ethernet eth3 offload lro
+set interfaces ethernet eth3 offload rfs
+set interfaces ethernet eth3 offload rps
+set interfaces ethernet eth3 offload sg
+set interfaces ethernet eth3 offload tso
+set interfaces ethernet eth3 ring-buffer rx 8192
+set interfaces ethernet eth3 ring-buffer tx 8192
 
 set interfaces ethernet eth4 address '10.1.0.1/24'
 set interfaces ethernet eth4 description 'LAN'
 set interfaces ethernet eth4 hw-id '50:6b:4b:02:c3:4f'
+set interfaces ethernet eth4 offload gro
+set interfaces ethernet eth4 offload gso
+set interfaces ethernet eth4 offload lro
+set interfaces ethernet eth4 offload rfs
+set interfaces ethernet eth4 offload rps
+set interfaces ethernet eth4 offload sg
+set interfaces ethernet eth4 offload tso
+set interfaces ethernet eth4 ring-buffer rx 8192
+set interfaces ethernet eth4 ring-buffer tx 8192
 set interfaces ethernet eth4 vif 10 address '10.1.1.1/24'
 set interfaces ethernet eth4 vif 10 description 'SERVERS'
 set interfaces ethernet eth4 vif 20 address '10.1.2.1/24'

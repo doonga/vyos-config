@@ -1,17 +1,20 @@
 #!/bin/vbash
 
- # Guest VLAN
+# Guest VLAN
 
- # IoT VLAN
+# IoT VLAN
 
- # LAN
+# LAN
 
- # Servers VLAN
+# Servers VLAN
 
- # Trusted VLAN
- set service router-advert interface eth4.20 prefix ::/64 valid-lifetime '172800'
+# Trusted VLAN
+set service router-advert interface eth4.20 prefix ::/64 valid-lifetime '172800'
 
- # Wireless VLAN
- set service router-advert interface eth4.60 prefix ::/64 valid-lifetime '172800'
+# Wireless VLAN
+set service router-advert interface eth4.60 prefix ::/64 valid-lifetime '172800'
 
- # Video VLAN
+# Video VLAN
+
+# NTP VLAN
+set service router-advert interface eth4.70 prefix ::/64 valid-lifetime '172800'

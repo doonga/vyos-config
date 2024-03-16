@@ -427,6 +427,13 @@ set firewall ipv4 name ntp-local rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name ntp-local rule 999 state invalid
 set firewall ipv4 name ntp-local rule 999 log
 
+set firewall ipv6 name ntp-local default-action "drop"
+set firewall ipv6 name ntp-local description "From ntp to LOCAL"
+set firewall ipv6 name ntp-local default-log
+set firewall ipv6 name ntp-local rule 1 action "accept"
+set firewall ipv6 name ntp-local rule 1 description "Rule: accept_icmpv6"
+set firewall ipv6 name ntp-local rule 1 protocol "icmpv6"
+
 # From NTP to SERVERS
 set firewall ipv4 name ntp-servers default-action 'drop'
 set firewall ipv4 name ntp-servers description 'From NTP to SERVERS'
@@ -487,6 +494,9 @@ set firewall ipv4 name ntp-wan rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name ntp-wan rule 999 state invalid
 set firewall ipv4 name ntp-wan rule 999 log
 
+set firewall ipv6 name ntp-wan default-action "accept"
+set firewall ipv6 name ntp-wan description "From NTP to WAN"
+
 # From LOCAL to GUEST
 set firewall ipv4 name local-guest default-action 'drop'
 set firewall ipv4 name local-guest description 'From LOCAL to GUEST'
@@ -533,6 +543,13 @@ set firewall ipv4 name local-ntp rule 999 action 'drop'
 set firewall ipv4 name local-ntp rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name local-ntp rule 999 state invalid
 set firewall ipv4 name local-ntp rule 999 log
+
+set firewall ipv6 name local-ntp default-action "drop"
+set firewall ipv6 name local-ntp description "From LOCAL to NTP"
+set firewall ipv6 name local-ntp default-log
+set firewall ipv6 name local-ntp rule 1 action 'accept'
+set firewall ipv6 name local-ntp rule 1 description "Rule: accept_icmpv6"
+set firewall ipv6 name local-ntp rule 1 protocol "icmpv6"
 
 # From LOCAL to SERVERS
 set firewall ipv4 name local-servers default-action 'drop'
@@ -587,7 +604,7 @@ set firewall ipv4 name local-containers rule 999 log
 
 # From LOCAL to TRUSTED
 set firewall ipv4 name local-trusted default-action 'drop'
-set firewall ipv4 name local-trusted description 'From LOCAL to WIRELESS'
+set firewall ipv4 name local-trusted description 'From LOCAL to TRUSTED'
 set firewall ipv4 name local-trusted default-log
 set firewall ipv4 name local-trusted rule 100 action 'accept'
 set firewall ipv4 name local-trusted rule 100 description 'Rule: accept_igmp'
@@ -625,7 +642,7 @@ set firewall ipv4 name local-wireless rule 999 state invalid
 set firewall ipv4 name local-wireless rule 999 log
 
 set firewall ipv6 name local-wireless default-action 'drop'
-set firewall ipv6 name local-wireless description 'From LOCAL to WIRELESSS'
+set firewall ipv6 name local-wireless description 'From LOCAL to WIRELESS'
 set firewall ipv6 name local-wireless default-log
 set firewall ipv6 name local-wireless rule 1 action 'accept'
 set firewall ipv6 name local-wireless rule 1 description 'Rule: accept_icmpv6'
@@ -1298,6 +1315,17 @@ set firewall ipv4 name wan-ntp rule 999 action 'drop'
 set firewall ipv4 name wan-ntp rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name wan-ntp rule 999 state invalid
 set firewall ipv4 name wan-ntp rule 999 log
+
+set firewall ipv6 name wan-ntp default-action "drop"
+set firewall ipv6 name wan-ntp description "From WAN to ntp"
+set firewall ipv6 name wan-ntp rule 1 action "accept"
+set firewall ipv6 name wan-ntp rule 1 state "established"
+set firewall ipv6 name wan-ntp rule 1 state "related"
+set firewall ipv6 name wan-ntp rule 2 action "accept"
+set firewall ipv6 name wan-ntp rule 2 protocol "icmpv6"
+set firewall ipv6 name wan-ntp rule 10 action "accept"
+set firewall ipv6 name wan-ntp rule 10 destination port "123"
+set firewall ipv6 name wan-ntp rule 10 protocol "udp"
 
 # From WAN to LOCAL
 set firewall ipv4 name wan-local default-action 'drop'

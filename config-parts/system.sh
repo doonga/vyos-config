@@ -24,3 +24,17 @@ set system task-scheduler task restart-containers crontab-spec '15 0 * * 7'
 set system task-scheduler task restart-containers executable path '/config/scripts/task-restart-containers.sh'
 
 set system time-zone 'America/New_York'
+
+set system option performance 'throughput'
+
+set system conntrack expect-table-size '10485760'
+set system conntrack hash-size '10485760'
+set system conntrack table-size '10485760'
+
+set system ip arp table-size '32768'
+set system ip multipath layer4-hashing
+set system ipv6 multipath layer4-hashing
+set system ipv6 neighbor table-size '32768'
+
+set system sysctl parameter net.core.default_qdisc value 'fq'
+set system sysctl parameter net.ipv4.tcp_congestion_control value 'bbr'
