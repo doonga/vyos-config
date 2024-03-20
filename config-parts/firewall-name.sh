@@ -705,6 +705,12 @@ set firewall ipv4 name servers-lan rule 999 log
 # From SERVERS to NTP
 set firewall ipv4 name servers-ntp default-action 'drop'
 set firewall ipv4 name servers-ntp description 'From SERVERS to NTP'
+set firewall ipv4 name servers-ntp rule 120 action 'accept'
+set firewall ipv4 name servers-ntp rule 120 description 'Rule: allow_prometheus_scraping'
+set firewall ipv4 name servers-ntp rule 120 source group address-group 'k8s_nodes'
+set firewall ipv4 name servers-ntp rule 120 destination group address-group 'ntp_nodes'
+set firewall ipv4 name servers-ntp rule 120 protocol 'tcp'
+set firewall ipv4 name servers-ntp rule 120 destination port '80'
 set firewall ipv4 name servers-ntp rule 999 action 'drop'
 set firewall ipv4 name servers-ntp rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name servers-ntp rule 999 state invalid

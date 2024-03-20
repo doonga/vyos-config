@@ -57,6 +57,11 @@ set firewall group address-group mqtt_clients address '10.1.3.44'
 
 set firewall group address-group nas address '10.1.1.3'
 
+set firewall group address-group ntp_nodes address '10.1.7.2'
+set firewall group address-group ntp_nodes address '10.1.7.3'
+set firewall group address-group ntp_nodes address '10.1.7.4'
+set firewall group address-group ntp_nodes address '10.1.7.5'
+
 set firewall group address-group omada address '10.45.0.10'
 
 set firewall group address-group omada-devices address '10.1.0.10-10.1.0.22'
