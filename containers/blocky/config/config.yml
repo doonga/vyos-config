@@ -3,19 +3,14 @@ ports:
   http: 4000
 
 bootstrapDns:
-  - upstream: tcp-tls:1.1.1.1
-  - upstream: tcp-tls:9.9.9.9
+  - upstream: tcp+udp:10.5.0.9
 
 upstreams:
   groups:
     # these external DNS resolvers will be used. Blocky picks 2 random resolvers from the list for each query
     default:
-      # Cloudflare
-      - tcp-tls:1.1.1.1:853
-      - tcp-tls:1.0.0.1:853
-      # Quad9
-      - tcp-tls:9.9.9.9:853
-      - tcp-tls:149.112.112.112:853
+      # pdns recursor
+      - tcp+udp:10.5.0.9:53
 
 # configuration of client name resolution
 clientLookup:
@@ -51,14 +46,9 @@ blocking:
       - https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-only/hosts
     gambling:
       - https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts
-    icloud-private-relay:
-      - |
-        mask.icloud.com
-        mask-h2.icloud.com
 
   clientGroupsBlock:
     default:
       - ads
       - fakenews
       - gambling
-      - icloud-private-relay
