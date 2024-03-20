@@ -76,6 +76,7 @@ motion-sensor-fsr-screek-1u         IN  A  10.1.3.48
 motion-sensor-office-screek-1u      IN  A  10.1.3.46
 office-hs110-rack                   IN  A  10.1.3.37
 office-samsung-tv                   IN  A  10.1.3.30
+omada                               IN  A  10.1.1.11
 solaredge-inverter                  IN  A  10.1.3.199
 nintendo-switch-todd                IN  A  10.1.3.12
 slzb-06                             IN  A  10.1.3.36
@@ -114,7 +115,6 @@ courtyard-porch-doorbell            IN  A  10.1.4.12
 
 ; Containers
 main                                IN  A  10.5.0.2
-omada                               IN  A  10.5.0.10
 onepassword-connect                 IN  A  10.5.0.5
 
 ; CNAME records
