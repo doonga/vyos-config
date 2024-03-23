@@ -6,6 +6,12 @@ set firewall global-options state-policy related action 'accept'
 set firewall global-options all-ping enable
 set firewall global-options broadcast-ping disable
 
+# 3D printer
+set firewall group port-group bambu-discovery port '1990'
+set firewall group port-group bambu-discovery port '2021'
+
+set firewall group address-group bambu-printers address '10.1.3.47'
+
 # Address Groups
 set firewall group address-group homekit-devices address '10.1.2.12'
 set firewall group address-group homekit-devices address '10.1.2.13'
@@ -62,10 +68,6 @@ set firewall group address-group ntp_nodes address '10.1.7.3'
 set firewall group address-group ntp_nodes address '10.1.7.4'
 set firewall group address-group ntp_nodes address '10.1.7.5'
 
-set firewall group address-group omada address '10.1.1.11'
-
-set firewall group address-group omada-devices address '10.1.0.10-10.1.0.22'
-
 set firewall group address-group plex_clients address '10.1.2.10'
 set firewall group address-group plex_clients address '10.1.2.11'
 set firewall group address-group plex_clients address '10.1.2.12'
@@ -81,6 +83,13 @@ set firewall group address-group scanners address '10.1.3.13'
 set firewall group address-group scrypted address '10.1.3.153'
 
 set firewall group address-group tftp_server address '10.5.0.20'
+
+# Unifi devices
+set firewall group address-group unifi_devices address '10.1.0.11-10.1.0.18' # Switches
+set firewall group address-group unifi_devices address '10.1.0.21-10.1.0.26' # AP's
+set firewall group address-group unifi_devices address '10.1.0.31' # Accessories
+
+set firewall group address-group vyos_unifi address '10.5.0.10'
 
 set firewall group address-group weather_stations address '10.1.3.38'
 

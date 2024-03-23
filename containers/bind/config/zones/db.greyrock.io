@@ -16,20 +16,18 @@ $ORIGIN greyrock.io.
 @                                   IN  NS gateway.greyrock.io.
 
 ; LAN
+game-room-u7-pro                    IN  A  10.1.0.22
+game-room-usw-flex-mini             IN  A  10.1.0.16
+game-room-usw-pro-max-24-poe        IN  A  10.1.0.13
+garage-usw-pro-max-24-poe           IN  A  10.1.0.14
 gateway                             IN  A  10.1.0.1
-fsr-switch-media                    IN  A  10.1.0.22
-gameroom-switch-1-gb                IN  A  10.1.0.18
-gameroom-switch-2-5-gb              IN  A  10.1.0.13
-gameroom-switch-media               IN  A  10.1.0.21
-gameroom-access-point               IN  A  10.1.0.15
-garage-switch                       IN  A  10.1.0.10
-kitchen-access-point                IN  A  10.1.0.16
-office-switch-8                     IN  A  10.1.0.12
-office-switch-8-poe                 IN  A  10.1.0.11
-office-switch-10-gb                 IN  A  10.1.0.19
-office-switch-media                 IN  A  10.1.0.20
-outdoor-access-point                IN  A  10.1.0.17
-upstairs-access-point               IN  A  10.1.0.14
+kitchen-u7-pro                      IN  A  10.1.0.21
+living-room-usw-flex-mini           IN  A  10.1.0.17
+office-usw-flex-mini                IN  A  10.1.0.15
+office-usp-pdu-pro                  IN  A  10.1.0.31
+office-usw-pro-aggregation          IN  A  10.1.0.11
+office-usw-pro-max-24-poe           IN  A  10.1.0.12
+upstairs-u7-pro                     IN  A  10.1.0.23
 
 ; Servers
 k8s1                                IN  A  10.1.1.4
@@ -54,10 +52,10 @@ brother-printer                     IN  A  10.1.3.13
 canon-printer                       IN  A  10.1.3.42
 downstairs-litter-robot             IN  A  10.1.3.33
 fsr-lg-tv                           IN  A  10.1.3.32
-gameroom-ps4                        IN  A  10.1.3.11
-gameroom-ps5                        IN  A  10.1.3.10
-gameroom-samsung-tv-left            IN  A  10.1.3.29
-gameroom-samsung-tv-right           IN  A  10.1.3.26
+game-room-ps4                        IN  A  10.1.3.11
+game-room-ps5                        IN  A  10.1.3.10
+game-room-samsung-tv-left            IN  A  10.1.3.29
+game-room-samsung-tv-right           IN  A  10.1.3.26
 garage-iotawatt                     IN  A  10.1.3.39
 garage-door-andy                    IN  A  10.1.3.35
 garage-door-todd                    IN  A  10.1.3.34
@@ -72,11 +70,14 @@ hydrawise-sprinkler-controller      IN  A  10.1.3.25
 k8s1-iot                            IN  A  10.1.3.7
 k8s2-iot                            IN  A  10.1.3.8
 k8s3-iot                            IN  A  10.1.3.9
+light-office-ceiling-1              IN  A  10.1.3.50
+light-office-ceiling-2              IN  A  10.1.3.51
+light-office-ceiling-3              IN  A  10.1.3.52
+light-office-ceiling-4              IN  A  10.1.3.53
 motion-sensor-fsr-screek-1u         IN  A  10.1.3.48
 motion-sensor-office-screek-1u      IN  A  10.1.3.46
 office-hs110-rack                   IN  A  10.1.3.37
 office-samsung-tv                   IN  A  10.1.3.30
-omada                               IN  A  10.1.1.11
 solaredge-inverter                  IN  A  10.1.3.199
 nintendo-switch-todd                IN  A  10.1.3.12
 slzb-06                             IN  A  10.1.3.36
@@ -89,7 +90,7 @@ withings-scale                      IN  A  10.1.3.27
 andys-desktop                       IN  A  10.1.2.11
 todds-desktop                       IN  A  10.1.2.10
 fsr-appletv                         IN  A  10.1.2.12
-gameroom-appletv                    IN  A  10.1.2.13
+game-room-appletv                    IN  A  10.1.2.13
 office-appletv                      IN  A  10.1.5.14
 
 ; Wireless
@@ -97,8 +98,8 @@ andys-iphone                        IN  A  10.1.5.14
 andys-ipad                          IN  A  10.1.5.21
 formalsittingroom-homepod-left      IN  A  10.1.5.15
 formalsittingroom-homepod-right     IN  A  10.1.5.22
-gameroom-homepod-left               IN  A  10.1.5.24
-gameroom-homepod-right              IN  A  10.1.5.25
+game-room-homepod-left               IN  A  10.1.5.24
+game-room-homepod-right              IN  A  10.1.5.25
 downstairs-bathroom-homepod         IN  A  10.1.5.16
 garage-homepod                      IN  A  10.1.5.17
 kitchen-homepod                     IN  A  10.1.5.18

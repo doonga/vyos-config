@@ -117,6 +117,26 @@ set container name speedtest-exporter allow-host-networks
 set container name speedtest-exporter restart 'on-failure'
 set container name speedtest-exporter shared-memory '0'
 
+# unifi
+set container name unifi environment TZ value 'America/New_York'
+set container name unifi environment RUNAS_UID0 value 'false'
+set container name unifi environment PGID value '102'
+set container name unifi environment PUID value '999'
+set container name unifi image 'ghcr.io/goofball222/unifi:8.0.28'
+set container name unifi memory '0'
+set container name unifi network containers address '10.5.0.10'
+set container name unifi restart 'on-failure'
+set container name unifi shared-memory '0'
+set container name unifi volume cert source '/config/containers/unifi/cert'
+set container name unifi volume cert destination '/usr/lib/unifi/cert'
+set container name unifi volume cert mode 'rw'
+set container name unifi volume data source '/config/containers/unifi/data'
+set container name unifi volume data destination '/usr/lib/unifi/data'
+set container name unifi volume data mode 'rw'
+set container name unifi volume logs source '/config/containers/unifi/logs'
+set container name unifi volume logs destination '/usr/lib/unifi/logs'
+set container name unifi volume logs mode 'rw'
+
 # onepassword-connect
 set container name onepassword-connect image 'docker.io/1password/connect-api:1.7.2'
 set container name onepassword-connect environment TZ value 'America/New_York'

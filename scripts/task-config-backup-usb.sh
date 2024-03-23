@@ -22,7 +22,11 @@ if findmnt -M "${dest}"; then
     /opt/vyatta/bin/vyatta-op-cmd-wrapper show configuration commands | gzip -3 -c > "${dest}/vyos/vyos-commands.${timestamp}.gz"
 
     # VyOS /config
-    tar --exclude="overlay*" -zvcf "${dest}/vyos/vyos-config.${timestamp}.tar.gz" /config
+    tar --exclude="overlay*" --exclude="unifi*" -zvcf "${dest}/vyos/vyos-config.${timestamp}.tar.gz" /config
+
+    # Unifi backups
+    mkdir -p "${dest}/unifi/"
+    rsync -r /config/containers/unifi/data/backup/autobackup/ "${dest}/unifi/"
 
     # Delete backups older than 1 month
     find "${dest}" -type f -mtime +30 -delete

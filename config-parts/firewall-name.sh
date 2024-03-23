@@ -41,11 +41,6 @@ set firewall ipv4 name guest-local rule 999 log
 set firewall ipv4 name guest-servers default-action 'drop'
 set firewall ipv4 name guest-servers description 'From GUEST to SERVERS'
 set firewall ipv4 name guest-servers default-log
-set firewall ipv4 name guest-servers rule 100 action 'accept'
-set firewall ipv4 name guest-servers rule 100 description 'Rule: accept_omada_traffic'
-set firewall ipv4 name guest-servers rule 100 protocol 'tcp_udp'
-set firewall ipv4 name guest-servers rule 100 destination group address-group omada
-set firewall ipv4 name guest-servers rule 100 destination port '8088,8443'
 set firewall ipv4 name guest-servers rule 999 action 'drop'
 set firewall ipv4 name guest-servers rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name guest-servers rule 999 state invalid
@@ -146,6 +141,11 @@ set firewall ipv4 name iot-local rule 110 action 'accept'
 set firewall ipv4 name iot-local rule 110 description 'Rule: accept_mdns'
 set firewall ipv4 name iot-local rule 110 destination port 'mdns'
 set firewall ipv4 name iot-local rule 110 protocol 'udp'
+set firewall ipv4 name iot-local rule 300 action 'accept'
+set firewall ipv4 name iot-local rule 300 description 'Rule: accept_discovery_from_bambu_printers'
+set firewall ipv4 name iot-local rule 300 destination group port-group bambu-discovery
+set firewall ipv4 name iot-local rule 300 protocol 'udp'
+set firewall ipv4 name iot-local rule 300 source group address-group 'bambu-printers'
 set firewall ipv4 name iot-local rule 500 action 'accept'
 set firewall ipv4 name iot-local rule 500 description 'Rule: accept_icmp_from_zigbee_coordinator'
 set firewall ipv4 name iot-local rule 500 protocol 'icmp'
@@ -330,10 +330,6 @@ set firewall ipv4 name lan-local rule 999 log
 set firewall ipv4 name lan-servers default-action 'drop'
 set firewall ipv4 name lan-servers description 'From LAN to SERVERS'
 set firewall ipv4 name lan-servers default-log
-set firewall ipv4 name lan-servers rule 100 action 'accept'
-set firewall ipv4 name lan-servers rule 100 description 'Rule: accept_omada_traffic'
-set firewall ipv4 name lan-servers rule 100 protocol 'tcp_udp'
-set firewall ipv4 name lan-servers rule 100 destination group address-group omada
 set firewall ipv4 name lan-servers rule 999 action 'drop'
 set firewall ipv4 name lan-servers rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name lan-servers rule 999 state invalid
@@ -438,10 +434,6 @@ set firewall ipv6 name ntp-local rule 1 protocol "icmpv6"
 set firewall ipv4 name ntp-servers default-action 'drop'
 set firewall ipv4 name ntp-servers description 'From NTP to SERVERS'
 set firewall ipv4 name ntp-servers default-log
-set firewall ipv4 name ntp-servers rule 100 action 'accept'
-set firewall ipv4 name ntp-servers rule 100 description 'Rule: accept_omada_traffic'
-set firewall ipv4 name ntp-servers rule 100 protocol 'tcp_udp'
-set firewall ipv4 name ntp-servers rule 100 destination group address-group omada
 set firewall ipv4 name ntp-servers rule 999 action 'drop'
 set firewall ipv4 name ntp-servers rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name ntp-servers rule 999 state invalid
@@ -613,6 +605,11 @@ set firewall ipv4 name local-trusted rule 110 action 'accept'
 set firewall ipv4 name local-trusted rule 110 description 'Rule: accept_mdns'
 set firewall ipv4 name local-trusted rule 110 destination port 'mdns'
 set firewall ipv4 name local-trusted rule 110 protocol 'udp'
+set firewall ipv4 name local-trusted rule 300 action 'accept'
+set firewall ipv4 name local-trusted rule 300 description 'Rule: accept_discovery_from_bambu_printers'
+set firewall ipv4 name local-trusted rule 300 destination group port-group bambu-discovery
+set firewall ipv4 name local-trusted rule 300 protocol 'udp'
+set firewall ipv4 name local-trusted rule 300 source group address-group 'bambu-printers'
 set firewall ipv4 name local-trusted rule 999 action 'drop'
 set firewall ipv4 name local-trusted rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name local-trusted rule 999 state invalid
@@ -636,6 +633,11 @@ set firewall ipv4 name local-wireless rule 110 action 'accept'
 set firewall ipv4 name local-wireless rule 110 description 'Rule: accept_mdns'
 set firewall ipv4 name local-wireless rule 110 destination port 'mdns'
 set firewall ipv4 name local-wireless rule 110 protocol 'udp'
+set firewall ipv4 name local-wireless rule 300 action 'accept'
+set firewall ipv4 name local-wireless rule 300 description 'Rule: accept_discovery_from_bambu_printers'
+set firewall ipv4 name local-wireless rule 300 destination group port-group bambu-discovery
+set firewall ipv4 name local-wireless rule 300 protocol 'udp'
+set firewall ipv4 name local-wireless rule 300 source group address-group 'bambu-printers'
 set firewall ipv4 name local-wireless rule 999 action 'drop'
 set firewall ipv4 name local-wireless rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name local-wireless rule 999 state invalid
@@ -980,6 +982,11 @@ set firewall ipv4 name trusted-local rule 220 action 'accept'
 set firewall ipv4 name trusted-local rule 220 description 'Rule: accept_wireguard'
 set firewall ipv4 name trusted-local rule 220 destination port '51820'
 set firewall ipv4 name trusted-local rule 220 protocol 'udp'
+set firewall ipv4 name trusted-local rule 300 action 'accept'
+set firewall ipv4 name trusted-local rule 300 description 'Rule: accept_discovery_from_bambu_printers'
+set firewall ipv4 name trusted-local rule 300 destination group port-group bambu-discovery
+set firewall ipv4 name trusted-local rule 300 protocol 'udp'
+set firewall ipv4 name trusted-local rule 300 source group address-group 'bambu-printers'
 set firewall ipv4 name trusted-local rule 999 action 'drop'
 set firewall ipv4 name trusted-local rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name trusted-local rule 999 state invalid
@@ -1110,6 +1117,11 @@ set firewall ipv4 name wireless-local rule 220 action 'accept'
 set firewall ipv4 name wireless-local rule 220 description 'Rule: accept_wireguard'
 set firewall ipv4 name wireless-local rule 220 destination port '51820'
 set firewall ipv4 name wireless-local rule 220 protocol 'udp'
+set firewall ipv4 name wireless-local rule 300 action 'accept'
+set firewall ipv4 name wireless-local rule 300 description 'Rule: accept_discovery_from_bambu_printers'
+set firewall ipv4 name wireless-local rule 300 destination group port-group bambu-discovery
+set firewall ipv4 name wireless-local rule 300 protocol 'udp'
+set firewall ipv4 name wireless-local rule 300 source group address-group 'bambu-printers'
 set firewall ipv4 name wireless-local rule 999 action 'drop'
 set firewall ipv4 name wireless-local rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name wireless-local rule 999 state invalid

@@ -22,8 +22,6 @@ set system static-host-mapping host-name gateway inet '10.1.0.1'
 
 set system task-scheduler task backup-config crontab-spec '30 0 * * *'
 set system task-scheduler task backup-config executable path '/config/scripts/task-config-backup-usb.sh'
-set system task-scheduler task restart-containers crontab-spec '15 0 * * 7'
-set system task-scheduler task restart-containers executable path '/config/scripts/task-restart-containers.sh'
 
 set system time-zone 'America/New_York'
 
