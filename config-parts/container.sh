@@ -44,15 +44,6 @@ set container name dnsdist volume config source '/config/containers/dnsdist/conf
 set container name dnsdist volume config destination '/etc/dnsdist/dnsdist.conf'
 set container name dnsdist volume config mode 'ro'
 
-# pdns-recursor
-set container name pdns-recursor cap-add 'net-bind-service'
-set container name pdns-recursor environment TZ value 'America/New_York'
-set container name pdns-recursor image 'docker.io/powerdns/pdns-recursor-50:5.0.3'
-set container name pdns-recursor memory '0'
-set container name pdns-recursor network containers address '10.5.0.9'
-set container name pdns-recursor restart 'on-failure'
-set container name pdns-recursor shared-memory '0'
-
 # wildcard certificate
 set container name lego-auto image 'ghcr.io/bjw-s/lego-auto:v0.3.0'
 set container name lego-auto memory '0'
