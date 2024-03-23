@@ -54,6 +54,11 @@ set firewall ipv4 name guest-containers rule 40 action 'accept'
 set firewall ipv4 name guest-containers rule 40 description 'Rule: accept_dns'
 set firewall ipv4 name guest-containers rule 40 destination port 'domain,domain-s'
 set firewall ipv4 name guest-containers rule 40 protocol 'tcp_udp'
+set firewall ipv4 name guest-containers rule 50 action 'accept'
+set firewall ipv4 name guest-containers rule 50 description ' Rule: accept_vyos_unifi'
+set firewall ipv4 name guest-containers rule 50 destination group address-group 'vyos_unifi'
+set firewall ipv4 name guest-containers rule 50 protocol 'tcp'
+set firewall ipv4 name guest-containers rule 50 destination port '8880,8443'
 set firewall ipv4 name guest-containers rule 999 action 'drop'
 set firewall ipv4 name guest-containers rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name guest-containers rule 999 state invalid
@@ -116,6 +121,11 @@ set firewall ipv4 name iot-lan rule 999 log
 set firewall ipv4 name iot-ntp default-action 'drop'
 set firewall ipv4 name iot-ntp description 'From IOT to NTP'
 set firewall ipv4 name iot-ntp default-log
+set firewall ipv4 name iot-ntp rule 130 action 'accept'
+set firewall ipv4 name iot-ntp rule 130 description 'Rule: accept_ntp'
+set firewall ipv4 name iot-ntp rule 130 destination group address-group 'ntp_nodes'
+set firewall ipv4 name iot-ntp rule 130 destination port 'ntp'
+set firewall ipv4 name iot-ntp rule 130 protocol 'udp'
 set firewall ipv4 name iot-ntp rule 999 action 'drop'
 set firewall ipv4 name iot-ntp rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name iot-ntp rule 999 state invalid
@@ -294,6 +304,11 @@ set firewall ipv4 name lan-guest rule 999 log
 set firewall ipv4 name lan-ntp default-action 'drop'
 set firewall ipv4 name lan-ntp description 'From LAN to NTP'
 set firewall ipv4 name lan-ntp default-log
+set firewall ipv4 name lan-ntp rule 130 action 'accept'
+set firewall ipv4 name lan-ntp rule 130 description 'Rule: accept_ntp'
+set firewall ipv4 name lan-ntp rule 130 destination group address-group 'ntp_nodes'
+set firewall ipv4 name lan-ntp rule 130 destination port 'ntp'
+set firewall ipv4 name lan-ntp rule 130 protocol 'udp'
 set firewall ipv4 name lan-ntp rule 999 action 'drop'
 set firewall ipv4 name lan-ntp rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name lan-ntp rule 999 state invalid
@@ -514,7 +529,7 @@ set firewall ipv4 name local-iot rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name local-iot rule 999 state invalid
 set firewall ipv4 name local-iot rule 999 log
 
-# From LOCAL to NTP
+# From LOCAL to LAN
 set firewall ipv4 name local-lan default-action 'drop'
 set firewall ipv4 name local-lan description 'From LOCAL to NTP'
 set firewall ipv4 name local-lan default-log
@@ -527,10 +542,11 @@ set firewall ipv4 name local-lan rule 999 log
 set firewall ipv4 name local-ntp default-action 'drop'
 set firewall ipv4 name local-ntp description 'From LOCAL to NTP'
 set firewall ipv4 name local-ntp default-log
-set firewall ipv4 name local-ntp rule 100 action 'accept'
-set firewall ipv4 name local-ntp rule 100 description 'Rule: accept_ntp'
-set firewall ipv4 name local-ntp rule 100 destination port 'ntp'
-set firewall ipv4 name local-ntp rule 100 protocol 'udp'
+set firewall ipv4 name local-ntp rule 130 action 'accept'
+set firewall ipv4 name local-ntp rule 130 description 'Rule: accept_ntp'
+set firewall ipv4 name local-ntp rule 130 destination group address-group 'ntp_nodes'
+set firewall ipv4 name local-ntp rule 130 destination port 'ntp'
+set firewall ipv4 name local-ntp rule 130 protocol 'udp'
 set firewall ipv4 name local-ntp rule 999 action 'drop'
 set firewall ipv4 name local-ntp rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name local-ntp rule 999 state invalid
@@ -713,6 +729,11 @@ set firewall ipv4 name servers-ntp rule 120 source group address-group 'k8s_node
 set firewall ipv4 name servers-ntp rule 120 destination group address-group 'ntp_nodes'
 set firewall ipv4 name servers-ntp rule 120 protocol 'tcp'
 set firewall ipv4 name servers-ntp rule 120 destination port '80'
+set firewall ipv4 name servers-ntp rule 130 action 'accept'
+set firewall ipv4 name servers-ntp rule 130 description 'Rule: accept_ntp'
+set firewall ipv4 name servers-ntp rule 130 destination group address-group 'ntp_nodes'
+set firewall ipv4 name servers-ntp rule 130 destination port 'ntp'
+set firewall ipv4 name servers-ntp rule 130 protocol 'udp'
 set firewall ipv4 name servers-ntp rule 999 action 'drop'
 set firewall ipv4 name servers-ntp rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name servers-ntp rule 999 state invalid
@@ -844,6 +865,11 @@ set firewall ipv4 name containers-lan rule 999 log
 set firewall ipv4 name containers-ntp default-action 'drop'
 set firewall ipv4 name containers-ntp description 'From CONTAINERS to NTP'
 set firewall ipv4 name containers-ntp default-log
+set firewall ipv4 name containers-ntp rule 130 action 'accept'
+set firewall ipv4 name containers-ntp rule 130 description 'Rule: accept_ntp'
+set firewall ipv4 name containers-ntp rule 130 destination group address-group 'ntp_nodes'
+set firewall ipv4 name containers-ntp rule 130 destination port 'ntp'
+set firewall ipv4 name containers-ntp rule 130 protocol 'udp'
 set firewall ipv4 name containers-ntp rule 999 action 'drop'
 set firewall ipv4 name containers-ntp rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name containers-ntp rule 999 state invalid
@@ -1223,6 +1249,11 @@ set firewall ipv4 name video-lan rule 999 log
 set firewall ipv4 name video-ntp default-action 'drop'
 set firewall ipv4 name video-ntp description 'From VIDEO to NTP'
 set firewall ipv4 name video-ntp default-log
+set firewall ipv4 name video-ntp rule 130 action 'accept'
+set firewall ipv4 name video-ntp rule 130 description 'Rule: accept_ntp'
+set firewall ipv4 name video-ntp rule 130 destination group address-group 'ntp_nodes'
+set firewall ipv4 name video-ntp rule 130 destination port 'ntp'
+set firewall ipv4 name video-ntp rule 130 protocol 'udp'
 set firewall ipv4 name video-ntp rule 999 action 'drop'
 set firewall ipv4 name video-ntp rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name video-ntp rule 999 state invalid
