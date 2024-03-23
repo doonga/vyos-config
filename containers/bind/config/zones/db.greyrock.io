@@ -37,10 +37,10 @@ nas                                 IN  A  10.1.1.3
 pikvm                               IN  A  10.1.1.52
 
 ; NTP
-time1                             IN  A  10.1.7.2
-time2                             IN  A  10.1.7.3
-time3                             IN  A  10.1.7.4
-time4                             IN  A  10.1.7.5
+time1                               IN  A  10.1.7.2
+time2                               IN  A  10.1.7.3
+time3                               IN  A  10.1.7.4
+time4                               IN  A  10.1.7.5
 
 ; IOT
 ambient-ws5000                      IN  A  10.1.3.38
@@ -52,10 +52,10 @@ brother-printer                     IN  A  10.1.3.13
 canon-printer                       IN  A  10.1.3.42
 downstairs-litter-robot             IN  A  10.1.3.33
 fsr-lg-tv                           IN  A  10.1.3.32
-game-room-ps4                        IN  A  10.1.3.11
-game-room-ps5                        IN  A  10.1.3.10
-game-room-samsung-tv-left            IN  A  10.1.3.29
-game-room-samsung-tv-right           IN  A  10.1.3.26
+game-room-ps4                       IN  A  10.1.3.11
+game-room-ps5                       IN  A  10.1.3.10
+game-room-samsung-tv-left           IN  A  10.1.3.29
+game-room-samsung-tv-right          IN  A  10.1.3.26
 garage-iotawatt                     IN  A  10.1.3.39
 garage-door-andy                    IN  A  10.1.3.35
 garage-door-todd                    IN  A  10.1.3.34
@@ -86,7 +86,7 @@ withings-scale                      IN  A  10.1.3.27
 andys-desktop                       IN  A  10.1.2.11
 todds-desktop                       IN  A  10.1.2.10
 fsr-appletv                         IN  A  10.1.2.12
-game-room-appletv                    IN  A  10.1.2.13
+game-room-appletv                   IN  A  10.1.2.13
 office-appletv                      IN  A  10.1.5.14
 
 ; Wireless
@@ -94,8 +94,8 @@ andys-iphone                        IN  A  10.1.5.14
 andys-ipad                          IN  A  10.1.5.21
 formalsittingroom-homepod-left      IN  A  10.1.5.15
 formalsittingroom-homepod-right     IN  A  10.1.5.22
-game-room-homepod-left               IN  A  10.1.5.24
-game-room-homepod-right              IN  A  10.1.5.25
+game-room-homepod-left              IN  A  10.1.5.24
+game-room-homepod-right             IN  A  10.1.5.25
 downstairs-bathroom-homepod         IN  A  10.1.5.16
 garage-homepod                      IN  A  10.1.5.17
 kitchen-homepod                     IN  A  10.1.5.18

@@ -2,16 +2,12 @@ ports:
   dns: 53
   http: 4000
 
-bootstrapDns:
-  - upstream: tcp+udp:1.1.1.1
-
 upstreams:
   groups:
     # these external DNS resolvers will be used. Blocky picks 2 random resolvers from the list for each query
     default:
-      # Cloudflare
-      - tcp-tls:1.1.1.1:853
-      - tcp-tls:1.0.0.1:853
+      # Local recursor
+      - tcp+udp:10.5.0.9
 
 # configuration of client name resolution
 clientLookup:
@@ -29,11 +25,14 @@ prometheus:
   path: /metrics
 
 caching:
-  minTime: 5m
-  maxTime: 30m
+  minTime: 30m
+  maxTime: 2h
   prefetching: true
+  prefetchThreshold: 2
 
 blocking:
+  blockType: nxDomain
+
   loading:
     downloads:
       timeout: 4m
@@ -45,9 +44,14 @@ blocking:
       - https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-only/hosts
     gambling:
       - https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts
+    icloud-private-relay:
+       - |
+         mask.icloud.com
+         mask-h2.icloud.com
 
   clientGroupsBlock:
     default:
       - ads
       - fakenews
       - gambling
+      - icloud-private-relay
