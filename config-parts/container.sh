@@ -174,3 +174,14 @@ set container name matchbox volume matchbox-data destination '/var/lib/matchbox'
 set container name matchbox volume matchbox-data mode 'rw'
 set container name matchbox volume matchbox-data propagation 'private'
 set container name matchbox volume matchbox-data source '/config/containers/matchbox/data'
+
+# vnstat
+set container name vnstat allow-host-networks
+set container name vnstat environment EXCLUDE_PATTERN value '^docker|^veth|^br-|^lxc'
+set container name vnstat environment TZ value 'America/New_York'
+set container name vnstat image 'ghcr.io/vergoh/vnstat:2.12'
+set container name vnstat memory '0'
+set container name vnstat shared-memory '0'
+set container name vnstat volume vnstat-data destination '/var/lib/vnstat'
+set container name vnstat volume vnstat-data mode 'rw'
+set container name vnstat volume vnstat-data source '/config/containers/vnstat/data'
