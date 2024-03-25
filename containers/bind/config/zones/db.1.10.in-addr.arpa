@@ -84,6 +84,10 @@ $ORIGIN 3.1.10.in-addr.arpa.
 47                         IN  PTR  bambu-a1-3d-printer.greyrock.io.
 48                         IN  PTR  motion-sensor-fsr-screek-1u.greyrock.io.
 49                         IN  PTR  bluetooth-proxy-office-olimex.greyrock.io.
+50                         IN  PTR  light-office-ceiling-1.greyrock.io.
+51                         IN  PTR  light-office-ceiling-2.greyrock.io.
+52                         IN  PTR  light-office-ceiling-3.greyrock.io.
+53                         IN  PTR  light-office-ceiling-4.greyrock.io.
 199                        IN  PTR  solaredge-inverter.greyrock.io.
 
 ; Trusted
