@@ -74,6 +74,7 @@ light-office-ceiling-1              IN  A  10.1.3.50
 light-office-ceiling-2              IN  A  10.1.3.51
 light-office-ceiling-3              IN  A  10.1.3.52
 light-office-ceiling-4              IN  A  10.1.3.53
+light-office-lamp                   IN  A  10.1.3.54
 motion-sensor-fsr-screek-1u         IN  A  10.1.3.48
 motion-sensor-office-screek-1u      IN  A  10.1.3.46
 office-hs110-rack                   IN  A  10.1.3.37

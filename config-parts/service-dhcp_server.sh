@@ -103,6 +103,8 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping light-office-ceiling-3 mac-address 'd8:bc:38:99:43:31'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping light-office-ceiling-4 ip-address '10.1.3.53'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping light-office-ceiling-4 mac-address 'd8:bc:38:99:44:fb'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping light-office-lamp ip-address '10.1.3.54'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping light-office-lamp mac-address 'c4:5b:be:df:2f:ec'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping motion-sensor-fsr-screek-1u ip-address '10.1.3.48'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping motion-sensor-fsr-screek-1u mac-address '84:fc:e6:c6:9b:ac'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping motion-sensor-office-screek-1u ip-address '10.1.3.46'
