@@ -57,6 +57,11 @@ blocking:
          mask.icloud.com
          mask-h2.icloud.com
 
+  whiteLists:
+    doh:
+      - |
+        doh.dns.apple.com
+
   clientGroupsBlock:
     default:
       - ads
