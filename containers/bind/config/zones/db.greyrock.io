@@ -79,6 +79,7 @@ motion-sensor-fsr-screek-1u         IN  A  10.1.3.48
 motion-sensor-office-screek-1u      IN  A  10.1.3.46
 office-hs110-rack                   IN  A  10.1.3.37
 office-samsung-tv                   IN  A  10.1.3.30
+plug-master-bedroom-fan             IN  A  10.1.3.55
 solaredge-inverter                  IN  A  10.1.3.199
 nintendo-switch-todd                IN  A  10.1.3.12
 slzb-06                             IN  A  10.1.3.36

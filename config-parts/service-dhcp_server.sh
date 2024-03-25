@@ -113,6 +113,8 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-hs110-rack mac-address '50:c7:bf:7c:ee:70'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-samsung-tv ip-address '10.1.3.30'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping office-samsung-tv mac-address '68:27:37:c2:fc:f0'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping plug-master-bedroom-fan ip-address '10.1.3.55'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping plug-master-bedroom-fan mac-address '40:f5:20:c7:55:bd'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping ps4 ip-address '10.1.3.11'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping ps4 mac-address '2c:cc:44:a9:b6:47'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping solargedge-inverter ip-address '10.1.3.199'
