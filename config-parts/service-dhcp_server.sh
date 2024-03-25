@@ -23,6 +23,14 @@ set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 range 0 
 
 set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping todds-work-laptop ip-address '192.168.2.11'
 set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping todds-work-laptop mac-address '5c:e9:1e:96:8f:da'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping upstairs-u7-pro ip-address '192.168.2.23'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping upstairs-u7-pro mac-address '9c:05:d6:59:22:f5'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping game-room-u7-pro ip-address '192.168.2.22'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping game-room-u7-pro mac-address '9c:05:d6:59:22:4d'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping kitchen-u7-pro ip-address '192.168.2.21'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping kitchen-u7-pro mac-address '9c:05:d6:59:23:39'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping outdoor-back-u6-mesh ip-address '192.168.2.24'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping outdoor-back-u6-mesh mac-address 'ac:8b:a9:dd:e4:68'
 
 # IoT VLAN
 set service dhcp-server shared-network-name IOT authoritative
@@ -141,8 +149,8 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mappin
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-usw-pro-aggregation mac-address 'f4:e2:c6:ea:ea:4c'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-usw-pro-max-24-poe ip-address '10.1.0.12'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-usw-pro-max-24-poe mac-address 'f4:e2:c6:ad:2a:98'
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-access-point-back ip-address '10.1.0.24'
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-access-point-back mac-address 'ac:15:a2:65:b7:d0'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-back-u6-mesh ip-address '10.1.0.24'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-back-u6-mesh mac-address 'ac:8b:a9:dd:e4:68'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping upstairs-u7-pro ip-address '10.1.0.23'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping upstairs-u7-pro mac-address '9c:05:d6:59:22:f5'
 
