@@ -163,6 +163,10 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mappin
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping office-usw-pro-max-24-poe mac-address 'f4:e2:c6:ad:2a:98'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-back-u6-mesh ip-address '10.1.0.24'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-back-u6-mesh mac-address 'ac:8b:a9:dd:e4:68'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-side-driveway-u6-mesh ip-address '10.1.0.25'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-side-driveway-u6-mesh mac-address 'ac:8b:a9:dd:e7:00'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-side-yard-u6-mesh ip-address '10.1.0.26'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping outdoor-side-yard-u6-mesh mac-address 'ac:8b:a9:dd:e1:1c'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping upstairs-u7-pro ip-address '10.1.0.23'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping upstairs-u7-pro mac-address '9c:05:d6:59:22:f5'
 

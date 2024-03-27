@@ -27,6 +27,9 @@ office-usw-flex-mini                IN  A  10.1.0.15
 office-usp-pdu-pro                  IN  A  10.1.0.31
 office-usw-pro-aggregation          IN  A  10.1.0.11
 office-usw-pro-max-24-poe           IN  A  10.1.0.12
+outdoor-back-u6-mesh                IN  A  10.1.0.24
+outdoor-side-driveway-u6-mesh       IN  A  10.1.0.25
+outdoor-side-yard-u6-mesh           IN  A  10.1.0.26
 upstairs-u7-pro                     IN  A  10.1.0.23
 
 ; Servers

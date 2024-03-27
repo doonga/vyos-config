@@ -28,6 +28,9 @@ $ORIGIN 0.1.10.in-addr.arpa.
 21                         IN  PTR  kitchen-u7-pro.greyrock.io.
 22                         IN  PTR  game-room-u7-pro.greyrock.io.
 23                         IN  PTR  upstairs-u7-pro.greyrock.io.
+24                         IN  PTR  outdoor-back-u6-mesh.greyrock.io.
+25                         IN  PTR  outdoor-side-driveway-u6-mesh.greyrock.io.
+26                         IN  PTR  outdoor-side-yard-u6-mesh.greyrock.io.
 31                         IN  PTR  office-usp-pdu-pro.greyrock.io.
 
 ; SERVERS
