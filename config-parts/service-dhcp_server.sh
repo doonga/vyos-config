@@ -31,6 +31,10 @@ set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-m
 set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping kitchen-u7-pro mac-address '9c:05:d6:59:23:39'
 set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping outdoor-back-u6-mesh ip-address '192.168.2.24'
 set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping outdoor-back-u6-mesh mac-address 'ac:8b:a9:dd:e4:68'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping outdoor-side-driveway-u6-mesh ip-address '192.168.2.25'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping outdoor-side-driveway-u6-mesh mac-address 'ac:8b:a9:dd:e7:00'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping outdoor-side-yard-u6-mesh ip-address '192.168.2.26'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping outdoor-side-yard-u6-mesh mac-address 'ac:8b:a9:dd:e1:1c'
 
 # IoT VLAN
 set service dhcp-server shared-network-name IOT authoritative
