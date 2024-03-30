@@ -25,3 +25,9 @@ set service mdns repeater interface 'eth4.60'
 # TFTP server
  set service tftp-server directory '/config/tftpboot'
  set service tftp-server listen-address 10.1.1.1
+
+# DNS forwarder
+set service dns forwarding domain greyrock.io name-server 10.46.0.3
+set service dns forwarding domain greyrock.casa name-server 10.46.0.3
+set service dns forwarding listen-address 10.1.1.1
+set service dns forwarding allow-from 10.1.1.0/24

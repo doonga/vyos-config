@@ -3,7 +3,5 @@
 
 # Track certain files and directories
 !.gitignore
-
-!/config/
-/config/*
-!/config/dnsdist.conf
+!.gitkeep
+!data/

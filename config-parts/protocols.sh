@@ -10,5 +10,8 @@ set protocols bgp neighbor 10.1.1.5 remote-as '64512'
 set protocols bgp neighbor 10.1.1.6 address-family ipv4-unicast
 set protocols bgp neighbor 10.1.1.6 description 'k8s3'
 set protocols bgp neighbor 10.1.1.6 remote-as '64512'
+set protocols bgp neighbor 10.1.1.7 address-family ipv4-unicast
+set protocols bgp neighbor 10.1.1.7 description 'utility'
+set protocols bgp neighbor 10.1.1.7 remote-as '64512'
 set protocols bgp parameters router-id '10.1.0.1'
 set protocols bgp system-as '64512'
