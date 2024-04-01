@@ -104,7 +104,7 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping light-dining-room-ceiling-2 ip-address '10.1.3.57'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping light-dining-room-ceiling-2 mac-address 'c8:c9:a3:30:35:ab'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping light-dining-room-ceiling-3 ip-address '10.1.3.58'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping light-dining-room-ceiling-3 mac-address 'c8:c9:a3:30:4c:a6'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping light-dining-room-ceiling-3 mac-address 'c8:c9:a3:30:34:9f'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping light-dining-room-ceiling-4 ip-address '10.1.3.59'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping light-dining-room-ceiling-4 mac-address 'c8:c9:a3:30:4d:66'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping light-dining-room-ceiling-5 ip-address '10.1.3.60'
