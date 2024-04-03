@@ -240,8 +240,12 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping nas mac-address 'f8:f2:1e:6e:ce:e0'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm ip-address '10.1.1.52'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm mac-address 'e4:5f:01:e4:93:32'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping utility ip-address '10.1.1.7'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping utility mac-address '48:21:0b:3e:d8:14'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s4 ip-address '10.1.1.8'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s4 mac-address '48:21:0b:3e:d8:14'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s5 ip-address '10.1.1.9'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s5 mac-address '48:21:0b:3e:db:da'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s6 ip-address '10.1.1.10'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s6 mac-address '48:21:0b:3e:d8:02'
 
 # Trusted VLAN
 set service dhcp-server shared-network-name TRUSTED authoritative
