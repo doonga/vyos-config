@@ -1,5 +1,5 @@
 > [!CAUTION]
-> April 23, 2024 - Due to horrible treatment the free/open-source community has been recieving from VyOS maintainers/owners in the past few weeks/months this project, I am currently looking to migrate back to either OPNsense or to Unifi's Dream Machine. 
+> April 23, 2024 - Due to horrible treatment the free/open-source community has been recieving from VyOS maintainers/owners in the past few weeks/months, I have migrated to Unifi's Dream Machine. 
 ><details>
 ><summary>More Details</summary>
 >
